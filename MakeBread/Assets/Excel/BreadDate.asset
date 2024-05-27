@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa47a192f922b41f5bf4ea95c17ea94f, type: 3}
+  m_Name: BreadDate
+  m_EditorClassIdentifier: 
+  Bread_date:
+  - id: swe_01
+    name: "\u30DE\u30EB\u30AF\u30B9\u30FC\u30D7"
+    taste: 1
+  - id: spi_01
+    name: "\u4E71\u8F9B\uFF08\u30E9\u30F3\u30C8\u30A6\uFF09"
+    taste: 2
+  - id: sour_01
+    name: "\u30B9\u30C3\u30D1\u306E\u5B9F"
+    taste: 3
+  - id: salt_01
+    name: "\u6D77\u306E\u7D20"
+    taste: 4

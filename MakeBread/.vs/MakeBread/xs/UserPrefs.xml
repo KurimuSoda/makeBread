@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemImageController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ItemImageController.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scripts/BreadInstantiate.cs" />
+      <File FileName="Assets/Scripts/ImputManager.cs" />
+      <File FileName="Assets/Scripts/StickRotateController.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MakeBread" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="ItemImageController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c0145876-1914-4d71-943e-d9cba7ab5038" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
