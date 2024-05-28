@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemImageController.cs">
     <Files>
-      <File FileName="Assets/Scripts/ItemImageController.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" />
-      <File FileName="Assets/Scripts/ImputManager.cs" />
+      <File FileName="Assets/Scripts/ItemImageController.cs" Line="27" Column="9" />
+      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ImputManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/StickRotateController.cs" />
     </Files>
     <Pads>
@@ -22,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c0145876-1914-4d71-943e-d9cba7ab5038" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dfc336c4-864b-40fa-9d26-a6d2c491d788" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
