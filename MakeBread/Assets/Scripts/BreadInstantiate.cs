@@ -7,6 +7,7 @@ public class BreadInstantiate : MonoBehaviour
 {
     [SerializeField] private GameObject _baseObj;
     private int _inputCount = 0;
+    private int _deleteNum = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,30 @@ public class BreadInstantiate : MonoBehaviour
 
     public void SummonBreadObj(string data_id)
     {
-        GameObject obj = Instantiate(_baseObj, new Vector3(0.0f, 0.0f, -1.0f), Quaternion.identity);
-        //GameObject textObj = obj.transform.GetChild(1).gameObject;
-        var itemImage = obj.GetComponentInChildren<ItemImageController>();
-        itemImage.num = _inputCount + 1;
-        itemImage.itemname_ID = data_id;
-        obj.name = data_id;
-        _inputCount++;
+        if(_inputCount < 4)
+        {
+            GameObject obj = Instantiate(_baseObj, new Vector3(0.0f, 0.0f, -1.0f), Quaternion.identity);
+            //GameObject textObj = obj.transform.GetChild(1).gameObject;
+            var itemImage = obj.GetComponentInChildren<ItemImageController>();
+            itemImage.num = _inputCount + 1;
+            itemImage.itemname_ID = data_id;
+            obj.tag = "Item" + itemImage.num;
+            obj.name = data_id;
+            _inputCount++;
+        }
+        else
+        {
+
+        }
+        
+    }
+
+    public void DeleteBreadObj()
+    {
+        _deleteNum = _inputCount;
+        GameObject missSet = GameObject.FindWithTag("Item" + _deleteNum);
+        Destroy(missSet);
+        _inputCount--;
+        //Debug.Log("miss:" + missSet.name);
     }
 }

@@ -23,16 +23,21 @@ public class ImputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            _breadinstantiate.DeleteBreadObj();
+        }
         if (Input.anyKeyDown)
         {
             for(int i = 0; i < _numbersKey.Length; i++)
             {
                 if (Input.GetKeyDown(_numbersKey[i]))
                 {
-                    DebugLog(i);
+                    SetBread(i);
                 }
             }
         }
+        
 
     }
 
@@ -41,7 +46,7 @@ public class ImputManager : MonoBehaviour
         
     }
 
-    private void DebugLog(int number)
+    private void SetBread(int number)
     {
         Debug.Log(breadData.Bread_date[number].name);
         _breadinstantiate.SummonBreadObj(breadData.Bread_date[number].id);
