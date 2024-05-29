@@ -1,22 +1,20 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TasteManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/TasteManager.cs" Line="21" Column="15" />
-      <File FileName="Assets/Scripts/ItemImageController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="33" Column="67" />
-      <File FileName="Assets/Scripts/ImputManager.cs" Line="52" Column="109" />
+      <File FileName="Assets/Scripts/TasteManager.cs" Line="24" Column="64" />
+      <File FileName="Assets/Scripts/ItemImageController.cs" />
+      <File FileName="Assets/Scripts/BreadInstantiate.cs" />
+      <File FileName="Assets/Scripts/ImputManager.cs" />
       <File FileName="Assets/Scripts/StickRotateController.cs" />
-      <File FileName="Assets/Scripts/BreadDataEntity.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BreadDataEntity.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MakeBread" expanded="True">
-            <Node name="Assets" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
               <Node name="Excel" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="TasteManager.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -25,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0e8ca0ab-3aab-4607-aa1f-f3d84f0f7271" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1522b995-74f9-4595-a824-91d6a26c878f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
