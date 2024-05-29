@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BreadInstantiate : MonoBehaviour
 {
     [SerializeField] private GameObject _baseObj;
+    [SerializeField] private TasteManager _tasteManager;
     private int _inputCount = 0;
     private int _deleteNum = 0;
     // Start is called before the first frame update
@@ -20,7 +21,7 @@ public class BreadInstantiate : MonoBehaviour
         
     }
 
-    public void SummonBreadObj(string data_id)
+    public void SummonBreadObj(string data_id, int data_taste)
     {
         if(_inputCount < 4)
         {
@@ -29,6 +30,7 @@ public class BreadInstantiate : MonoBehaviour
             var itemImage = obj.GetComponentInChildren<ItemImageController>();
             itemImage.num = _inputCount + 1;
             itemImage.itemname_ID = data_id;
+            _tasteManager.PutInTastArray(_inputCount, data_taste);
             obj.tag = "Item" + itemImage.num;
             obj.name = data_id;
             _inputCount++;

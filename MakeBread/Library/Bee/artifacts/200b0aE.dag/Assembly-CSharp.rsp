@@ -366,6 +366,7 @@
 "Assets/Scripts/ImputManager.cs"
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/StickRotateController.cs"
+"Assets/Scripts/TasteManager.cs"
 -langversion:9.0
 
 /deterministic
