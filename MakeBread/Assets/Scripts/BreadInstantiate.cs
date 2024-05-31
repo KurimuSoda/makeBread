@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BreadInstantiate : MonoBehaviour
 {
+    [SerializeField] private GameObject _itemsParent;
     [SerializeField] private GameObject _baseObj;
     [SerializeField] private TasteManager _tasteManager;
     private int _inputCount = 0;
@@ -18,14 +19,18 @@ public class BreadInstantiate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            _itemsParent.SetActive(false);
+            Debug.Log("確定!");
+        }
     }
 
     public void SummonBreadObj(string data_id, int data_taste)
     {
         if(_inputCount < 4)
         {
-            GameObject obj = Instantiate(_baseObj, new Vector3(0.0f, 0.0f, -1.0f), Quaternion.identity);
+            GameObject obj = Instantiate(_baseObj, _itemsParent.transform);
             //GameObject textObj = obj.transform.GetChild(1).gameObject;
             var itemImage = obj.GetComponentInChildren<ItemImageController>();
             itemImage.num = _inputCount + 1;

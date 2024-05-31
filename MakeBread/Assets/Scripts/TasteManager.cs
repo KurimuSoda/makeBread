@@ -37,4 +37,32 @@ public class TasteManager : MonoBehaviour
         _tasteArray[inputNumber] = data_taste;
         
     }
+
+    private void TasteCheck()
+    {
+        int sweet = 0, spice = 0, sour = 0, salty = 0;
+
+        for(int i = 0; i < 4; i++)
+        {
+            if (_tasteArray[i] == 1)
+            {
+                sweet++;
+            }
+            else if (_tasteArray[i] == 2)
+            {
+                spice++;
+            }
+            else if (_tasteArray[i] == 3)
+            {
+                sour++;
+            }
+            else if (_tasteArray[i] == 4)
+            {
+                salty++;
+            }
+            else { }
+
+
+        }
+    }
 }
