@@ -57,8 +57,5 @@ public class ItemImageController : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
+    
 }

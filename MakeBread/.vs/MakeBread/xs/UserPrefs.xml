@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImputManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BreadInstantiate.cs">
     <Files>
-      <File FileName="Assets/Scripts/ItemImageController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="48" Column="23" />
-      <File FileName="Assets/Scripts/ImputManager.cs" Line="26" Column="47" />
+      <File FileName="Assets/Scripts/TasteManager.cs" Line="13" Column="33" />
+      <File FileName="Assets/Scripts/ItemImageController.cs" Line="60" Column="5" />
+      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="30" Column="15" />
+      <File FileName="Assets/Scripts/ImputManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/StickRotateController.cs" />
+      <File FileName="Assets/Scripts/BreadDataEntity.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MakeBread" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ImputManager.cs" selected="True" />
+                <Node name="BreadInstantiate.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7fb3ccc5-b9fe-4762-beb5-86ff59b6cf4d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="98054150-af72-485f-8c6f-b77b836e5e41" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -49,6 +49,6 @@ public class ImputManager : MonoBehaviour
     private void SetBread(int number)
     {
         Debug.Log(breadData.Bread_date[number].name);
-        _breadinstantiate.SummonBreadObj(breadData.Bread_date[number].id);
+        _breadinstantiate.SummonBreadObj(breadData.Bread_date[number].id, breadData.Bread_date[number].taste);
     }
 }
