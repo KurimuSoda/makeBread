@@ -10,6 +10,9 @@ public class BreadInstantiate : MonoBehaviour
     [SerializeField] private TasteManager _tasteManager;
     private int _inputCount = 0;
     private int _deleteNum = 0;
+    private string[] _setBreadDataIDArray = new string[4];
+    private bool _isReturnCheck = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,14 @@ public class BreadInstantiate : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             _itemsParent.SetActive(false);
+            _isReturnCheck = true;
             Debug.Log("確定!");
+            //Debug.Log("BiterCheck is : " + BiterCheck());
+            if (BiterCheck())
+            {
+                Debug.Log("Will Be Biter......");
+                _tasteManager.isBiter = true;
+            }
         }
     }
 
@@ -33,6 +43,8 @@ public class BreadInstantiate : MonoBehaviour
             GameObject obj = Instantiate(_baseObj, _itemsParent.transform);
             //GameObject textObj = obj.transform.GetChild(1).gameObject;
             var itemImage = obj.GetComponentInChildren<ItemImageController>();
+            _setBreadDataIDArray[_inputCount] = data_id;
+
             itemImage.num = _inputCount + 1;
             itemImage.itemname_ID = data_id;
             _tasteManager.PutInTastArray(_inputCount, data_taste);
@@ -49,10 +61,30 @@ public class BreadInstantiate : MonoBehaviour
 
     public void DeleteBreadObj()
     {
+        if (_isReturnCheck) { return; }
         _deleteNum = _inputCount;
         GameObject missSet = GameObject.FindWithTag("Item" + _deleteNum);
         Destroy(missSet);
         _inputCount--;
         //Debug.Log("miss:" + missSet.name);
+    }
+
+    private bool BiterCheck()
+    {
+        
+        string biterCheck;
+
+        foreach(string breadID in _setBreadDataIDArray)
+        {
+            int count = 0;
+            for (int i = 0; i < 4; i++)
+            {
+                biterCheck = _setBreadDataIDArray[i];
+                if(breadID == biterCheck) { count++; }
+                if(count >= 2) { return true; }
+            }
+        }
+
+        return false;
     }
 }

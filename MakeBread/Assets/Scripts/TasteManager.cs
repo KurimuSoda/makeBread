@@ -8,6 +8,9 @@ public class TasteManager : MonoBehaviour
     /// <summary>選択した材料の味を選択した順番に格納する</summary>
     private int[] _tasteArray = new int[4];
     private string[] _tasteStringArray = new string[5] {"甘い", "辛い", "酸っぱい", "しょっぱい", "苦い"};
+    private int[] _tastCountReArray = new int[4] { 0, 0, 0, 0 };
+
+    public bool isBiter = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +25,9 @@ public class TasteManager : MonoBehaviour
         {
             _mainTaste = _tasteArray[3];
             Debug.Log("main taste is ---> " + _mainTaste + " : " + _tasteStringArray[_mainTaste - 1]);
-            //Debug.Log(_mainTaste);
-            /*
-            for(int i = 0; i < 4; i++)
-            {
-                Debug.Log(_tasteArray[i]);
-            }
-            */
+            _tastCountReArray = TasteCheck();
+            
+
         }
     }
 
@@ -38,31 +37,34 @@ public class TasteManager : MonoBehaviour
         
     }
 
-    private void TasteCheck()
+    private int[] TasteCheck()
     {
-        int sweet = 0, spice = 0, sour = 0, salty = 0;
+        int sweet = 0, spice = 1, sour = 2, salty = 3;
+        int[] tasteCheckArray = new int[4] { 0, 0, 0, 0 };
 
         for(int i = 0; i < 4; i++)
         {
             if (_tasteArray[i] == 1)
             {
-                sweet++;
+                tasteCheckArray[sweet]++;
             }
             else if (_tasteArray[i] == 2)
             {
-                spice++;
+                tasteCheckArray[spice]++;
             }
             else if (_tasteArray[i] == 3)
             {
-                sour++;
+                tasteCheckArray[sour]++;
             }
             else if (_tasteArray[i] == 4)
             {
-                salty++;
+                tasteCheckArray[salty]++;
             }
             else { }
 
 
         }
+
+        return tasteCheckArray;
     }
 }
