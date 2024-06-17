@@ -367,6 +367,16 @@
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TasteManager.cs"
+"Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothCharacteristic.cs"
+"Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothManager.cs"
+"Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothPeripheral.cs"
+"Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothService.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/ImportConfig.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbCharacteristic.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbManager.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbPeripheral.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbService.cs"
+"Assets/UnityCoreBluetooth/Scripts/NativeInterface/UnityCoreBluetoothManager.cs"
 -langversion:9.0
 
 /deterministic
