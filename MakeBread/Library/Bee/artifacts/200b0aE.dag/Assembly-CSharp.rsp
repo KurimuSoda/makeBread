@@ -363,6 +363,7 @@
 "Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs"
 "Assets/Scripts/BreadDataEntity.cs"
 "Assets/Scripts/BreadInstantiate.cs"
+"Assets/Scripts/CoreBLE_TestScript.cs"
 "Assets/Scripts/ImputManager.cs"
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/StickRotateController.cs"

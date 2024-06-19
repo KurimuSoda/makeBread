@@ -56,26 +56,27 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UnityCoreBluetoothManager.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothService.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/ImportConfig.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothManager.cs" />
     <Compile Include="Assets/Scripts/ItemImageController.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbService.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Example.cs" />
     <Compile Include="Assets/Scripts/BreadDataEntity.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbManager.cs" />
     <Compile Include="Assets/Scripts/BreadInstantiate.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothCharacteristic.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Entity/MstItemEntity.cs" />
     <Compile Include="Assets/Scripts/TasteManager.cs" />
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbPeripheral.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbCharacteristic.cs" />
+    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothPeripheral.cs" />
     <Compile Include="Assets/Scripts/ImputManager.cs" />
     <Compile Include="Assets/Excel/BreadDate.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbService.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbCharacteristic.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothManager.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/ImportConfig.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothPeripheral.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbManager.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothService.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UcbPeripheral.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothCharacteristic.cs" />
-    <Compile Include="Assets/UnityCoreBluetooth/Scripts/NativeInterface/UnityCoreBluetoothManager.cs" />
+    <Compile Include="Assets/Scripts/CoreBLE_TestScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

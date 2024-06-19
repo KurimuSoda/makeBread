@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemImageController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CoreBLE_TestScript.cs">
     <Files>
       <File FileName="Assets/Scripts/ItemImageController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TasteManager.cs" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="30" Column="15" />
-      <File FileName="Assets/Scripts/ImputManager.cs" />
-      <File FileName="Assets/Scripts/StickRotateController.cs" />
-      <File FileName="Assets/Scripts/BreadDataEntity.cs" />
+      <File FileName="Assets/Scripts/TasteManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CoreBLE_TestScript.cs" Line="72" Column="6" />
+      <File FileName="Assets/UnityCoreBluetooth/Scripts/CoreBluetooth/CoreBluetoothManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +13,12 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ItemImageController.cs" selected="True" />
+                <Node name="CoreBLE_TestScript.cs" selected="True" />
+              </Node>
+              <Node name="UnityCoreBluetooth" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="CoreBluetooth" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -25,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="882a08a8-02d2-4d28-be04-35733a9106a0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dd0ea76d-594c-464c-ab50-de4a8ab9dae6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
