@@ -56,8 +56,10 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/ImportScript/SerialHandler.cs" />
     <Compile Include="Assets/Scripts/ItemImageController.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Example.cs" />
+    <Compile Include="Assets/Scripts/BTSerialTest.cs" />
     <Compile Include="Assets/Scripts/BreadDataEntity.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
     <Compile Include="Assets/Scripts/BreadInstantiate.cs" />
@@ -66,8 +68,6 @@
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
     <Compile Include="Assets/Scripts/ImputManager.cs" />
     <Compile Include="Assets/Excel/BreadDate.cs" />
-    <Compile Include="Assets/Scripts/BTSerialTest.cs" />
-    <Compile Include="Assets/Scripts/ImportScript/SerialHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

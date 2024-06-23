@@ -27,8 +27,7 @@ public class BTSerialTest : MonoBehaviour
         Debug.Log("受信データ: " + data);
         */
 
-        var data = message.Split(
-            new string[] { "\n" }, System.StringSplitOptions.None); //受信する
+        //var data = message.Split(new string[] { "\n" }, System.StringSplitOptions.None); //受信する
         Debug.Log(message);
     }
 
