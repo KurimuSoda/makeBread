@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemImageController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BTSerialTest.cs">
     <Files>
-      <File FileName="Assets/Scripts/ItemImageController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/TasteManager.cs" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="30" Column="15" />
-      <File FileName="Assets/Scripts/ImputManager.cs" />
-      <File FileName="Assets/Scripts/StickRotateController.cs" />
-      <File FileName="Assets/Scripts/BreadDataEntity.cs" />
+      <File FileName="Assets/Scripts/BTSerialTest.cs" Line="31" Column="28" />
+      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="30" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +11,8 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ItemImageController.cs" selected="True" />
+                <Node name="ImportScript" expanded="True" />
+                <Node name="BTSerialTest.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="882a08a8-02d2-4d28-be04-35733a9106a0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4123124e-bb22-464e-a8c9-caf0f757d688" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
