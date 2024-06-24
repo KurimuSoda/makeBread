@@ -25,7 +25,7 @@ public class ImputManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            _breadinstantiate.DeleteBreadObj();
+           // _breadinstantiate.DeleteBreadObj();
         }
         if (Input.anyKeyDown)
         {
@@ -43,10 +43,10 @@ public class ImputManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+       
     }
 
-    private void SetBread(int number)
+    public void SetBread(int number)
     {
         Debug.Log(breadData.Bread_date[number].name);
         _breadinstantiate.SummonBreadObj(breadData.Bread_date[number].id, breadData.Bread_date[number].taste);

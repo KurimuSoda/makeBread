@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/BTSerialTest.unity
+- path: Assets/Scenes/CookingPot 1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
