@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/ImportScript/SerialHandler.cs" />
     <Compile Include="Assets/Scripts/ItemImageController.cs" />
+    <Compile Include="Assets/Scripts/BTSerialManager.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Example.cs" />
     <Compile Include="Assets/Scripts/BTSerialTest.cs" />
     <Compile Include="Assets/Scripts/BreadDataEntity.cs" />
@@ -67,7 +68,9 @@
     <Compile Include="Assets/Scripts/TasteManager.cs" />
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
     <Compile Include="Assets/Scripts/ImputManager.cs" />
+    <Compile Include="Assets/Scripts/NFCInputManager.cs" />
     <Compile Include="Assets/Excel/BreadDate.cs" />
+    <Compile Include="Assets/Scripts/NFCChecks.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

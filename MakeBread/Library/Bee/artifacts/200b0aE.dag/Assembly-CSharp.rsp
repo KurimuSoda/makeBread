@@ -363,10 +363,13 @@
 "Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs"
 "Assets/Scripts/BreadDataEntity.cs"
 "Assets/Scripts/BreadInstantiate.cs"
+"Assets/Scripts/BTSerialManager.cs"
 "Assets/Scripts/BTSerialTest.cs"
 "Assets/Scripts/ImportScript/SerialHandler.cs"
 "Assets/Scripts/ImputManager.cs"
 "Assets/Scripts/ItemImageController.cs"
+"Assets/Scripts/NFCChecks.cs"
+"Assets/Scripts/NFCInputManager.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TasteManager.cs"
 -langversion:9.0

@@ -5,7 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class BreadDataEntity
 {
+    public int no;
     public string id;
     public string name;
     public int taste;
+    public string uid;
 }

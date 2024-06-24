@@ -8,9 +8,25 @@ public class BreadInstantiate : MonoBehaviour
     [SerializeField] private GameObject _itemsParent;
     [SerializeField] private GameObject _baseObj;
     [SerializeField] private TasteManager _tasteManager;
+
+    /// <summary>
+    /// 入力された回数をカウント。番目。
+    /// </summary>
     private int _inputCount = 0;
+
+    /// <summary>
+    /// 削除するアイテムの番号。番目。
+    /// </summary>
     private int _deleteNum = 0;
+
+    /// <summary>
+    /// 選択したアイテム4つを記録するための配列。IDが記録されている。
+    /// </summary>
     private string[] _setBreadDataIDArray = new string[4];
+
+    /// <summary>
+    /// エンターキーが押されたかどうか。
+    /// </summary>
     private bool _isReturnCheck = false;
 
     // Start is called before the first frame update
@@ -36,6 +52,11 @@ public class BreadInstantiate : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 選択したアイテムの画像付きオブジェクトを生成する関数。
+    /// </summary>
+    /// <param name="data_id"></param>
+    /// <param name="data_taste"></param>
     public void SummonBreadObj(string data_id, int data_taste)
     {
         if(_inputCount < 4)
