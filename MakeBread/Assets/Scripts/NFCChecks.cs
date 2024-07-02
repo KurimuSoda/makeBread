@@ -25,7 +25,7 @@ public enum ReadStatus
 
 }
 
-public class NFCChecks : MonoBehaviour
+public class NFCChecks: MonoBehaviour
 {
     /// <summary>
     /// 新しく読み取ったUID
@@ -105,6 +105,4 @@ public class NFCChecks : MonoBehaviour
     }
 
 }
-
-
 

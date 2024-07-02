@@ -2281,6 +2281,7 @@ GameObject:
   - component: {fileID: 1281707244}
   - component: {fileID: 1281707243}
   - component: {fileID: 1281707242}
+  - component: {fileID: 1281707247}
   m_Layer: 0
   m_Name: ImputManager
   m_TagString: Untagged
@@ -2379,6 +2380,19 @@ MonoBehaviour:
   _shakedChecks: {fileID: 0}
   _imputMG: {fileID: 1281707242}
   readUid: 
+--- !u!114 &1281707247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281707240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69f3288f87094c85a4e57aa781fa5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBiter: 0
 --- !u!1 &1303150165
 GameObject:
   m_ObjectHideFlags: 0

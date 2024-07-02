@@ -380,9 +380,9 @@ GameObject:
   - component: {fileID: 99461352}
   - component: {fileID: 99461354}
   - component: {fileID: 99461357}
-  - component: {fileID: 99461356}
   - component: {fileID: 99461355}
   - component: {fileID: 99461358}
+  - component: {fileID: 99461359}
   m_Layer: 0
   m_Name: ImputManager
   m_TagString: Untagged
@@ -433,7 +433,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemsParent: {fileID: 1544923217}
   _baseObj: {fileID: 755893399689994093, guid: dda912b6ce81b4c918e03a83402d3281, type: 3}
-  _tasteManager: {fileID: 965589054}
 --- !u!114 &99461355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,20 +447,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portName: /dev/cu.M5StickCPlus2BT-ESP32SPP
   baudRate: 115200
---- !u!114 &99461356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99461351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6286ee77e18264e829525cc9648ef2da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
-  readStatus: 1
 --- !u!114 &99461357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,12 +460,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serialHandler: {fileID: 99461355}
-  _nfcChecks: {fileID: 99461356}
+  _nfcChecks: {fileID: 99461359}
   _breadInstantiate: {fileID: 99461354}
   _breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
   _shakedChecks: {fileID: 99461358}
   _imputMG: {fileID: 99461352}
   readUid: 
+  isEnter: 0
 --- !u!114 &99461358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +479,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4ab07d4a62d43bdafd712b64725a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  strShaked: "Shaked\r"
+--- !u!114 &99461359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99461351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6286ee77e18264e829525cc9648ef2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
+  readStatus: 1
 --- !u!1 &104648606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965589052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c69f3288f87094c85a4e57aa781fa5cb, type: 3}
   m_Name: 

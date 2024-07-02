@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TasteMG;
 
 public class BreadInstantiate : MonoBehaviour
 {
     [SerializeField] private GameObject _itemsParent;
     [SerializeField] private GameObject _baseObj;
-    [SerializeField] private TasteManager _tasteManager;
+    private TasteMG.TasteManager _tasteManager = new TasteMG.TasteManager();
 
     /// <summary>
     /// 入力された回数をカウント。番目。
@@ -107,5 +108,18 @@ public class BreadInstantiate : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void SelectionFixing()
+    {
+        _itemsParent.SetActive(false);
+            _isReturnCheck = true;
+            Debug.Log("確定!");
+            //Debug.Log("BiterCheck is : " + BiterCheck());
+            if (BiterCheck())
+            {
+                Debug.Log("Will Be Biter......");
+                _tasteManager.isBiter = true;
+            }
     }
 }

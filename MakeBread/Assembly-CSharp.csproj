@@ -65,13 +65,14 @@
     <Compile Include="Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
     <Compile Include="Assets/Scripts/BreadInstantiate.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Entity/MstItemEntity.cs" />
-    <Compile Include="Assets/Scripts/TasteManager.cs" />
+    <Compile Include="Assets/Scripts/TasteManager_old.cs" />
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
     <Compile Include="Assets/Scripts/ImputManager.cs" />
     <Compile Include="Assets/Scripts/NFCInputManager.cs" />
+    <Compile Include="Assets/Scripts/ShakedChecks.cs" />
     <Compile Include="Assets/Excel/BreadDate.cs" />
     <Compile Include="Assets/Scripts/NFCChecks.cs" />
-    <Compile Include="Assets/Scripts/ShakedChecks.cs" />
+    <Compile Include="Assets/Scripts/TasteManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

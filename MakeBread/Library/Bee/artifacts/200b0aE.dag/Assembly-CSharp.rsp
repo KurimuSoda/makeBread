@@ -373,6 +373,7 @@
 "Assets/Scripts/ShakedChecks.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TasteManager.cs"
+"Assets/Scripts/TasteManager_old.cs"
 -langversion:9.0
 
 /deterministic
