@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BreadInstantiate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImportScript/SerialHandler.cs">
     <Files>
-      <File FileName="Assets/Scripts/BreadDataEntity.cs" Line="8" Column="19" />
-      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/BreadDataEntity.cs" />
+      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="69" Column="1" />
       <File FileName="Assets/Scripts/ItemImageController.cs" Line="52" Column="1" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="23" Column="41" />
-      <File FileName="Assets/Scripts/BTSerialManager.cs" Line="74" Column="39" />
+      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="89" Column="10" />
+      <File FileName="Assets/Scripts/BTSerialManager.cs" Line="54" Column="1" />
+      <File FileName="Assets/Scripts/ShakedChecks.cs" Line="6" Column="22" />
       <File FileName="Assets/Scripts/NFCChecks.cs" Line="60" Column="1" />
+      <File FileName="Assets/Scripts/ImputManager.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scripts/TasteManager.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/StickRotateController.cs" Line="28" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,8 +19,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ImportScript" expanded="True" />
-                <Node name="BreadInstantiate.cs" selected="True" />
+                <Node name="ImportScript" expanded="True">
+                  <Node name="SerialHandler.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -26,11 +31,13 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d99a12ae-502b-4f23-b9e1-f58c1da36cc8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f0d42a53-fb22-4f14-b1e1-56c5bbdc4160" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="83" column="1" />
+      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/BTSerialManager.cs" relfile="Assets/Scripts/BTSerialManager.cs" line="54" column="1" />
+      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/BreadInstantiate.cs" relfile="Assets/Scripts/BreadInstantiate.cs" line="59" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

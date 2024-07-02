@@ -370,6 +370,7 @@
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/NFCChecks.cs"
 "Assets/Scripts/NFCInputManager.cs"
+"Assets/Scripts/ShakedChecks.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TasteManager.cs"
 -langversion:9.0

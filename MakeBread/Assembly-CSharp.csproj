@@ -71,6 +71,7 @@
     <Compile Include="Assets/Scripts/NFCInputManager.cs" />
     <Compile Include="Assets/Excel/BreadDate.cs" />
     <Compile Include="Assets/Scripts/NFCChecks.cs" />
+    <Compile Include="Assets/Scripts/ShakedChecks.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
