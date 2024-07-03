@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TasteMG;
+using TemperatureFunc;
+
 
 public class BTSerialManager : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class BTSerialManager : MonoBehaviour
     [SerializeField] private BreadDate _breadData;
     
     private TasteManager _tastMG = new TasteManager();
-
+    private ThermometerController _thermometerCon = new ThermometerController();
 
     /// <summary>
     /// デバッグしやすいようにキーボードでも選択できるようにしている
@@ -42,7 +44,7 @@ public class BTSerialManager : MonoBehaviour
     void Start()
     {
         serialHandler.OnDataReceived += OnDataReceived;
-        
+        _thermometerCon.GetThermoDistance();
     }
 
     // Update is called once per frame
@@ -63,10 +65,12 @@ public class BTSerialManager : MonoBehaviour
     {
         if(_readStatus == ReadStatus.ReadOK)
         {
+            
             if (_strNull == message || _oldMessage[0] == message) return;
 
             //同じものが連続して送られてくるため、2回目以降を弾く用。同じものを連続して読み取れない
             _oldMessage[0] = message;
+            
             if (message == _enterNFC)
             {
                 _tastMG.PushEnter();
@@ -78,10 +82,6 @@ public class BTSerialManager : MonoBehaviour
             }
             else if (message == _backSpaceNFC)
             {
-                /*
-                _readStatus = ReadStatus.StopRead;
-                Debug.Log(_readStatus);
-                */
                 PutBackSpace();
                 return;
             }
@@ -114,6 +114,7 @@ public class BTSerialManager : MonoBehaviour
                 if (_receiveStrCount > 2) return;
 
                 Debug.Log("Shaked!!");
+                M5Shaked();
                 
             }
 
@@ -145,7 +146,7 @@ public class BTSerialManager : MonoBehaviour
 
     private void M5Shaked()
     {
-
+        _thermometerCon.TemperatureUP();
     }
 
     /// <summary>

@@ -8,6 +8,8 @@ TagManager:
   - Item2
   - Item3
   - Item4
+  - LeftObj
+  - RightObj
   layers:
   - Default
   - TransparentFX

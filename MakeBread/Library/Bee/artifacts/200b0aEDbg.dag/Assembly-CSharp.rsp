@@ -370,9 +370,12 @@
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/NFCChecks.cs"
 "Assets/Scripts/NFCInputManager.cs"
-"Assets/Scripts/ShakedChecks.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TasteManager.cs"
+"Assets/Scripts/TasteManager_old.cs"
+"Assets/Scripts/ThermometerController.cs"
+"Assets/Scripts/ThermoNeedleMove.cs"
+"Assets/Scripts/ToDoCheck.cs"
 -langversion:9.0
 
 /deterministic
