@@ -1253,6 +1253,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8093608218536250304, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: _readStatus
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608218536250304, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: nowGameScene
+      value: CookingPotBT
+      objectReference: {fileID: 0}
     - target: {fileID: 8093608218536250310, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
       propertyPath: m_Name
       value: ImputMG
@@ -1299,6 +1307,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8093608218536250311, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608218830232013, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608219997925029, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608220173567827, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

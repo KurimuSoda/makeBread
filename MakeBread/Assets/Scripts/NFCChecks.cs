@@ -37,13 +37,13 @@ public class NFCChecks: MonoBehaviour
 
     public ReadStatus readStatus = ReadStatus.ReadOK;
 
-
+    
     // Sceneが開始された時に一度だけ呼び出される関数。オブジェクトのアクティブ状態に関わらず行われる。
-    private void Awake()
+    /*private void Awake()
     {
         ItemDataLengthCount();
 
-    }
+    }*/
 
     /// <summary>
     /// UIDを受け取って対応する配列番号(int型)を返す関数
@@ -95,7 +95,7 @@ public class NFCChecks: MonoBehaviour
     /// <summary>
     /// Bread_dateに入っている素材の数を調べる
     /// </summary>
-    private void ItemDataLengthCount()
+    public void ItemDataLengthCount()
     {
         foreach (BreadDataEntity datacount in breadData.Bread_date)
         {

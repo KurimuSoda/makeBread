@@ -51,8 +51,8 @@ public class BTSerialManager : MonoBehaviour
     {
         serialHandler.OnDataReceived += OnDataReceived;
 
+        /*
         nowGameScene = SceneManager.GetActiveScene().name;
-
         if(nowGameScene == _sceneNameMG.gameSceneNames[1])
         {
             _nowScene = SceneNames.CookingPotBT;
@@ -69,6 +69,7 @@ public class BTSerialManager : MonoBehaviour
             _nowScene = SceneNames.ResultScene;
             _readStatus = ReadStatus.ReadOK;
         }
+        */
         
     }
 
@@ -185,5 +186,30 @@ public class BTSerialManager : MonoBehaviour
     {
         _breadInstantiate.DeleteBreadObj();
         _countImput--;
+    }
+
+
+    public void ModeChengeWithScene(string nextScene)
+    {
+        if (nextScene == _sceneNameMG.gameSceneNames[0])
+        {
+            _nfcChecks.ItemDataLengthCount();
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[1])
+        {
+            _nowScene = SceneNames.CookingPotBT;
+            _readStatus = ReadStatus.ReadOK;
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[2])
+        {
+            _nowScene = SceneNames.OvenFire;
+            _readStatus = ReadStatus.StopRead;
+            _thermometerCon.GetThermoDistance();
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[3])
+        {
+            _nowScene = SceneNames.ResultScene;
+            _readStatus = ReadStatus.ReadOK;
+        }
     }
 }

@@ -367,6 +367,7 @@
 "Assets/Scripts/BTSerialManager.cs"
 "Assets/Scripts/BTSerialTest.cs"
 "Assets/Scripts/GameMG.cs"
+"Assets/Scripts/GMSingleton.cs"
 "Assets/Scripts/ImportScript/SerialHandler.cs"
 "Assets/Scripts/ItemImageController.cs"
 "Assets/Scripts/NFCChecks.cs"
