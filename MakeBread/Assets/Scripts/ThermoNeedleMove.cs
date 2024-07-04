@@ -14,8 +14,8 @@ public class ThermoNeedleMove : MonoBehaviour
     private bool _isAnimation = false;
     private float _nowNeedleAngle = 0.0f;
 
-    // Start is called before the first frame update
-    void Awake()
+    
+    public void Start()
     {
         _needleObj = this.gameObject;
         _thermoCon.GetThermoDistance();
@@ -42,6 +42,7 @@ public class ThermoNeedleMove : MonoBehaviour
             _nowNeedleAngle = _needleAngles.z;
             _isAnimation = true;
         }
+        TemperatureJadge();
 
 
         //_needleObj.transform.eulerAngles = _needleAngles;
@@ -62,5 +63,19 @@ public class ThermoNeedleMove : MonoBehaviour
         _angelZMoveCount++;
 
         
+    }
+
+    private void TemperatureJadge()
+    {
+        //float nowRotZ = _needleObj.transform.localEulerAngles.z;
+        float rotRate = _thermoCon.ReturnThermoRate();
+        if(rotRate >= 0.7f && rotRate < 0.85f)
+        {
+            Debug.Log("Good!");
+        }
+        else if(rotRate >= 0.85f)
+        {
+            Debug.Log("Too Hot!!");
+        }
     }
 }

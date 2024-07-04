@@ -23,6 +23,17 @@ namespace TasteMG
 
         }
 
+        public int ReturnLastItemTaste()
+        {
+            int lastTaste = _mainTaste;
+            if (isBiter)
+            {
+                lastTaste = 4;
+            }
+
+            return lastTaste;
+        }
+
         public void PushEnter()
         {
             _mainTaste = _tasteArray[3];

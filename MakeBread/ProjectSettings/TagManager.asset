@@ -10,6 +10,7 @@ TagManager:
   - Item4
   - LeftObj
   - RightObj
+  - GameManager
   layers:
   - Default
   - TransparentFX

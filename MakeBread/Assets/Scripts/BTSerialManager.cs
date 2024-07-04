@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TasteMG;
 using TemperatureFunc;
+using UnityEngine.SceneManagement;
+using SceneMG.support;
 
 
 public class BTSerialManager : MonoBehaviour
@@ -14,13 +16,17 @@ public class BTSerialManager : MonoBehaviour
     
     private TasteManager _tastMG = new TasteManager();
     private ThermometerController _thermometerCon = new ThermometerController();
+    private SceneNameMG _sceneNameMG = new SceneNameMG();
 
     /// <summary>
     /// デバッグしやすいようにキーボードでも選択できるようにしている
     /// </summary>
-    [SerializeField] private ImputManager _imputMG;
+    [SerializeField] private GameMG _imputMG;
 
-    private ReadStatus _readStatus = ReadStatus.ReadOK;
+    [SerializeField]private ReadStatus _readStatus = ReadStatus.ReadOK;
+
+    public string nowGameScene = "TitleScene";
+    private SceneNames _nowScene;
     
     private string[] _oldMessage = new string[5] { "", "", "", "", ""}; //あまり意味がないかも
     public string readUid = "";
@@ -44,7 +50,26 @@ public class BTSerialManager : MonoBehaviour
     void Start()
     {
         serialHandler.OnDataReceived += OnDataReceived;
-        _thermometerCon.GetThermoDistance();
+
+        nowGameScene = SceneManager.GetActiveScene().name;
+
+        if(nowGameScene == _sceneNameMG.gameSceneNames[1])
+        {
+            _nowScene = SceneNames.CookingPotBT;
+            _readStatus = ReadStatus.ReadOK;
+        }
+        else if(nowGameScene == _sceneNameMG.gameSceneNames[2])
+        {
+            _nowScene = SceneNames.OvenFire;
+            _readStatus = ReadStatus.StopRead;
+            _thermometerCon.GetThermoDistance();
+        }
+        else if(nowGameScene == _sceneNameMG.gameSceneNames[3])
+        {
+            _nowScene = SceneNames.ResultScene;
+            _readStatus = ReadStatus.ReadOK;
+        }
+        
     }
 
     // Update is called once per frame
@@ -77,6 +102,7 @@ public class BTSerialManager : MonoBehaviour
                 _breadInstantiate.SelectionFixing();
                 _readStatus = ReadStatus.StopRead;
                 _countImput = 0;
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 //Debug.Log("Enter was received!");
                 return;
             }
@@ -86,17 +112,20 @@ public class BTSerialManager : MonoBehaviour
                 return;
             }
 
+            if(_nowScene == SceneNames.CookingPotBT)
+            {
+                if (_countImput > 4) return;
 
-            if (_countImput > 4) return;
+                //送られてきた文字列を記録
+                _oldMessage[_countImput] = message;
+                //_oldMessage[0] = message;
 
-            //送られてきた文字列を記録
-            _oldMessage[_countImput] = message;
-            //_oldMessage[0] = message;
+                //送られてきた文字列の後ろに"\r"がついてるので消す
+                readUid = message.Replace("\r", "");
 
-            //送られてきた文字列の後ろに"\r"がついてるので消す
-            readUid = message.Replace("\r", "");
+                ItemDataSend(readUid);
+            }
             
-            ItemDataSend(readUid);
 
         }
         else if(_readStatus == ReadStatus.StopRead)

@@ -8,7 +8,7 @@ public class BreadInstantiate : MonoBehaviour
 {
     [SerializeField] private GameObject _itemsParent;
     [SerializeField] private GameObject _baseObj;
-    private TasteMG.TasteManager _tasteManager = new TasteMG.TasteManager();
+    private TasteManager _tasteManager = new TasteManager();
 
     /// <summary>
     /// 入力された回数をカウント。番目。
@@ -29,29 +29,6 @@ public class BreadInstantiate : MonoBehaviour
     /// エンターキーが押されたかどうか。
     /// </summary>
     private bool _isReturnCheck = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            _itemsParent.SetActive(false);
-            _isReturnCheck = true;
-            Debug.Log("確定!");
-            //Debug.Log("BiterCheck is : " + BiterCheck());
-            if (BiterCheck())
-            {
-                Debug.Log("Will Be Biter......");
-                _tasteManager.isBiter = true;
-            }
-        }
-    }
 
     /// <summary>
     /// 選択したアイテムの画像付きオブジェクトを生成する関数。
@@ -121,5 +98,11 @@ public class BreadInstantiate : MonoBehaviour
                 Debug.Log("Will Be Biter......");
                 _tasteManager.isBiter = true;
             }
+    }
+
+    public string ReturnFirstItemID()
+    {
+        string firstItemID = _setBreadDataIDArray[0];
+        return firstItemID;
     }
 }

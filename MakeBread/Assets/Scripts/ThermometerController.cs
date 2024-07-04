@@ -81,6 +81,7 @@ namespace TemperatureFunc
         public void TemperatureUP()
         {
             upTemperature = upTemperature * 0.1f;
+            if (_leftObj.transform.position.x >= 18) return;
             for (int i = 0; i < upTemperature; i++)
             {
                 _leftObj.transform.Translate(1.0f, 0, 0);
@@ -102,6 +103,11 @@ namespace TemperatureFunc
         {
             _nowLeftX = _leftObj.transform.position.x;
             _thermoRate = Mathf.Clamp01(_nowLeftX / _thermoDistance);
+        }
+
+        public float ReturnThermoRate()
+        {
+            return _thermoRate;
         }
 
         /// <summary>
