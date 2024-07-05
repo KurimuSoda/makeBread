@@ -31,6 +31,7 @@ public class SerialHandler : MonoBehaviour
         }
     }
 
+    //シングルトンを使わず画面遷移をする場合、アタッチしているオブジェクトが破棄されるので一度この処理が走ってしまう
     void OnDestroy()
     {
         Close();

@@ -480,7 +480,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
   _breadinstantiate: {fileID: 99461354}
+  _btSerialMG: {fileID: 0}
   _thermoMeter: {fileID: 0}
+  _soundMG: {fileID: 0}
 --- !u!1 &104648606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,15 +1313,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8093608218830232013, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608219997925026, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608219997925027, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8093608219997925027, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8093608219997925029, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8093608220173567827, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 124c62ec25f0342249ba2301879ca4ae, type: 3}

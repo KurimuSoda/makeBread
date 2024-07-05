@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ToDoCheck.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/ThermoNeedleMove.cs">
     <Files>
-      <File FileName="Assets/Scripts/ItemImageController.cs" Line="62" Column="1" />
-      <File FileName="Assets/Scripts/BreadInstantiate.cs" Line="11" Column="46" />
-      <File FileName="Assets/Scripts/BTSerialManager.cs" Line="54" Column="11" />
-      <File FileName="Assets/Scripts/GameMG.cs" Line="75" Column="13" />
-      <File FileName="Assets/Scripts/ThermoNeedleMove.cs" Line="22" Column="58" />
-      <File FileName="Assets/Scripts/ToDoCheck.cs" Line="12" Column="11" />
-      <File FileName="Assets/Scripts/SceneNameMG.cs" />
-      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/MG/SoundMG.cs" Line="39" Column="59" />
       <File FileName="Assets/Scripts/BreadRotate.cs" Line="19" Column="48" />
+      <File FileName="Assets/Scripts/MG/ThermometerController.cs" Line="88" Column="13" />
+      <File FileName="Assets/Scripts/MG/GameMG.cs" Line="35" Column="25" />
+      <File FileName="Assets/Scripts/MG/BTSerialManager.cs" Line="13" Column="51" />
+      <File FileName="Assets/Scripts/MG/ThermoNeedleMove.cs" Line="69" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +15,9 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="ImportScript" expanded="True" />
-                <Node name="ToDoCheck.cs" selected="True" />
+                <Node name="MG" expanded="True">
+                  <Node name="ThermoNeedleMove.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -28,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a24e534f-c9ca-49a9-8212-deb97aa2ead6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="10043f36-19bb-47f0-8c79-86396378a547" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />
