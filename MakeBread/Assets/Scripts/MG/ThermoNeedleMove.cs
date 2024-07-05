@@ -8,10 +8,12 @@ public class ThermoNeedleMove : MonoBehaviour
     private ThermometerController _thermoCon = new ThermometerController();
     private Vector3 _needleAngles;
     private Vector3 _motionAngles = new Vector3(0.0f, 0.0f, -0.5f);
+    private Vector3 _downMotionAngles = new Vector3(0.0f, 0.0f, 0.2f);
     private GameObject _needleObj;
     private int _temperature = 0;
     private int _angelZMoveCount = 0;
     private bool _isAnimation = false;
+    
     private float _nowNeedleAngle = 0.0f;
 
     /*
@@ -49,7 +51,15 @@ public class ThermoNeedleMove : MonoBehaviour
             _nowNeedleAngle = _needleAngles.z;
             _isAnimation = true;
         }
+        /*
+        if (_isAnimation == false)
+        {
+            NeedleDownMotion();
+        }
+        */
+
         TemperatureJadge();
+        
 
 
         //_needleObj.transform.eulerAngles = _needleAngles;
@@ -90,17 +100,47 @@ public class ThermoNeedleMove : MonoBehaviour
         
     }
 
+    private void NeedleDownMotion()
+    {
+        _thermoCon.TemperatureDown();
+        
+        _needleObj.transform.Rotate(_downMotionAngles);
+        
+
+    }
+
     private void TemperatureJadge()
     {
         //float nowRotZ = _needleObj.transform.localEulerAngles.z;
         float rotRate = _thermoCon.ReturnThermoRate();
+        if(rotRate < 0.7f)
+        {
+            if(OvenTimers.isGoodTemperature == true || OvenTimers.isTooHot == true)
+            {
+                OvenTimers.isGoodTemperature = false;
+                OvenTimers.isTooHot = false;
+            }
+        }
         if(rotRate >= 0.7f && rotRate < 0.85f)
         {
-            Debug.Log("Good!");
+            if(OvenTimers.isGoodTemperature == false)
+            {
+                Debug.Log("Good!");
+                OvenTimers.isTooHot = false;
+                OvenTimers.isGoodTemperature = true;
+            }
+            
         }
         else if(rotRate >= 0.85f)
         {
-            Debug.Log("Too Hot!!");
+            
+            if(OvenTimers.isTooHot == false)
+            {
+                Debug.Log("Too Hot!!");
+                OvenTimers.isGoodTemperature = false;
+                OvenTimers.isTooHot = true;
+            }
+            
         }
     }
 }

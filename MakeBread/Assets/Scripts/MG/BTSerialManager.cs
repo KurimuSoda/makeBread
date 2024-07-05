@@ -18,9 +18,7 @@ public class BTSerialManager : MonoBehaviour
     private ThermometerController _thermometerCon = new ThermometerController();
     private SceneNameMG _sceneNameMG = new SceneNameMG();
 
-    /// <summary>
-    /// デバッグしやすいようにキーボードでも選択できるようにしている
-    /// </summary>
+    
     [SerializeField] private GameMG _imputMG;
 
     [SerializeField]private ReadStatus _readStatus = ReadStatus.ReadOK;
@@ -100,10 +98,29 @@ public class BTSerialManager : MonoBehaviour
             
             if (message == _enterNFC)
             {
-                _tastMG.PushEnter();
-                _breadInstantiate.SelectionFixing();
-                _readStatus = ReadStatus.StopRead;
-                _countImput = 0;
+                if(_nowScene == SceneNames.CookingPotBT)
+                {
+                    _tastMG.PushEnter();
+                    _breadInstantiate.SelectionFixing();
+                    _readStatus = ReadStatus.StopRead;
+                    _countImput = 0;
+
+                    for (int i = 1; i < 5; i++)
+                    {
+                        GameObject oldItem = GameObject.FindWithTag("Item" + i);
+                        Destroy(oldItem);
+                    }
+                    StartCoroutine(_imputMG.LoadSceneAsync("OvenFire"));
+                }
+                else if(_nowScene == SceneNames.TitleScene)
+                {
+                    StartCoroutine(_imputMG.LoadSceneAsync("CookingPotBT"));
+                }
+                else if(_nowScene == SceneNames.ResultScene)
+                {
+                    StartCoroutine(_imputMG.LoadSceneAsync("TitleScene"));
+                }
+                
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 //Debug.Log("Enter was received!");
                 return;
@@ -194,6 +211,7 @@ public class BTSerialManager : MonoBehaviour
     {
         if (nextScene == _sceneNameMG.gameSceneNames[0])
         {
+            _nowScene = SceneNames.TitleScene;
             _nfcChecks.ItemDataLengthCount();
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[1])

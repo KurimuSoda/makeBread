@@ -306,7 +306,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.52
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -402,7 +402,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.55
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -621,6 +621,7 @@ MonoBehaviour:
   _nfcChecks: {fileID: 8093608218536250306}
   _thremoNeedle: {fileID: 8093608219359921070}
   _soundMG: {fileID: 2395799251619410253}
+  _breadInstant: {fileID: 8093608218536250307}
 --- !u!114 &3860795396062311222
 MonoBehaviour:
   m_ObjectHideFlags: 0

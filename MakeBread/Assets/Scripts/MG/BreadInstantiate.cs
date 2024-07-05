@@ -6,7 +6,7 @@ using TasteMG;
 
 public class BreadInstantiate : MonoBehaviour
 {
-    [SerializeField] private GameObject _itemsParent;
+    private GameObject _itemsParent;
     [SerializeField] private GameObject _baseObj;
     private TasteManager _tasteManager = new TasteManager();
 
@@ -29,6 +29,29 @@ public class BreadInstantiate : MonoBehaviour
     /// エンターキーが押されたかどうか。
     /// </summary>
     private bool _isReturnCheck = false;
+
+
+    public void BreadInstantiateInit()
+    {
+        _inputCount = 0;
+        _deleteNum = 0;
+        _setBreadDataIDArray = new string[4]{ "", "", "", ""};
+        _isReturnCheck = false;
+
+        /*
+        for(int i = 1; i < 5; i++)
+        {
+            GameObject oldItem = GameObject.FindWithTag("Item" + i);
+            Destroy(oldItem);
+        }
+        */
+        
+    }
+
+    public void GetItemsParent()
+    {
+        _itemsParent = GameObject.FindWithTag("ItemsUI");
+    }
 
     /// <summary>
     /// 選択したアイテムの画像付きオブジェクトを生成する関数。

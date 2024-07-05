@@ -36,7 +36,7 @@ public class SoundMG : MonoBehaviour
             _mainBGM.UnPause();
             //_mainBGM.Play();
         }
-        else if(sceneName == _sceneNameMG.gameSceneNames[1])
+        else if(sceneName == _sceneNameMG.gameSceneNames[1] || sceneName == _sceneNameMG.gameSceneNames[2])
         {
             _mainBGM.Pause();
             _selectItemBGM.UnPause();

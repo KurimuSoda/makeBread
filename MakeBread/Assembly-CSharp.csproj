@@ -68,6 +68,7 @@
     <Compile Include="Assets/Scripts/MG/ThermometerController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+    <Compile Include="Assets/Scripts/MG/InitsMG.cs" />
     <Compile Include="Assets/Scripts/MG/BTSerialManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Example.cs" />
@@ -78,11 +79,13 @@
     <Compile Include="Assets/Scripts/ToDoCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
+    <Compile Include="Assets/Scripts/MG/SoundMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
     <Compile Include="Assets/Scripts/MG/BreadInstantiate.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
+    <Compile Include="Assets/Scripts/OvenTimers.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Entity/MstItemEntity.cs" />
@@ -111,8 +114,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/MG/SoundMG.cs" />
-    <Compile Include="Assets/Scripts/MG/InitsMG.cs" />
+    <Compile Include="Assets/Scripts/ItemsEnableSclipt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

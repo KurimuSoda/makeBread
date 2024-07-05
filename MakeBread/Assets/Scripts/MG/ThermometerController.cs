@@ -109,11 +109,12 @@ namespace TemperatureFunc
         }
 
         /// <summary>
-        /// 温度を下げるための関数。LeftObjを左に移動させる
+        /// 温度を下げるための関数。LeftObjを左に移動させる。挙動がおかしい
         /// </summary>
         public void TemperatureDown()
         {
-            _leftObj.transform.Translate(1.0f, 0, 0.0f, 0f);
+            if (_leftObj.transform.position.x <= 0) return;
+            _leftObj.transform.Translate(-0.2f,  0.0f, 0.0f);
         }
 
         /// <summary>

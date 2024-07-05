@@ -416,7 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66445370c80e14913a2263951fa037f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemsParent: {fileID: 1544923217}
   _baseObj: {fileID: 755893399689994093, guid: dda912b6ce81b4c918e03a83402d3281, type: 3}
 --- !u!114 &99461355
 MonoBehaviour:
@@ -482,7 +481,9 @@ MonoBehaviour:
   _breadinstantiate: {fileID: 99461354}
   _btSerialMG: {fileID: 0}
   _thermoMeter: {fileID: 0}
+  _itemObj: {fileID: 0}
   _soundMG: {fileID: 0}
+  _initMG: {fileID: 0}
 --- !u!1 &104648606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,9 +1444,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544923218}
+  - component: {fileID: 1544923219}
   m_Layer: 0
   m_Name: Items
-  m_TagString: Untagged
+  m_TagString: ItemsUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,6 +1468,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544923219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544923217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336858c73367e4974ae773191bc2ae68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1608815133
 GameObject:
   m_ObjectHideFlags: 0
