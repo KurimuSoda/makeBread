@@ -104,6 +104,7 @@ public class BTSerialManager : MonoBehaviour
                     _breadInstantiate.SelectionFixing();
                     _readStatus = ReadStatus.StopRead;
                     _countImput = 0;
+                    
 
                     for (int i = 1; i < 5; i++)
                     {

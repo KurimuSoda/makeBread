@@ -21,6 +21,6 @@ public class BreadRotate : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        this.gameObject.transform.Rotate(0.0f, 0.0f, 1.0f);
+        this.gameObject.transform.Rotate(0.0f, 1.0f, 0.0f);
     }
 }

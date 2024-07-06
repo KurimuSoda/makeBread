@@ -26,10 +26,14 @@ public class GameMG : MonoBehaviour
         KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
     };
 
-    [SerializeField]private  static string _firstItem = "";
+    public  static string _firstItem = "";
     private static int _lastItemTaste = 0;
 
+    /// <summary>
+    /// アイテム選択のシーンに置いてあるImageオブジェクトからのみ変更する
+    /// </summary>
     public static bool isItemsObjExit = false;
+    //public static bool isResultBreadActive = false;
 
     /// <summary>
     /// [3]に焼いたパンの結果を入れる。状態は普通、上等、焼きすぎの3種類
@@ -109,6 +113,7 @@ public class GameMG : MonoBehaviour
             isItemsObjExit = false;
         }
         
+        
 
     }
 
@@ -121,6 +126,7 @@ public class GameMG : MonoBehaviour
     /// <param name="mode">シーンの読み込みモード</param>
     private void SceneLoaded(Scene nextScene, LoadSceneMode mode)
     {
+        
         _nowSceneName = nextScene.name;
         _btSerialMG.ModeChengeWithScene(nextScene.name);
         _soundMG.ChangeBGM(nextScene.name);
@@ -163,6 +169,20 @@ public class GameMG : MonoBehaviour
         breadStatuses[3] = breadStatus;
     }
 
+    /// <summary>
+    /// リザルトのパンを表示するのに使うIDを返す
+    /// </summary>
+    /// <returns>最初の素材のID</returns>
+    public string SendItemID()
+    {
+        return _firstItem;
+    }
+
+    public string SendBakeStatus()
+    {
+        return breadStatuses[3];
+    }
+
     private void GameMGInit()
     {
         _firstItem = "";
@@ -183,6 +203,11 @@ public class GameMG : MonoBehaviour
         _firstItem = _breadinstantiate.ReturnFirstItemID();
         _lastItemTaste = _tasteMG.ReturnLastItemTaste();
         */
+        if (_nowSceneName == "CookingPotBT")
+        {
+            _firstItem = _breadinstantiate.ReturnFirstItemID();
+            _lastItemTaste = _tasteMG.ReturnLastItemTaste();
+        }
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
         while (!asyncLoad.isDone)

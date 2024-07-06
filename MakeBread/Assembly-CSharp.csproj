@@ -86,6 +86,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
     <Compile Include="Assets/Scripts/OvenTimers.cs" />
+    <Compile Include="Assets/Scripts/ItemsEnableSclipt.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/Entity/MstItemEntity.cs" />
@@ -114,7 +115,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/ItemsEnableSclipt.cs" />
+    <Compile Include="Assets/Scripts/SetActiveResultBread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
