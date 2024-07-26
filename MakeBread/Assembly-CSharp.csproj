@@ -79,6 +79,7 @@
     <Compile Include="Assets/Scripts/ToDoCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
+    <Compile Include="Assets/Scripts/SetActiveResultBread.cs" />
     <Compile Include="Assets/Scripts/MG/SoundMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
@@ -115,7 +116,6 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/SetActiveResultBread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
