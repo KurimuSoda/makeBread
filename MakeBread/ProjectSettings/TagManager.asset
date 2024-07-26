@@ -8,11 +8,15 @@ TagManager:
   - Item2
   - Item3
   - Item4
+  - LeftObj
+  - RightObj
+  - GameManager
+  - ItemsUI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Meter
   - Water
   - UI
   - 
