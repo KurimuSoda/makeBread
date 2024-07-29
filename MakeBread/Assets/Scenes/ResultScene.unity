@@ -276,7 +276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 173ad631556754d74a896e3db43ec7b2, type: 3}
       propertyPath: m_Name
-      value: Sour_01
+      value: sour_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 173ad631556754d74a896e3db43ec7b2, type: 3}
       propertyPath: m_IsActive
@@ -1216,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3114d3c14be44eaa1b3e659b5e2172, type: 3}
       propertyPath: m_Name
-      value: Salt_01
+      value: salt_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a3114d3c14be44eaa1b3e659b5e2172, type: 3}
       propertyPath: m_IsActive
@@ -1254,15 +1254,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.29
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.26
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1304,6 +1304,10 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8eaa35ccd0eef4a3db56a0bdec35f44d, type: 2}
     - target: {fileID: 919132149155446097, guid: a794e24233d5c4fe3ac9ec2b876d698d, type: 3}
       propertyPath: m_Name
       value: FishBread
