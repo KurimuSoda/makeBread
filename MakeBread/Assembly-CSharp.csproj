@@ -54,11 +54,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.dll" />
-    <Analyzer Include="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXmlFormats.dll" />
-    <Analyzer Include="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OOXML.dll" />
-    <Analyzer Include="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Imports/ExcelImporter/Editor/NPOI/Net20/ICSharpCode.SharpZipLib.dll" />
-    <Analyzer Include="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXml4Net.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
@@ -121,6 +116,9 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imports/lilToon/Shader/lts_fakeshadow.shader" />
@@ -969,13 +967,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="lilToon.Editor.csproj">
-      <Project>{6427BC5B-055F-78D4-CBC6-94703E628F31}</Project>
-      <Name>lilToon.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="ExcelImporter.csproj">
       <Project>{BC6E8705-C93C-3DC8-9D86-D5377955B57A}</Project>
       <Name>ExcelImporter</Name>
+    </ProjectReference>
+    <ProjectReference Include="lilToon.Editor.csproj">
+      <Project>{6427BC5B-055F-78D4-CBC6-94703E628F31}</Project>
+      <Name>lilToon.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="ExcelImporter.Editor.csproj">
       <Project>{CBB38C07-6088-3BF6-B6F6-C73B39FC72DC}</Project>

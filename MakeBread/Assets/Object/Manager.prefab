@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5716834193550283981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5716834193550284016}
+  - component: {fileID: 5716834193550284019}
+  - component: {fileID: 5716834193550284018}
+  - component: {fileID: 5716834193550284023}
+  - component: {fileID: 5716834193550284022}
+  - component: {fileID: 5716834193550284017}
+  - component: {fileID: 5716834193550284020}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5716834193550284016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5716834193550284019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a38d5fb4b7344a6a1af0c7dbc8c70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serialHandler: {fileID: 5716834193550284023}
+  _nfcChecks: {fileID: 5716834193550284022}
+  _gameMG: {fileID: 5716834193550284018}
+  _readStatus: 0
+  nowGameScene: TitleScene
+  readUid: 
+--- !u!114 &5716834193550284018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c94feb8305747fd84635dcf8aeeea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
+  _breadInstantiate: {fileID: 5716834193550284017}
+  _btSerialMG: {fileID: 5716834193550284019}
+  _nfcChecks: {fileID: 5716834193550284022}
+  nowSceneName: 
+--- !u!114 &5716834193550284023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8989ab5befcc44b4d84dea16cc796f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portName: /dev/cu.M5StickCPlus2BT-ESP32SPP
+  baudRate: 115200
+--- !u!114 &5716834193550284022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6286ee77e18264e829525cc9648ef2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
+  readStatus: 1
+--- !u!114 &5716834193550284017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66445370c80e14913a2263951fa037f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseObj: {fileID: 755893399689994093, guid: dda912b6ce81b4c918e03a83402d3281, type: 3}
+--- !u!114 &5716834193550284020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716834193550283981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b4c1d73af1649d8850effd86540c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

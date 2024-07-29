@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ItemsEnableSclipt : MonoBehaviour
 {
+    //アイテム選択画面の時にImageの親オブジェクトを取得するフラグを立てる専用
     private void OnEnable()
     {
-        GameMG.isItemsObjExit = true;
+        GameMG_new.isItemsObjExit = true;
+        
     }
 }

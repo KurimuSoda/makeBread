@@ -31,20 +31,20 @@ public class NFCChecks: MonoBehaviour
     [SerializeField] private BreadDate breadData;
     private int _itemLength = 0;
 
-    public ReadStatus readStatus = ReadStatus.ReadOK;
+    //public ReadStatus readStatus = ReadStatus.ReadOK;
 
     
     // Sceneが開始された時に一度だけ呼び出される関数。オブジェクトのアクティブ状態に関わらず行われる。
-    /*private void Awake()
+    private void Awake()
     {
         ItemDataLengthCount();
 
-    }*/
+    }
 
     public void NFCChecksInit()
     {
         _itemLength = 0;
-        readStatus = ReadStatus.ReadOK;
+        //readStatus = ReadStatus.ReadOK;
         ItemDataLengthCount();
     }
 

@@ -354,11 +354,6 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/ICSharpCode.SharpZipLib.dll"
--analyzer:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.dll"
--analyzer:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OOXML.dll"
--analyzer:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXml4Net.dll"
--analyzer:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXmlFormats.dll"
 "Assets/Imports/ExcelImporter/Editor/ExcelAssetScriptMenu.cs"
 "Assets/Imports/ExcelImporter/Editor/ExcelImporter.cs"
 -langversion:9.0

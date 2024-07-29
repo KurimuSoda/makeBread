@@ -29,10 +29,9 @@ void read_rfid(){
     //BTSerial.println(s);
     s.toUpperCase();
   }
-  if (s == "" || s == data) {
+  if (s == "") {
     ::delay(200);
     return;
-
   }
   data = s;
   M5.Lcd.println(data);

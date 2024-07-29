@@ -1,0 +1,159 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TasteMG;
+using TemperatureFunc;
+using UnityEngine.SceneManagement;
+using SceneMG.support;
+
+
+public class BTSerialManager_new : MonoBehaviour
+{
+    public SerialHandler serialHandler;
+    [SerializeField ]private NFCChecks _nfcChecks;
+    /*
+    [SerializeField] private BreadInstantiate _breadInstantiate;
+    [SerializeField] private BreadDate _breadData;
+    */
+    [SerializeField] private GameMG_new _gameMG;
+    
+    private TasteManager _tastMG = new TasteManager();
+    private ThermometerController _thermometerCon = new ThermometerController();
+    private SceneNameMG _sceneNameMG = new SceneNameMG();
+
+    
+    //[SerializeField] private GameMG _imputMG;
+
+    /// <summary>
+    /// M5からのシリアル通信を受け取るかどうかの状態を入れる
+    /// </summary>
+    public ReadStatus _readStatus = ReadStatus.ReadOK;
+
+    public string nowGameScene = "TitleScene";
+    public SceneNames _nowScene;
+    
+    private string[] _oldMessage = new string[5] { "", "", "", "", ""}; //あまり意味がないかも
+    public string readUid = "";
+
+    /// <summary>
+    /// Null検知用
+    /// </summary>
+    private string _strNull = "\r";
+    private int _countImput = 1;
+
+    //public bool isEnter = false;
+    private string _enterNFC = "04D1BEAF790000\r";  //Enter(Return)NFC UID
+    private string _backSpaceNFC = "048E69B2790000\r";  //BackSpaceNFC UID
+    private string _strShaked = "Shaked\r";
+
+    //複数回送られてくるシリアルデータの1回目を判別する用。もしかしたら同じもの連続で読めるようになるかも。
+    private int _receiveStrCount = 0;
+
+   
+    // Start is called before the first frame update
+    void Start()
+    {
+        serialHandler.OnDataReceived += OnDataReceived;
+        //_thermometerCon.GetThermoDistance();
+
+    }
+
+
+    /// <summary>
+    /// シリアルメッセージを確認する
+    /// </summary>
+    /// <param name="message">送られてきたメッセージ</param>
+    void OnDataReceived(string message)
+    {
+        //Read Serial
+        if(_readStatus == ReadStatus.ReadOK)
+        {
+            if (_strNull == message)    //Null = "" が送られてきたとき
+            {
+                _receiveStrCount = 0;
+                return;
+            }
+            else if(_strShaked == message)
+            {
+                _receiveStrCount = 0;
+                return;
+            }
+            //Null = "" 以外が送られてきたとき
+            _receiveStrCount++;
+            if (_receiveStrCount > 2) return;
+
+            if (_nowScene == SceneNames.CookingPotBT)
+            {
+                //送られてきた文字列の後ろに"\r"がついてるので消す
+                readUid = message.Replace("\r", "");
+
+                _gameMG.ItemDataSend(readUid);
+                
+            }
+            
+
+        }
+        else if(_readStatus == ReadStatus.StopRead)
+        {
+            if (_strNull == message)    //Null = "" が送られてきたとき
+            {
+                _receiveStrCount = 0;
+                return;
+            }
+
+            if(_strShaked == message)
+            {
+                _receiveStrCount++;
+
+                if (_receiveStrCount > 2) return;
+
+                Debug.Log("Shaked!!");
+                M5Shaked();
+                
+            }
+
+            return;
+        }
+    }
+
+    private void M5Shaked()
+    {
+        _thermometerCon.TemperatureUP();
+    }
+
+    /*
+    /// <summary>
+    /// NFCでBackSpaceの代わりをするための関数。最新のアイテムを1つ消す。2回連続では使えない。
+    /// </summary>
+    private void PutBackSpace()
+    {
+        _breadInstantiate.DeleteBreadObj();
+        _countImput--;
+    }
+    */
+
+    public void ModeChengeWithScene(string nextScene)
+    {
+        if (nextScene == _sceneNameMG.gameSceneNames[0])
+        {
+            _nowScene = SceneNames.TitleScene;
+            _nfcChecks.ItemDataLengthCount();
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[1])
+        {
+            _nowScene = SceneNames.CookingPotBT;
+            _readStatus = ReadStatus.ReadOK;
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[2])
+        {
+            _nowScene = SceneNames.OvenFire;
+            _readStatus = ReadStatus.StopRead;
+            //_thermometerCon.GetThermoDistance();
+        }
+        else if (nextScene == _sceneNameMG.gameSceneNames[3])
+        {
+            _nowScene = SceneNames.ResultScene;
+            _readStatus = ReadStatus.ReadOK;
+        }
+    }
+}

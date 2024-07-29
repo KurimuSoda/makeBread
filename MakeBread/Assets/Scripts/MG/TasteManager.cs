@@ -23,6 +23,10 @@ namespace TasteMG
 
         }
 
+        /// <summary>
+        /// 最終的な味を返す。0甘い, 1辛い, 2酸っぱい, 3しょっぱい, 4苦い
+        /// </summary>
+        /// <returns>int型</returns>
         public int ReturnLastItemTaste()
         {
             int lastTaste = _mainTaste;
@@ -38,9 +42,13 @@ namespace TasteMG
         {
             _mainTaste = _tasteArray[3];
             //Debug.Log("main taste is ---> " + _mainTaste + " : " + _tasteStringArray[_mainTaste - 1]);
-            _tastCountReArray = TasteCheck();
+            _tastCountReArray = TasteCheck();   //味の個数を配列で受け取る
         }
 
+        /// <summary>
+        /// 各味の個数を配列に格納する。[swe, spi, sour, salt]
+        /// </summary>
+        /// <returns>int配列[swe, spi, sour, salt]</returns>
         private int[] TasteCheck()
         {
             int sweet = 0, spice = 1, sour = 2, salty = 3;
