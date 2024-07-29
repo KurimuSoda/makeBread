@@ -56,11 +56,11 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/lilToon/External/Editor/ChilloutVRModule.cs" />
-    <Compile Include="Assets/lilToon/External/Editor/VRChatModule.cs" />
+    <Compile Include="Assets/Imports/lilToon/External/Editor/ChilloutVRModule.cs" />
+    <Compile Include="Assets/Imports/lilToon/External/Editor/VRChatModule.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/lilToon/External/Editor/lilToon.Editor.External.asmdef" />
+    <None Include="Assets/Imports/lilToon/External/Editor/lilToon.Editor.External.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

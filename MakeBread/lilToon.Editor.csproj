@@ -56,35 +56,35 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/lilToon/Editor/lilRenderPipelineReader.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilToonPropertyDrawer.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilStartup.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilToonAssetPostprocessor.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilDirectoryManager.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilInspector.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilMaterialProperty.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilToonSetting.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilPropertyNameChecker.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilTextureUtils.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilLanguageManager.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilToonEditorUtils.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilSemVerParser.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilEnumeration.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilShaderContainerImporter.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilShaderAPI.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilConstants.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilMaterialUtils.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilShaderManager.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilEditorParameters.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilOptimizer.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilEditorGUI.cs" />
-    <Compile Include="Assets/lilToon/Editor/lilToonPreset.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilDirectoryManager.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilRenderPipelineReader.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilEditorParameters.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilToonSetting.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilMaterialUtils.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilPropertyNameChecker.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilToonPropertyDrawer.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilConstants.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilShaderAPI.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilEditorGUI.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilInspector.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilOptimizer.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilTextureUtils.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilToonPreset.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilMaterialProperty.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilEnumeration.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilShaderManager.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilToonEditorUtils.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilSemVerParser.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilLanguageManager.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilToonAssetPostprocessor.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilStartup.cs" />
+    <Compile Include="Assets/Imports/lilToon/Editor/lilShaderContainerImporter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/lilToon/Editor/CurrentRP.txt" />
-    <None Include="Assets/lilToon/Editor/Resources/lang.txt" />
-    <None Include="Assets/lilToon/Editor/csc.rsp" />
-    <None Include="Assets/lilToon/Editor/lilToon.Editor.asmdef" />
+    <None Include="Assets/Imports/lilToon/Editor/CurrentRP.txt" />
+    <None Include="Assets/Imports/lilToon/Editor/Resources/lang.txt" />
+    <None Include="Assets/Imports/lilToon/Editor/csc.rsp" />
+    <None Include="Assets/Imports/lilToon/Editor/lilToon.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
