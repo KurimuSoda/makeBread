@@ -123,9 +123,14 @@ public class BreadInstantiate : MonoBehaviour
             }
     }
 
-    public string ReturnFirstItemID()
+    /// <summary>
+    /// 選んだアイテムの中からnumberのIDを返す
+    /// </summary>
+    /// <param name="number">何番目に選んだやつか</param>
+    /// <returns>string ID</returns>
+    public string ReturnSelectItemID(int number)
     {
-        string firstItemID = _setBreadDataIDArray[0];
+        string firstItemID = _setBreadDataIDArray[number];
         return firstItemID;
     }
 }

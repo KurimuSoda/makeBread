@@ -40,8 +40,17 @@ public class GameMG_new : MonoBehaviour
         KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
     };
 
-    public  static string _firstItem = "";
+    /// <summary>
+    /// 選んだアイテムの中からランダムで一つを選ぶ(string ID)
+    /// </summary>
+    public  static string _FirstItem = "";
+    /// <summary>
+    /// ランダムで番号を入れる
+    /// </summary>
+    public static int _RandomItem = 0;
     private static int _lastItemTaste = 0;
+
+    private int _countImput = 0;
 
     /// <summary>
     /// アイテム選択のシーンに置いてあるImageオブジェクトからのみ変更する。アイテム画像を生成するための親オブジェクトを取得するフラグを立てる用。
@@ -55,6 +64,7 @@ public class GameMG_new : MonoBehaviour
     private string[] breadStatuses = new string[4] { "Nomal", "Good", "OverCoocked", "" };
 
     public string nowSceneName = "";
+
 
     private void Awake()
     {
@@ -80,7 +90,8 @@ public class GameMG_new : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-           _breadInstantiate.DeleteBreadObj();
+            _breadInstantiate.DeleteBreadObj();
+            _countImput--;
         }
         /*
         if (Input.GetKeyDown(KeyCode.Return))
@@ -152,7 +163,7 @@ public class GameMG_new : MonoBehaviour
     /// <returns>最初の素材のID</returns>
     public string SendItemID()
     {
-        return _firstItem;
+        return _FirstItem;
     }
 
     /// <summary>
@@ -166,7 +177,7 @@ public class GameMG_new : MonoBehaviour
 
     private void GameMGInit()
     {
-        _firstItem = "";
+        _FirstItem = "";
         _lastItemTaste = 0;
         breadStatuses[3] = "";
         nowSceneName = SceneManager.GetActiveScene().name;
@@ -181,47 +192,16 @@ public class GameMG_new : MonoBehaviour
     public IEnumerator LoadSceneAsync (string sceneName)
     {
         
-        //遷移後のシーンにあるImputMGに最初に選んだアイテムのIDと決定された味を渡す
+        //遷移後のシーンにあるImputMGに最初に選んだアイテムのIDを渡す
         //_firstItem = _breadinstantiate.ReturnFirstItemID();
-        //_lastItemTaste = _tasteMG.ReturnLastItemTaste();
         
-        if (nowSceneName == "CookingPotBT")
-        {
-            _firstItem = _breadInstantiate.ReturnFirstItemID();
-            _lastItemTaste = _tasteMG.ReturnLastItemTaste();
-        }
-
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
     }
-    /*
-    public void ArrangementChangeEachScene()
-    {
-        if (nowSceneName == _sceneNameMG.gameSceneNames[0])    //TitleScene
-        {
-            _itemObj.SetActive(false);
-            _thermoMeter.SetActive(false);
-        }
-        else if (nowSceneName == _sceneNameMG.gameSceneNames[1])   //SelectItemScene
-        {
-            _thermoMeter.SetActive(false);
-            _itemObj.SetActive(false);
-        }
-        else if (nowSceneName == _sceneNameMG.gameSceneNames[2])   //OvenFireScene
-        {
-            _itemObj.SetActive(false);
-            _thermoMeter.SetActive(true);
-        }
-        else if(nowSceneName == _sceneNameMG.gameSceneNames[3])    //ResultScene
-        {
-            _itemObj.SetActive(false);
-            _thermoMeter.SetActive(false);
-        }
-        
-    }*/
+    
 
     /// <summary>
     /// Sceneが開始された時に他のオブジェクトが呼ぶ。現在のSceneを教えてもらうための関数。
@@ -248,13 +228,28 @@ public class GameMG_new : MonoBehaviour
     }
 
     /// <summary>
+    /// タイトル画面から次の画面に移動する時に実行する
+    /// </summary>
+    public void TitleFinish()
+    {
+        StartCoroutine(LoadSceneAsync("CookingPot"));
+    }
+
+
+    /// <summary>
     /// アイテムを選択し終わったあとに実行する
     /// </summary>
     public void ItemSelectFinish()
     {
-        _tasteMG.PushEnter();
+        if(_countImput > 3) { _countImput = 3; }
+        _tasteMG.PushEnter(_countImput);
         _lastItemTaste = _tasteMG.ReturnLastItemTaste();
-        //選んだアイテムからランダムでベースにするパンを決める関数を作る
+
+        //何番目のアイテムをベースにするかランダムで選出し_FirstItemにIDを記録する
+        ItemSelectMG.RandomItemChose(_countImput);
+        _FirstItem = _breadInstantiate.ReturnSelectItemID(_RandomItem);
+
+        StartCoroutine(LoadSceneAsync("OvenFire"));
     }
 
 
@@ -264,10 +259,12 @@ public class GameMG_new : MonoBehaviour
     /// <param name="readuid">messageで送られてきたUIDを渡す</param>
     public void ItemDataSend(string readuid)
     {
+        if (_countImput > 3) return;
         //_btSerialMG._readStatus = ReadStatus.StopRead;
         int itemNo = _nfcChecks.UIDtoArrayNo(readuid);
         SetBread(itemNo);
-        //_countImput++;
+
+        _countImput++;
     }
 
 

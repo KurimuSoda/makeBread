@@ -38,9 +38,13 @@ namespace TasteMG
             return lastTaste;
         }
 
-        public void PushEnter()
+        /// <summary>
+        /// メインの味を決定する。受け取ったimputCountの値で最後のアイテムの味を_mainTasteに記録する
+        /// </summary>
+        /// <param name="inputCount">選んだアイテムの数</param>
+        public void PushEnter(int inputCount)
         {
-            _mainTaste = _tasteArray[3];
+            _mainTaste = _tasteArray[inputCount];
             //Debug.Log("main taste is ---> " + _mainTaste + " : " + _tasteStringArray[_mainTaste - 1]);
             _tastCountReArray = TasteCheck();   //味の個数を配列で受け取る
         }

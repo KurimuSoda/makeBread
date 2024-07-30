@@ -46,6 +46,7 @@ public class ToldSceneName : MonoBehaviour
 
     private void Update()
     {
+        //Nを押したら次のSceneに遷移する
         if (Input.GetKeyDown(KeyCode.N))
         {
             switch (_thisSceneName)

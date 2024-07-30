@@ -64,7 +64,9 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
     <Compile Include="Assets/Scripts/MG/ItemImageController.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" />
     <Compile Include="Assets/Scripts/BreadRotate.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
     <Compile Include="Assets/Scripts/MG/ThermometerController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
@@ -115,10 +117,10 @@
     <Compile Include="Assets/Scripts/MG/NFCChecks.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
-    <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
-    <Compile Include="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" />
+    <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imports/lilToon/Shader/lts_fakeshadow.shader" />
