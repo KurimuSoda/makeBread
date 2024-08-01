@@ -375,6 +375,7 @@
 "Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs"
 "Assets/Scripts/MG/NewMGs/GameMG_new.cs"
 "Assets/Scripts/MG/NewMGs/ItemSelectMG.cs"
+"Assets/Scripts/MG/NewMGs/OvenMG.cs"
 "Assets/Scripts/MG/NewMGs/TitleMG.cs"
 "Assets/Scripts/MG/NewMGs/ToldSceneName.cs"
 "Assets/Scripts/MG/NFCChecks.cs"

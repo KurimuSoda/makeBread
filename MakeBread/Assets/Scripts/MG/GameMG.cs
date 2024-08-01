@@ -88,7 +88,7 @@ public class GameMG : MonoBehaviour
         {
             if(_nowSceneName == "CookingPotBT")
             {
-                _firstItem = _breadinstantiate.ReturnFirstItemID();
+                _firstItem = _breadinstantiate.ReturnSelectItemID(3);
                 _lastItemTaste = _tasteMG.ReturnLastItemTaste();
             }
             
@@ -205,7 +205,7 @@ public class GameMG : MonoBehaviour
         */
         if (_nowSceneName == "CookingPotBT")
         {
-            _firstItem = _breadinstantiate.ReturnFirstItemID();
+            _firstItem = _breadinstantiate.ReturnSelectItemID(3);
             _lastItemTaste = _tasteMG.ReturnLastItemTaste();
         }
 

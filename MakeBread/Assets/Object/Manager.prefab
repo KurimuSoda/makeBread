@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5716834193550284020}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
   _gameMG: {fileID: 5716834193550284018}
   _readStatus: 0
   nowGameScene: TitleScene
+  _nowScene: 0
   readUid: 
 --- !u!114 &5716834193550284018
 MonoBehaviour:
@@ -99,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
-  readStatus: 1
 --- !u!114 &5716834193550284017
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -32,6 +32,7 @@ public class ItemSelectMG : MonoBehaviour
         _randomBaseItem = 0;
         _randomBaseItem = Random.Range(0, imputCount);
         GameMG_new._RandomItem = _randomBaseItem;
+        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem);
     }
     
 }

@@ -52,6 +52,9 @@ public class GameMG_new : MonoBehaviour
 
     private int _countImput = 0;
 
+    private int _inputUPLimit = 4;
+    private int _inputLowerLimit = 0;
+
     /// <summary>
     /// アイテム選択のシーンに置いてあるImageオブジェクトからのみ変更する。アイテム画像を生成するための親オブジェクトを取得するフラグを立てる用。
     /// </summary>
@@ -109,6 +112,8 @@ public class GameMG_new : MonoBehaviour
             {
                 if (Input.GetKeyDown(_numbersKey[i]))
                 {
+                    _countImput++;
+                    _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
                     SetBread(i);
                 }
             }
@@ -232,7 +237,7 @@ public class GameMG_new : MonoBehaviour
     /// </summary>
     public void TitleFinish()
     {
-        StartCoroutine(LoadSceneAsync("CookingPot"));
+        StartCoroutine(LoadSceneAsync("CookingPotBT"));
     }
 
 
@@ -265,6 +270,7 @@ public class GameMG_new : MonoBehaviour
         SetBread(itemNo);
 
         _countImput++;
+        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
     }
 
 

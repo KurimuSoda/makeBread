@@ -70,6 +70,7 @@
     <Compile Include="Assets/Scripts/MG/ThermometerController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/OvenMG.cs" />
     <Compile Include="Assets/Scripts/MG/InitsMG.cs" />
     <Compile Include="Assets/Scripts/MG/BTSerialManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
@@ -98,11 +99,13 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Scripts/MG/SceneNameMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
     <Compile Include="Assets/Scripts/MG/TasteManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
@@ -119,8 +122,6 @@
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
-    <Compile Include="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imports/lilToon/Shader/lts_fakeshadow.shader" />
