@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58860
+59369
 Successfully changed project path to: /Users/hb21a035/Documents/MakeBread_Git/MakeBread
 /Users/hb21a035/Documents/MakeBread_Git/MakeBread
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,7 +54,7 @@ Successfully changed project path to: /Users/hb21a035/Documents/MakeBread_Git/Ma
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 139.67 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 120.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -69,7 +69,7 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56262
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56265
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.10f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -77,7 +77,7 @@ Register platform support module: /Applications/Unity/Hub/Editor/2021.3.10f1/Uni
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.10f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.10f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009253 seconds.
+Registered in 0.010278 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
@@ -86,39 +86,39 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 114.94 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 138.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.169 seconds
+- Completed reload, in  1.664 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1169ms)
-		BeginReloadAssembly (181ms)
+	ReloadAssembly (1665ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (804ms)
-			LoadAssemblies (185ms)
+		EndReloadAssembly (1127ms)
+			LoadAssemblies (204ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (358ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (483ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (554ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (116ms)
+				InitializePlatformSupportModulesInManaged (120ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (115ms)
+				RefreshPlugins (138ms)
 				BeforeProcessingInitializeOnLoad (3ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (74ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015450 seconds.
+Registered in 0.014314 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/hb21a035/Documents/MakeBread_Git/MakeBread/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/hb21a035/Documents/MakeBread_Git/MakeBread/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
@@ -127,41 +127,41 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 127.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 174.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.204 seconds
+- Completed reload, in  2.482 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2206ms)
-		BeginReloadAssembly (177ms)
+	ReloadAssembly (2484ms)
+		BeginReloadAssembly (166ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1841ms)
-			LoadAssemblies (180ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (2157ms)
+			LoadAssemblies (177ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (616ms)
+			SetupTypeCache (693ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (875ms)
+			RebuildScriptCaches (122ms)
+			SetupLoadedEditorAssemblies (1010ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (128ms)
-				BeforeProcessingInitializeOnLoad (163ms)
-				ProcessInitializeOnLoadAttributes (452ms)
-				ProcessInitializeOnLoadMethodAttributes (86ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (78ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (175ms)
+				BeforeProcessingInitializeOnLoad (195ms)
+				ProcessInitializeOnLoadAttributes (467ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.10f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
 Compilation failed: 
 
 program_source:829:53: warning: writable resources in non-void post-tessellation vertex function
@@ -16991,12 +16991,12 @@ struct Mtl_VertexOutPostTess
         return output;
 }
 // SHADER_STAGE_DOMAIN_end
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3557 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 73 unused Assets / (9.5 MB). Loaded Objects now: 3999.
-Memory consumption went from 307.8 MB to 298.3 MB.
-Total: 7.776805 ms (FindLiveObjects: 0.344793 ms CreateObjectMapping: 0.189020 ms MarkObjects: 3.023405 ms  DeleteObjects: 4.218806 ms)
+Memory consumption went from 307.7 MB to 298.2 MB.
+Total: 14.021197 ms (FindLiveObjects: 0.743879 ms CreateObjectMapping: 0.492588 ms MarkObjects: 5.204940 ms  DeleteObjects: 7.578519 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -17010,43 +17010,127 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 65941.960731 seconds.
-  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Love aura.prefab
-  artifactKey: Guid(43d1d06cf70fcb2488255051aaae40a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Love aura.prefab using Guid(43d1d06cf70fcb2488255051aaae40a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd7685ccf5d2f4073faf293992b81d0') in 2.235645 seconds 
+  Time since last request: 67156.145299 seconds.
+  path: Assets/Material/Strong_01.mat
+  artifactKey: Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Strong_01.mat using Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3632793627186d7fbfee74d3ef23fb17') in 1.193753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.198418 seconds.
+  path: Assets/Material/Strong_01.mat
+  artifactKey: Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Strong_01.mat using Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9f312dc787772d5990487ec3d5adf0') in 0.015108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.843371 seconds.
+  path: Assets/Material/Demo_04.mat
+  artifactKey: Guid(145c4e35651f1474b919289df6d5b875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Demo_04.mat using Guid(145c4e35651f1474b919289df6d5b875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f341deaf20460d7aab6e9cdceced65') in 0.286793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 949.327544 seconds.
+  path: Assets/Material/Demo_04.mat
+  artifactKey: Guid(145c4e35651f1474b919289df6d5b875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Demo_04.mat using Guid(145c4e35651f1474b919289df6d5b875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a956323dc569ef63d8324ab89050913') in 0.131319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.875659 seconds.
+  path: Assets/Material/Strong_01.mat
+  artifactKey: Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Strong_01.mat using Guid(ae760c0257d9c4dd1b46ebc5c828111b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1adfb62777df5570d5953d6bc749d736') in 0.014351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.353578 seconds.
+  path: Assets/Material/Strong_02.mat
+  artifactKey: Guid(16d4c157728f748f7a65b68f8d226b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Strong_02.mat using Guid(16d4c157728f748f7a65b68f8d226b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c066c6a1049f862fd2c9856a939bf95') in 0.017466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.862343 seconds.
+  path: Assets/Material/Strong_02.mat
+  artifactKey: Guid(16d4c157728f748f7a65b68f8d226b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Strong_02.mat using Guid(16d4c157728f748f7a65b68f8d226b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55feb206203f34afc92e700cf601c57a') in 0.014413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.398019 seconds.
+  path: Assets/Imports/Hovl Studio
+  artifactKey: Guid(5939edb6029f24a4caf33a71b43ca5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio using Guid(5939edb6029f24a4caf33a71b43ca5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c0c597c86573669fd97acf2fc8a8c4') in 0.002593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.161992 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack
+  artifactKey: Guid(ccaf0d0261bfcfe4f874cb02d8931eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack using Guid(ccaf0d0261bfcfe4f874cb02d8931eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e48a4f2661ea2b8189c5cdf383e52d') in 0.004049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.707846 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials
+  artifactKey: Guid(a342b6520836d4e40bf3cae8acbccd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials using Guid(a342b6520836d4e40bf3cae8acbccd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55896dc672df433c29e0eb1aabcb622e') in 0.002140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.908733 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/Additive.mat
+  artifactKey: Guid(32fac6e45890e9d48961b3db7c93c0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/Additive.mat using Guid(32fac6e45890e9d48961b3db7c93c0be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dce81d981ec9465b07a740e0005e6f') in 0.511387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd
+  artifactKey: Guid(670f1c056a06d7049b90d1fd1e480427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd using Guid(670f1c056a06d7049b90d1fd1e480427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f7774c5933451bfcb913bae506faf1') in 1.179831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/Heart.mat
+  artifactKey: Guid(e97a79db1dd66ad4d8f70932abe94b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/Heart.mat using Guid(e97a79db1dd66ad4d8f70932abe94b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a7a981ca94ab28c068072fbf84a25c') in 0.041148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/Circle2.mat
+  artifactKey: Guid(8fce5540653d6d8439e52364661e10c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/Circle2.mat using Guid(8fce5540653d6d8439e52364661e10c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0fefe44d006b73dd9479349c9ea044') in 0.033954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/Star.mat
+  artifactKey: Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/Star.mat using Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9174b69447c942ced1510c021713e86') in 0.021848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Materials/Flare.mat
+  artifactKey: Guid(818e127314f46c844a3b31d893dcfe6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Materials/Flare.mat using Guid(818e127314f46c844a3b31d893dcfe6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355d26715f5dc409099e049bb1cf7154') in 0.021723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 330.707023 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Textures/Circle.png
+  artifactKey: Guid(c4cf9c9f7cf52f6409ef75a08a4357ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Textures/Circle.png using Guid(c4cf9c9f7cf52f6409ef75a08a4357ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca51797d432486b854a9819c00435cb') in 2.132729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Textures/Flash2.png
+  artifactKey: Guid(b80e2bf2e14ae37469c6a566da0c8c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Textures/Flash2.png using Guid(b80e2bf2e14ae37469c6a566da0c8c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ceb2d7b9d9414095239cbc5208da139') in 0.036856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Textures/Flash.png
+  artifactKey: Guid(497534591604c9c40922a9ea2ef833b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Textures/Flash.png using Guid(497534591604c9c40922a9ea2ef833b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7f8754fcc4049c89ef37729621fcf2') in 0.022450 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000106 seconds.
-  path: Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab
-  artifactKey: Guid(4d9a3b35b3bc07649b697df7fb497b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab using Guid(4d9a3b35b3bc07649b697df7fb497b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d4d8b9842c1904e965c53f4a7b67fa') in 0.012863 seconds 
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Textures/Smoke26.png
+  artifactKey: Guid(08b3912bdc0a5ed4d9a27125425a97f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Textures/Smoke26.png using Guid(08b3912bdc0a5ed4d9a27125425a97f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eaf0e01e6f2a73901da41375abae7f8') in 0.024262 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab
-  artifactKey: Guid(354b6251e950209409c75ab984acf000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab using Guid(354b6251e950209409c75ab984acf000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3387b07cc04e57de49bdf9ff4a1913d5') in 0.075701 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab
-  artifactKey: Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab using Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b0dc5147cedddedfd411ea40e32071') in 0.025577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.096592 seconds.
-  path: Assets/Imports/Sweet Land GUI
-  artifactKey: Guid(202956400304347e4b682fff8164cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Sweet Land GUI using Guid(202956400304347e4b682fff8164cb33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7218e24a63744b1473ab2c4b65996d') in 0.001420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.418334 seconds.
-  path: Assets/Imports/Sweet Land GUI/Sprites
-  artifactKey: Guid(37881841b2548400c95d1b1d391be557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Sweet Land GUI/Sprites using Guid(37881841b2548400c95d1b1d391be557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8da772647286587d73aec434d4e9e1') in 0.002362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.838882 seconds.
-  path: Assets/Imports/Sweet Land GUI/Sprites/Buttons
-  artifactKey: Guid(b3dcf8b3f83e64aeaa869ce0c99bbd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/Sweet Land GUI/Sprites/Buttons using Guid(b3dcf8b3f83e64aeaa869ce0c99bbd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc415041752eb293cc115dbba0469d48') in 0.003523 seconds 
+  Time since last request: 0.000085 seconds.
+  path: Assets/Imports/Hovl Studio/Magic effects pack/Textures/Heart.png
+  artifactKey: Guid(47a48c9cf6895484983862ae79cb7102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/Hovl Studio/Magic effects pack/Textures/Heart.png using Guid(47a48c9cf6895484983862ae79cb7102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed428b7573632888c8bd02068a2c550') in 0.029198 seconds 
