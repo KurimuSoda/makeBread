@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class OvenTimers : MonoBehaviour
 {
-    private GameMG _gameMG;
+    private GameMG_new _gameMG;
     public static bool isGoodTemperature = false;
     public static bool isTooHot = false;
 
@@ -15,6 +16,9 @@ public class OvenTimers : MonoBehaviour
     private bool _isTimeUp = false;
     private float timer = 0.0f;
     private int _timeUpCount = 0;
+
+    private int _timerInt = 30;
+    [SerializeField] private TextMeshProUGUI _timerText;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +56,7 @@ public class OvenTimers : MonoBehaviour
 
     public void OvenTimerInit()
     {
-        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG>();
+        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
         goodTime = 0.0f;
         tooHotTime = 0.0f;
         _beadStatus = "";
@@ -66,6 +70,11 @@ public class OvenTimers : MonoBehaviour
     /// </summary>
     private void HalfMinutesTimer() {
         timer += Time.deltaTime;
+
+        //小数点切り捨てでカウントダウン
+        _timerInt = 30 - Mathf.FloorToInt(timer);
+        _timerText.text = _timerInt.ToString();
+
         if(timer >= 30.0f)
         {
             Debug.Log("TimeUp!");
