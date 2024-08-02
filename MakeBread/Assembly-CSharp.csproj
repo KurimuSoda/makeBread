@@ -239,7 +239,6 @@
     <None Include="Assets/Imports/lilToon/Shader/lts_tess_twotrans.shader" />
     <None Include="Assets/Imports/lilToon/Shader/lts_furonly_cutout.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/Hovl Studio/Magic effects pack/Demo scene/Readme.txt" />
     <None Include="Assets/Imports/lilToon/Shader/lts_ref_blur.shader" />
     <None Include="Assets/Imports/lilToon/Shader/Includes/lil_pass_depthnormals.hlsl" />
     <None Include="Assets/Imports/lilToon/Shader/Includes/lil_pass_forward_normal.hlsl" />
