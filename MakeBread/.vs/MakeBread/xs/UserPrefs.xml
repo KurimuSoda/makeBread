@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OvenTimers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SetActiveResultBread.cs">
     <Files>
-      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="273" Column="81" />
-      <File FileName="Assets/Scripts/MG/SoundMG.cs" Line="40" Column="30" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="97" Column="6" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="35" Column="67" />
+      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/SoundMG.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
+      <File FileName="Assets/Scripts/MG/TasteManager.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/ThermoNeedleMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/OvenTimers.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/ThermometerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SetActiveResultBread.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +21,7 @@
                 <Node name="MG" expanded="True">
                   <Node name="NewMGs" expanded="True" />
                 </Node>
-                <Node name="OvenTimers.cs" selected="True" />
+                <Node name="SetActiveResultBread.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -44,7 +43,6 @@
       <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/GameMG.cs" relfile="Assets/Scripts/MG/GameMG.cs" line="206" column="1" />
       <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" relfile="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" line="88" column="1" />
       <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" relfile="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" line="82" column="1" />
-      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/TasteManager.cs" relfile="Assets/Scripts/MG/TasteManager.cs" line="26" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
