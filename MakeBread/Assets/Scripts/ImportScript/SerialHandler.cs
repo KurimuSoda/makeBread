@@ -71,7 +71,8 @@ public class SerialHandler : MonoBehaviour
                     isNewMessageReceived_ = true;
                 // }
             } catch (System.Exception e) {
-                Debug.LogWarning(e.Message);
+                //Debug.LogWarning(e.Message);      一旦コメントアウトした　繋がらなかった時用の処理をここに書くといいかも
+                Debug.Log(e.Message);
             }
         }
     }

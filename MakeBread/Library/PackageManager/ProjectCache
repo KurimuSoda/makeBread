@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638510903970000000
+      ticks: 638581992720000000
     m_Hash: 2891438559
   m_LockFileStatus:
     m_FilePath: /Users/hb21a035/Documents/MakeBread_Git/MakeBread/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638510904040000000
+      ticks: 638581992720000000
     m_Hash: 3956890126
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -116,6 +116,8 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
+    - 2.4.4
     compatible:
     - 1.17.2
     - 1.17.6
@@ -139,6 +141,8 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
+    - 2.4.3
+    - 2.4.4
     verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
@@ -336,6 +340,7 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
+    - 3.0.31
     compatible:
     - 3.0.15
     - 3.0.16
@@ -349,7 +354,8 @@ m_ResolvedPackages:
     - 3.0.26
     - 3.0.27
     - 3.0.28
-    verified: 3.0.28
+    - 3.0.31
+    verified: 3.0.31
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -593,6 +599,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -614,6 +621,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -787,6 +795,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -803,6 +812,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     verified: 3.0.9
   dependencies:
   - name: com.unity.ugui
@@ -946,6 +956,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     compatible:
     - 1.6.4
     - 1.6.5
@@ -965,6 +976,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     verified: 1.6.5
   dependencies:
   - name: com.unity.modules.director
@@ -3151,6 +3163,7 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3168,6 +3181,7 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
@@ -3263,6 +3277,7 @@ m_ResolvedPackages:
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     compatible:
     - 1.4.2
     - 1.4.3
@@ -3280,6 +3295,7 @@ m_ResolvedPackages:
     - 1.12.2
     - 1.12.4
     - 1.12.5
+    - 1.13.0
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest

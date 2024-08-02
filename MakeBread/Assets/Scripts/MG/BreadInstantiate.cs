@@ -73,6 +73,7 @@ public class BreadInstantiate : MonoBehaviour
             obj.tag = "Item" + itemImage.num;
             obj.name = data_id;
             _inputCount++;
+            _inputCount = Mathf.Clamp(_inputCount, 0, 4);
         }
         else
         {
@@ -85,9 +86,13 @@ public class BreadInstantiate : MonoBehaviour
     {
         if (_isReturnCheck) { return; }
         _deleteNum = _inputCount;
+
+        //削除する番号の味をデフォルトの4にする
+        //_tasteManager.PutInTastArray(_inputCount, 4);
         GameObject missSet = GameObject.FindWithTag("Item" + _deleteNum);
         Destroy(missSet);
         _inputCount--;
+        _inputCount = Mathf.Clamp(_inputCount, 0, 4);
         //Debug.Log("miss:" + missSet.name);
     }
 
@@ -123,9 +128,14 @@ public class BreadInstantiate : MonoBehaviour
             }
     }
 
-    public string ReturnFirstItemID()
+    /// <summary>
+    /// 選んだアイテムの中からnumberのIDを返す
+    /// </summary>
+    /// <param name="number">何番目に選んだやつか</param>
+    /// <returns>string ID</returns>
+    public string ReturnSelectItemID(int number)
     {
-        string firstItemID = _setBreadDataIDArray[0];
+        string firstItemID = _setBreadDataIDArray[number];
         return firstItemID;
     }
 }

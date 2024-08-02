@@ -8,21 +8,29 @@ namespace TasteMG
     public class TasteManager
     {
         private int _mainTaste = 0;
-        /// <summary>選択した材料の味を選択した順番に格納する</summary>
-        private int[] _tasteArray = new int[4];
+        /// <summary>選択した材料の味を選択した順番に[0~3]に格納する。初期値は全て4(苦い)が入っている</summary>
+        private int[] _tasteArray = new int[4] { 4, 4, 4, 4};
         private string[] _tasteStringArray = new string[5] { "甘い", "辛い", "酸っぱい", "しょっぱい", "苦い" };
         private int[] _tastCountReArray = new int[4] { 0, 0, 0, 0 };
 
         public bool isBiter = false;
 
 
-        
+        /// <summary>
+        /// 選ばれたアイテムの味を配列に格納する
+        /// </summary>
+        /// <param name="inputNumber">何番目に格納するか[0~3]</param>
+        /// <param name="data_taste">格納するintデータ</param>
         public void PutInTastArray(int inputNumber, int data_taste)
         {
             _tasteArray[inputNumber] = data_taste;
 
         }
 
+        /// <summary>
+        /// 最終的な味を返す。0甘い, 1辛い, 2酸っぱい, 3しょっぱい, 4苦い
+        /// </summary>
+        /// <returns>int型</returns>
         public int ReturnLastItemTaste()
         {
             int lastTaste = _mainTaste;
@@ -34,13 +42,21 @@ namespace TasteMG
             return lastTaste;
         }
 
-        public void PushEnter()
+        /// <summary>
+        /// メインの味を決定する。受け取ったimputCountの値で最後のアイテムの味を_mainTasteに記録する
+        /// </summary>
+        /// <param name="inputCount">選んだアイテムの数</param>
+        public void PushEnter(int inputCount)
         {
-            _mainTaste = _tasteArray[3];
+            _mainTaste = _tasteArray[inputCount];
             //Debug.Log("main taste is ---> " + _mainTaste + " : " + _tasteStringArray[_mainTaste - 1]);
-            _tastCountReArray = TasteCheck();
+            _tastCountReArray = TasteCheck();   //味の個数を配列で受け取る
         }
 
+        /// <summary>
+        /// 各味の個数を配列に格納する。[swe, spi, sour, salt]
+        /// </summary>
+        /// <returns>int配列[swe, spi, sour, salt]</returns>
         private int[] TasteCheck()
         {
             int sweet = 0, spice = 1, sour = 2, salty = 3;

@@ -100,7 +100,7 @@ public class BTSerialManager : MonoBehaviour
             {
                 if(_nowScene == SceneNames.CookingPotBT)
                 {
-                    _tastMG.PushEnter();
+                    _tastMG.PushEnter(_countImput);
                     _breadInstantiate.SelectionFixing();
                     _readStatus = ReadStatus.StopRead;
                     _countImput = 0;

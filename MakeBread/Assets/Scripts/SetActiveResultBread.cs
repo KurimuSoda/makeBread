@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SetActiveResultBread : MonoBehaviour
 {
+    //TODO change MG script Do!
     [SerializeField]private string _firstItemID = "";
-    private GameMG _gameMG;
+    private GameMG_new _gameMG;
     [SerializeField]private GameObject _resultBread;
 
     
@@ -14,21 +15,22 @@ public class SetActiveResultBread : MonoBehaviour
     {
         _firstItemID = "";
 
-        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG>();
+        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
         _firstItemID = _gameMG.SendItemID();
 
-        
-        _resultBread = transform.Find(_firstItemID).gameObject;
-        if(_resultBread == null)
+        //_firstItemID = "spi_01";  //for Debug
+
+        if(_firstItemID == "")
         {
             _resultBread = transform.Find("FishBread").gameObject;
+            //Debug.Log("result bread dont find...");
         }
+        else
+        {
+            _resultBread = transform.Find(_firstItemID).gameObject;
+        }
+        
         _resultBread.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
