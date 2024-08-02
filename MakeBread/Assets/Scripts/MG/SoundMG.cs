@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using SceneMG.support;
+using UnityEngine.SceneManagement;
 
 public class SoundMG : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class SoundMG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ChangeBGM(SceneManager.GetActiveScene().name);
     }
 
     // Update is called once per frame

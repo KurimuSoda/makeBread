@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OvenTimers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs">
     <Files>
       <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/SoundMG.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
-      <File FileName="Assets/Scripts/MG/TasteManager.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/SoundMG.cs" Line="16" Column="55" />
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="123" Column="26" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="5" Column="16" />
+      <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="103" Column="40" />
       <File FileName="Assets/Scripts/SetActiveResultBread.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/OvenTimers.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/OvenTimers.cs" Line="39" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,9 +18,10 @@
               <Node name="Scripts" expanded="True">
                 <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
-                  <Node name="NewMGs" expanded="True" />
+                  <Node name="NewMGs" expanded="True">
+                    <Node name="ItemSelectMG.cs" selected="True" />
+                  </Node>
                 </Node>
-                <Node name="OvenTimers.cs" selected="True" />
               </Node>
             </Node>
           </Node>

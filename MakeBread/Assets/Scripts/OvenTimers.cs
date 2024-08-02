@@ -6,12 +6,17 @@ using TMPro;
 public class OvenTimers : MonoBehaviour
 {
     private GameMG_new _gameMG;
+    [SerializeField] private OvenMG _ovenMG;
     public static bool isGoodTemperature = false;
     public static bool isTooHot = false;
 
-    public float goodTime = 0.0f;
-    public float tooHotTime = 0.0f;
-    private string _beadStatus = "";
+    public float coldTime = 10.0f;
+    public float tooHotTime = 8.0f;
+
+    /// <summary>
+    /// string Status
+    /// </summary>
+    private string _breadStatus = "";
 
     private bool _isTimeUp = false;
     private float timer = 0.0f;
@@ -31,8 +36,8 @@ public class OvenTimers : MonoBehaviour
         if (_isTimeUp)
         {
             if (_timeUpCount > 1) return;
-            JadgeBreadStatus();
-            _gameMG.BreadStatusPutArray(_beadStatus);
+            _breadStatus = _ovenMG.JadgeBreadStatus();
+            _gameMG.BreadStatusPutArray(_breadStatus);
             StartCoroutine("GoToResult");
             Debug.Log("Kansei!");
             _timeUpCount++;
@@ -43,7 +48,7 @@ public class OvenTimers : MonoBehaviour
         }
         if (isGoodTemperature)
         {
-            goodTime += Time.deltaTime;
+            coldTime += Time.deltaTime;
             
         }
         else if (isTooHot)
@@ -57,9 +62,9 @@ public class OvenTimers : MonoBehaviour
     public void OvenTimerInit()
     {
         _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
-        goodTime = 0.0f;
+        coldTime = 0.0f;
         tooHotTime = 0.0f;
-        _beadStatus = "";
+        _breadStatus = "";
         _isTimeUp = false;
         _timeUpCount = 0;
         timer = 0.0f;
@@ -95,22 +100,23 @@ public class OvenTimers : MonoBehaviour
         StartCoroutine(_gameMG.LoadSceneAsync("ResultScene"));
     }
 
-    private void JadgeBreadStatus()
+    /*
+    public void JadgeBreadStatus(float coldTimeCount, float overCookTimeCount)
     {
-        if(tooHotTime >= 8.0f)
+        if(overCookTimeCount >= tooHotTime)
         {
-            _beadStatus = "OverCoocked";
+            _breadStatus = "OverCoocked";
         }
-        else if (goodTime >= 15.0f && tooHotTime < 8.0f)
+        else if (coldTimeCount >= coldTime || overCookTimeCount <= tooHotTime)
         {
-            _beadStatus = "Good";
+            _breadStatus = "Nomal";
         }
-        else if(goodTime < 15.0f && tooHotTime < 8.0f)
+        else if (coldTimeCount > coldTime && overCookTimeCount < tooHotTime)
         {
-            _beadStatus = "Nomal";
+            _breadStatus = "Good";
         }
-
+    
     }
-
+    */
 
 }

@@ -118,7 +118,12 @@ public class BTSerialManager_new : MonoBehaviour
 
     private void M5Shaked()
     {
-        _thermometerCon.TemperatureUP();
+        if(SceneManager.GetActiveScene().name == "OvenFire")
+        {
+            //振られたフラグを立てる
+            OvenMG.IsShaked = true;
+            //_thermometerCon.TemperatureUP();
+        }
     }
 
     /*

@@ -3886,9 +3886,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514481ad07a5943a38d9dd7359009c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goodTime: 0
-  tooHotTime: 0
+  _ovenMG: {fileID: 1191047136}
+  coldTime: 10
+  tooHotTime: 8
   _timerText: {fileID: 974742659}
+--- !u!114 &1191047136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191047132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a62bcac1ffd42c7a702d30fd8ad505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireObj: {fileID: 1169214868}
+  _efectObj: {fileID: 1514680390}
+  _addScale: 0.1
+  _downScale: 0.002
 --- !u!1 &1201489183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5070,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480140077}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1514680390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9017484664307500583, guid: 1245b8d2997d5b34fb1637be70a7eb05, type: 3}
+  m_PrefabInstance: {fileID: 752289698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1583025626
 GameObject:
   m_ObjectHideFlags: 0
