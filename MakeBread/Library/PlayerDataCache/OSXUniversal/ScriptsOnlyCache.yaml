@@ -464,13 +464,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8674}
     - Class: 114
-      Script: {instanceID: 26144}
+      Script: {instanceID: 28536}
     - Class: 114
-      Script: {instanceID: 26152}
+      Script: {instanceID: 28544}
     - Class: 114
-      Script: {instanceID: 26154}
+      Script: {instanceID: 28546}
     - Class: 114
-      Script: {instanceID: 26156}
+      Script: {instanceID: 28548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1628,4 +1628,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/CookingPotBT.unity
   - Assets/Scenes/OvenFire.unity
   - Assets/Scenes/ResultScene.unity
-  playerPath: /Users/hb21a035/Desktop/TestBild_0803_usb.app
+  playerPath: /Users/hb21a035/Desktop/TestBild_0803_BT.app
