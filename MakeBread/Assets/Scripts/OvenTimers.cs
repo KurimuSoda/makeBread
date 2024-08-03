@@ -7,6 +7,7 @@ public class OvenTimers : MonoBehaviour
 {
     private GameMG_new _gameMG;
     [SerializeField] private OvenMG _ovenMG;
+    [SerializeField] private GameObject _finishPanel;
     public static bool isGoodTemperature = false;
     public static bool isTooHot = false;
 
@@ -36,6 +37,7 @@ public class OvenTimers : MonoBehaviour
         if (_isTimeUp)
         {
             if (_timeUpCount > 1) return;
+            _finishPanel.SetActive(true);
             _breadStatus = _ovenMG.JadgeBreadStatus();
             _gameMG.BreadStatusPutArray(_breadStatus);
             StartCoroutine("GoToResult");

@@ -42,8 +42,8 @@ public class BTSerialManager_new : MonoBehaviour
     private int _countImput = 1;
 
     //public bool isEnter = false;
-    private string _enterNFC = "04D1BEAF790000\r";  //Enter(Return)NFC UID
-    private string _backSpaceNFC = "048E69B2790000\r";  //BackSpaceNFC UID
+    //private string _enterNFC = "04D1BEAF790000\r";  //Enter(Return)NFC UID
+    //private string _backSpaceNFC = "048E69B2790000\r";  //BackSpaceNFC UID
     private string _strShaked = "Shaked\r";
 
     //複数回送られてくるシリアルデータの1回目を判別する用。もしかしたら同じもの連続で読めるようになるかも。
@@ -118,11 +118,23 @@ public class BTSerialManager_new : MonoBehaviour
 
     private void M5Shaked()
     {
-        if(SceneManager.GetActiveScene().name == "OvenFire")
+        if(_nowScene == SceneNames.OvenFire)
         {
             //振られたフラグを立てる
             OvenMG.IsShaked = true;
             //_thermometerCon.TemperatureUP();
+        }
+        else if(_nowScene == SceneNames.TitleScene)
+        {
+            TitleMG.IsShaked = true;
+        }
+        else if (_nowScene == SceneNames.CookingPotBT)
+        {
+            ItemSelectMG.IsShaked = true;
+        }
+        else if (_nowScene == SceneNames.ResultScene)
+        {
+            ResultSceneMG.IsShaked = true;
         }
     }
 
@@ -142,12 +154,12 @@ public class BTSerialManager_new : MonoBehaviour
         if (nextScene == _sceneNameMG.gameSceneNames[0])
         {
             _nowScene = SceneNames.TitleScene;
-            _nfcChecks.ItemDataLengthCount();
+            //_nfcChecks.ItemDataLengthCount();
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[1])
         {
             _nowScene = SceneNames.CookingPotBT;
-            _readStatus = ReadStatus.ReadOK;
+            //_readStatus = ReadStatus.ReadOK;
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[2])
         {
@@ -158,7 +170,27 @@ public class BTSerialManager_new : MonoBehaviour
         else if (nextScene == _sceneNameMG.gameSceneNames[3])
         {
             _nowScene = SceneNames.ResultScene;
-            _readStatus = ReadStatus.ReadOK;
+            //_readStatus = ReadStatus.ReadOK;
+        }
+    }
+
+    public void ChangeNowSceneName(string nowName)
+    {
+        if(nowName == "TitleScene")
+        {
+            _nowScene = SceneNames.TitleScene;
+        }
+        else if(nowName == "CookingPotBT")
+        {
+            _nowScene = SceneNames.CookingPotBT;
+        }
+        else if(nowName == "OvenFire")
+        {
+            _nowScene = SceneNames.OvenFire;
+        }
+        else if(nowName == "ResultScene")
+        {
+            _nowScene = SceneNames.ResultScene;
         }
     }
 }

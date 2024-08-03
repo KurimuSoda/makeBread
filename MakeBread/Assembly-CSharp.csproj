@@ -122,6 +122,7 @@
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imports/lilToon/Shader/lts_fakeshadow.shader" />

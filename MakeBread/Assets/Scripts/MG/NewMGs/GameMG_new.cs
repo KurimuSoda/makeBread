@@ -91,10 +91,12 @@ public class GameMG_new : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (Input.GetKeyDown(KeyCode.Backspace) || ItemSelectMG.IsShaked)
         {
+            if (nowSceneName != "CookingPotBT") return;
             _breadInstantiate.DeleteBreadObj();
             _countImput--;
+            ItemSelectMG.IsShaked = false;
         }
         /*
         if (Input.GetKeyDown(KeyCode.Return))
@@ -215,6 +217,7 @@ public class GameMG_new : MonoBehaviour
     public void CollByChangeScene(string thisSceneName)
     {
         nowSceneName = thisSceneName;
+        _btSerialMG.ChangeNowSceneName(thisSceneName);
 
         if(nowSceneName == _sceneNameMG.gameSceneNames[1])  //SelectItemScene
         {

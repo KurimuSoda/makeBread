@@ -9,6 +9,8 @@ public class ItemSelectMG : MonoBehaviour
     private GameMG_new _gameMG;
     [SerializeField] private static int _randomBaseItem = 0;
 
+    public static bool IsShaked = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class ItemSelectMG : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             _gameMG.ItemSelectFinish();
+            IsShaked = false;
         }
     }
 
