@@ -22,7 +22,7 @@ public class SetActiveResultBread : MonoBehaviour
 
         if(_firstItemID == "")
         {
-            _resultBread = transform.Find("FishBread").gameObject;
+            //_resultBread = transform.Find("FishBread").gameObject;
             //Debug.Log("result bread dont find...");
         }
         else
