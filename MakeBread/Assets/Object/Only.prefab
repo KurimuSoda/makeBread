@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a1bbef6e6d646daa099f48cf2e169c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainBGM: {fileID: 2204225036939421038}
-  _selectItemBGM: {fileID: 1145973445515151818}
+  _mainBGM: {fileID: 1145973445515151818}
+  _selectItemBGM: {fileID: 2204225036939421038}
 --- !u!82 &1145973445515151818
 AudioSource:
   m_ObjectHideFlags: 0

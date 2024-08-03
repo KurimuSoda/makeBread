@@ -13,6 +13,7 @@ public class SoundMG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        BGMInit();
         ChangeBGM(SceneManager.GetActiveScene().name);
     }
 
