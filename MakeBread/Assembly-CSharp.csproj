@@ -60,6 +60,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
+    <Compile Include="Assets/Scripts/ImportScript/FullScreenGameView.cs" />
     <Compile Include="Assets/Scripts/ImportScript/SerialHandler.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
@@ -111,6 +112,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/Scripts/MG/GMSingleton.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
@@ -122,7 +124,6 @@
     <Compile Include="Assets/Scripts/MG/GameMG.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
     <Compile Include="Assets/Scripts/MG/ThermoNeedleMove.cs" />
-    <Compile Include="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Imports/lilToon/Shader/lts_fakeshadow.shader" />

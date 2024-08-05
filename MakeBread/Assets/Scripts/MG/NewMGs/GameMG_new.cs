@@ -11,6 +11,7 @@ public class GameMG_new : MonoBehaviour
     [SerializeField] private BreadDate breadData;
     [SerializeField] private BreadInstantiate _breadInstantiate;
     [SerializeField] private BTSerialManager_new _btSerialMG;
+    //[SerializeField] private InitsMG _initMG;
 
     /// <summary>
     /// NFC関係の処理を行う用の関数を集めたスクリプト
@@ -107,6 +108,11 @@ public class GameMG_new : MonoBehaviour
         }
         */
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //_initMG.TitleInit();
+            GameMGInit();
+        }
         
         if (Input.anyKeyDown)
         {
@@ -188,6 +194,9 @@ public class GameMG_new : MonoBehaviour
         _lastItemTaste = 0;
         breadStatuses[3] = "";
         nowSceneName = SceneManager.GetActiveScene().name;
+
+        _nfcChecks.NFCChecksInit();
+        _breadInstantiate.BreadInstantiateInit();
     }
 
     

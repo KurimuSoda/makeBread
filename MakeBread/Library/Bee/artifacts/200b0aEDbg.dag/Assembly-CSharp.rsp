@@ -364,6 +364,7 @@
 "Assets/Imports/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs"
 "Assets/Scripts/BreadDataEntity.cs"
 "Assets/Scripts/BreadRotate.cs"
+"Assets/Scripts/ImportScript/FullScreenGameView.cs"
 "Assets/Scripts/ImportScript/SerialHandler.cs"
 "Assets/Scripts/ItemsEnableSclipt.cs"
 "Assets/Scripts/MG/BreadInstantiate.cs"

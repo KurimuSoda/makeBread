@@ -28,7 +28,7 @@ public class InitsMG : MonoBehaviour
     public void TitleInit()
     {
         _nfcChecks.NFCChecksInit();
-        //_soundMG.BGMInit();
+        _soundMG.BGMInit();
         _thermoCon.ThermoConObjInit(false);
         _thremoNeedle.ThermoNeedleInit(false);
         _breadInstant.BreadInstantiateInit();

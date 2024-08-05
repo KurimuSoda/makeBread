@@ -71,6 +71,7 @@ MonoBehaviour:
   breadData: {fileID: 11400000, guid: 321706d1c5ba24b9783272006b9a0bd8, type: 2}
   _breadInstantiate: {fileID: 5716834193550284017}
   _btSerialMG: {fileID: 5716834193550284019}
+  _initMG: {fileID: 0}
   _nfcChecks: {fileID: 5716834193550284022}
   nowSceneName: 
 --- !u!114 &5716834193550284023

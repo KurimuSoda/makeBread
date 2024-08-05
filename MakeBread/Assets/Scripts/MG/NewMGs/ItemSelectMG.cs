@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //TODO 1度に2回設置してしまうのをなんとかする
-//TODO BGM周り整える
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
 {
@@ -20,10 +19,12 @@ public class ItemSelectMG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || IsShaked == true)
         {
-            _gameMG.ItemSelectFinish();
             IsShaked = false;
+
+            _gameMG.ItemSelectFinish();
+            
         }
     }
 
