@@ -188,10 +188,15 @@ public class GameMG_new : MonoBehaviour
         return breadStatuses[3];
     }
 
+    /// <summary>
+    /// GMのInit、初期化
+    /// </summary>
     private void GameMGInit()
     {
         _FirstItem = "";
         _lastItemTaste = 0;
+        _RandomItem = 0;
+        _countImput = 0;
         breadStatuses[3] = "";
         nowSceneName = SceneManager.GetActiveScene().name;
 

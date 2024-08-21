@@ -14,6 +14,7 @@ public class ItemSelectMG : MonoBehaviour
     void Start()
     {
         _gameMG = GameObject.Find("Manager").GetComponent<GameMG_new>();
+        ItemSelectMGInit();
     }
 
     // Update is called once per frame
@@ -28,16 +29,24 @@ public class ItemSelectMG : MonoBehaviour
         }
     }
 
+    public void ItemSelectMGInit()
+    {
+        _randomBaseItem = 0;
+        IsShaked = false;
+
+        Random.InitState(System.DateTime.Now.Millisecond);
+    }
+
     /// <summary>
     /// 入力した回数(選んだアイテム)の数を受け取って、その中からランダムに抽出した値をGMに渡す
     /// </summary>
     /// <param name="imputCount">入力した回数(選んだアイテム)の数</param>
-    public static void RandomItemChose(int imputCount)
+    public static void RandomItemChose(int inputCount)
     {
         _randomBaseItem = 0;
-        _randomBaseItem = Random.Range(0, imputCount);
+        _randomBaseItem = Random.Range(0, inputCount + 1);
         GameMG_new._RandomItem = _randomBaseItem;
-        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem);
+        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", Inputsount is --> " + inputCount);
     }
     
 }
