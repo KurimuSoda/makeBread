@@ -114,6 +114,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:DOTWEEN
 -define:PACKAGE_PHYSICS
 -define:PACKAGE_PHYSICS2D
 -define:PACKAGE_TILEMAP
@@ -352,6 +353,8 @@
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OOXML.dll"
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXml4Net.dll"
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXmlFormats.dll"
+-r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"

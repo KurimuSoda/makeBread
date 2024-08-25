@@ -114,6 +114,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:DOTWEEN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.3.10f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
@@ -347,6 +348,8 @@
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OOXML.dll"
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXml4Net.dll"
 -r:"Assets/Imports/ExcelImporter/Editor/NPOI/Net20/NPOI.OpenXmlFormats.dll"
+-r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/Unity.Services.Core.Internal.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEngine.UI.ref.dll"
