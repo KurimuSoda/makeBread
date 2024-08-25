@@ -84582,3 +84582,15 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1408.477735 seconds.
+  path: Assets/Object/Image/キャラ2_0816.png
+  artifactKey: Guid(5c2ce5e1d32774be898323bbd6ed4e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Object/Image/キャラ2_0816.png using Guid(5c2ce5e1d32774be898323bbd6ed4e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71af4efc9f6c03e5fec66caa7b34471f') in 0.216755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.388136 seconds.
+  path: Assets/Object/Image/キャラ2_0816.png
+  artifactKey: Guid(5c2ce5e1d32774be898323bbd6ed4e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Object/Image/キャラ2_0816.png using Guid(5c2ce5e1d32774be898323bbd6ed4e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100d49996bcf2e5c3bfcf2281847b999') in 0.098267 seconds 
