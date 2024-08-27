@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1206
     height: 715
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 123
+  controlID: 49
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 124
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 54
+  controlID: 51
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 55
+  controlID: 52
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 285
     height: 665
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -422,10 +422,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 525e0000
-      m_LastClickedID: 24146
-      m_ExpandedIDs: c0ebffff20fbffff385d0000
+      scrollPos: {x: 0, y: 16}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 22fbffff385d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -795,22 +795,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/MG/NewMGs
+    - Assets/TextFontAdd
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/MG/NewMGs
+  - Assets/TextFontAdd
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/hb21a035/Documents/MakeBread_Git/MakeBread
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 478}
-    m_SelectedIDs: c0600000
-    m_LastClickedID: 24768
-    m_ExpandedIDs: 0000000066600000686000006a6000006c6000006e6000007060000072600000746000007860000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ba600000
+    m_LastClickedID: 24762
+    m_ExpandedIDs: 000000005e60000060600000626000006460000066600000686000006a6000006c6000006e600000bc60000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -838,7 +838,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066600000686000006a6000006c6000006e6000007060000072600000746000007660000078600000
+    m_ExpandedIDs: 000000005e60000060600000626000006460000066600000686000006a6000006c6000006e600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
