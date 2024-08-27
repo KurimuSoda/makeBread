@@ -382,6 +382,7 @@
 "Assets/Scripts/MG/InitsMG.cs"
 "Assets/Scripts/MG/ItemImageController.cs"
 "Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs"
+"Assets/Scripts/MG/NewMGs/FermentMG.cs"
 "Assets/Scripts/MG/NewMGs/GameMG_new.cs"
 "Assets/Scripts/MG/NewMGs/ItemSelectMG.cs"
 "Assets/Scripts/MG/NewMGs/OvenMG.cs"

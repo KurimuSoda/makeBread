@@ -9,15 +9,16 @@ namespace SceneMG.support {
         TitleScene,
         CookingPotBT,
         OvenFire,
-        ResultScene
+        ResultScene,
+        FermentScene
     }
 
     public class SceneNameMG
     {
         /// <summary>
-        /// ビルドセッティングに登録中のシーン --> "TitleScene", "CookingPotBT", "OvenFire", "ResultScene"
+        /// ビルドセッティングに登録中のシーン --> "TitleScene", "CookingPotBT", "OvenFire", "ResultScene", "FermentScene"
         /// </summary>
-        public string[] gameSceneNames = { "TitleScene", "CookingPotBT", "OvenFire", "ResultScene" };
+        public string[] gameSceneNames = { "TitleScene", "CookingPotBT", "OvenFire", "ResultScene", "FermentScene" };
 
         
     }
