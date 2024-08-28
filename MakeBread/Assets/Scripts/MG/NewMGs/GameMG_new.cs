@@ -11,6 +11,7 @@ public class GameMG_new : MonoBehaviour
     [SerializeField] private BreadDate breadData;
     [SerializeField] private BreadInstantiate _breadInstantiate;
     [SerializeField] private BTSerialManager_new _btSerialMG;
+    //[SerializeField] private InitsMG _initMG;
 
     /// <summary>
     /// NFC関係の処理を行う用の関数を集めたスクリプト
@@ -61,6 +62,8 @@ public class GameMG_new : MonoBehaviour
     public static bool isItemsObjExit = false;
     //public static bool isResultBreadActive = false;
 
+    public string score_Ferment = "C";
+
     /// <summary>
     /// [3]に焼いたパンの結果を入れる。状態は普通、上等、焼きすぎの3種類
     /// </summary>
@@ -91,10 +94,12 @@ public class GameMG_new : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (Input.GetKeyDown(KeyCode.Backspace) || ItemSelectMG.IsShaked)
         {
+            if (nowSceneName != "CookingPotBT") return;
             _breadInstantiate.DeleteBreadObj();
             _countImput--;
+            ItemSelectMG.IsShaked = false;
         }
         /*
         if (Input.GetKeyDown(KeyCode.Return))
@@ -105,6 +110,11 @@ public class GameMG_new : MonoBehaviour
         }
         */
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            //_initMG.TitleInit();
+            GameMGInit();
+        }
         
         if (Input.anyKeyDown)
         {
@@ -180,12 +190,20 @@ public class GameMG_new : MonoBehaviour
         return breadStatuses[3];
     }
 
+    /// <summary>
+    /// GMのInit、初期化
+    /// </summary>
     private void GameMGInit()
     {
         _FirstItem = "";
         _lastItemTaste = 0;
+        _RandomItem = 0;
+        _countImput = 0;
         breadStatuses[3] = "";
         nowSceneName = SceneManager.GetActiveScene().name;
+
+        _nfcChecks.NFCChecksInit();
+        _breadInstantiate.BreadInstantiateInit();
     }
 
     
@@ -215,6 +233,7 @@ public class GameMG_new : MonoBehaviour
     public void CollByChangeScene(string thisSceneName)
     {
         nowSceneName = thisSceneName;
+        _btSerialMG.ChangeNowSceneName(thisSceneName);
 
         if(nowSceneName == _sceneNameMG.gameSceneNames[1])  //SelectItemScene
         {

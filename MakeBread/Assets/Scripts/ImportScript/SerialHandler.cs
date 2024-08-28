@@ -9,7 +9,8 @@ public class SerialHandler : MonoBehaviour
     public event SerialDataReceivedEventHandler OnDataReceived;
 
     //M5StickCPlus2のBluetooth接続したときに確認したポート
-    public string portName = "/dev/cu.M5StickCPlus2BT-ESP32SPP";
+    public string portName = "/dev/cu.M5StickCPlus2BT-ESP32SPP";　//無線
+    //public string portName = "/dev/cu.wchusbserial57710015711"; //有線
     public int baudRate    = 115200;
 
     private SerialPort serialPort_;

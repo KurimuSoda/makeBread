@@ -30,7 +30,9 @@ public class BreadInstantiate : MonoBehaviour
     /// </summary>
     private bool _isReturnCheck = false;
 
-
+    /// <summary>
+    /// BreadInstantiateを初期化する関数
+    /// </summary>
     public void BreadInstantiateInit()
     {
         _inputCount = 0;

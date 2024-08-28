@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelImporter", "ExcelImporter.csproj", "{BC6E8705-C93C-3DC8-9D86-D5377955B57A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{7C3B83FF-51B7-F67A-B633-73F28A60DD2C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelImporter.Editor", "ExcelImporter.Editor.csproj", "{CBB38C07-6088-3BF6-B6F6-C73B39FC72DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lilToon.Editor", "lilToon.Editor.csproj", "{6427BC5B-055F-78D4-CBC6-94703E628F31}"
@@ -25,6 +27,10 @@ Global
 		{BC6E8705-C93C-3DC8-9D86-D5377955B57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6E8705-C93C-3DC8-9D86-D5377955B57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC6E8705-C93C-3DC8-9D86-D5377955B57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3B83FF-51B7-F67A-B633-73F28A60DD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3B83FF-51B7-F67A-B633-73F28A60DD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3B83FF-51B7-F67A-B633-73F28A60DD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3B83FF-51B7-F67A-B633-73F28A60DD2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBB38C07-6088-3BF6-B6F6-C73B39FC72DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CBB38C07-6088-3BF6-B6F6-C73B39FC72DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBB38C07-6088-3BF6-B6F6-C73B39FC72DC}.Release|Any CPU.ActiveCfg = Release|Any CPU

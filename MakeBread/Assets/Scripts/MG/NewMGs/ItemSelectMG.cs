@@ -2,38 +2,51 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //TODO 1度に2回設置してしまうのをなんとかする
-//TODO BGM周り整える
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
 {
     private GameMG_new _gameMG;
     [SerializeField] private static int _randomBaseItem = 0;
 
+    public static bool IsShaked = false;
+
     // Start is called before the first frame update
     void Start()
     {
         _gameMG = GameObject.Find("Manager").GetComponent<GameMG_new>();
+        ItemSelectMGInit();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || IsShaked == true)
         {
+            IsShaked = false;
+
             _gameMG.ItemSelectFinish();
+            
         }
+    }
+
+    public void ItemSelectMGInit()
+    {
+        _randomBaseItem = 0;
+        IsShaked = false;
+
+        Random.InitState(System.DateTime.Now.Millisecond);
     }
 
     /// <summary>
     /// 入力した回数(選んだアイテム)の数を受け取って、その中からランダムに抽出した値をGMに渡す
     /// </summary>
     /// <param name="imputCount">入力した回数(選んだアイテム)の数</param>
-    public static void RandomItemChose(int imputCount)
+    public static void RandomItemChose(int inputCount)
     {
         _randomBaseItem = 0;
-        _randomBaseItem = Random.Range(0, imputCount);
+        _randomBaseItem = Random.Range(0, inputCount + 1);
         GameMG_new._RandomItem = _randomBaseItem;
-        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem);
+        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", Inputsount is --> " + inputCount);
     }
     
 }

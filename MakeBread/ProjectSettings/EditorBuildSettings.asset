@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TitleScene.unity
     guid: 11c7dde914d224375a5e0cf157c984a4
   - enabled: 1
     path: Assets/Scenes/CookingPotBT.unity
     guid: c66e18441745741d8a303cf212c728b0
+  - enabled: 1
+    path: Assets/Scenes/FermentScene.unity
+    guid: ae17f997c152a436c82bcec9c68b26cc
   - enabled: 1
     path: Assets/Scenes/OvenFire.unity
     guid: 7a8ff897d458449209545b186e89789d
