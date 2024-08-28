@@ -31,6 +31,10 @@ public class ToldSceneName : MonoBehaviour
         {
             _thisScene = SceneNames.CookingPotBT;
         }
+        else if(_thisSceneName == "FermentScene")
+        {
+            _thisScene = SceneNames.FermentScene;
+        }
         else if(_thisSceneName == "OvenFire")
         {
             _thisScene = SceneNames.OvenFire;
@@ -56,6 +60,10 @@ public class ToldSceneName : MonoBehaviour
                     break;
 
                 case "CookingPotBT":
+                    SceneManager.LoadScene("FermentScene");
+                    break;
+
+                case "FermentScene":
                     SceneManager.LoadScene("OvenFire");
                     break;
 

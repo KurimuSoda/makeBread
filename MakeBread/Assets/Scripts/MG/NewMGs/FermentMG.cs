@@ -6,16 +6,26 @@ using TMPro;
 
 public class FermentMG : MonoBehaviour
 {
+    private GameMG_new _gameMG;
     /// <summary>
     /// 生地オブジェクトの膨張をするかどうか
     /// </summary>
-    public bool isBigStart = false;
+    [SerializeField] private bool isBigStart = false;
     [SerializeField] private GameObject _BreadKiji;
 
-    private float teas = 0.01f;
+    /// <summary>
+    /// 生地オブジェクトのScaleに代入する変数
+    /// </summary>
+    private float _kijiScale = 0.01f;
+
+    /// <summary>
+    /// 生地オブジェクトが_kijiScaleに達するまでの時間
+    /// </summary>
     [SerializeField] private float _time = 0.2f;
 
     [SerializeField] private float score_Ferment = 0.0f;
+
+    [SerializeField] private GameObject _howtoObj;
 
     [SerializeField] private GameObject scoreCanvas;
     [SerializeField] private RectTransform scCan;
@@ -27,10 +37,12 @@ public class FermentMG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _howtoObj.SetActive(true);
         Random.InitState(System.DateTime.Now.Millisecond);
         scoreCanvas.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         scCan.localScale = scoreSize;
         scoreCanvas.SetActive(false);
+        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
     }
 
     // Update is called once per frame
@@ -38,6 +50,7 @@ public class FermentMG : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            _howtoObj.SetActive(false);
             scoreCanvas.SetActive(false);
             scCan.transform.DOKill();
             BreadAnimStart();
@@ -49,22 +62,31 @@ public class FermentMG : MonoBehaviour
        
     }
 
+    /// <summary>
+    /// 生地の拡大アニメーションを再生する
+    /// </summary>
     private void BreadAnimStart()
     {
         _BreadKiji.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         _time = Random.Range(1.0f, 3.1f);
-        teas = Random.Range(2.0f, 3.6f) * 10;
-        teas = Mathf.Floor(teas) * 0.1f;
-        _BreadKiji.transform.DOScale(new Vector3(teas, teas, teas), _time)
+        _kijiScale = Random.Range(2.2f, 3.6f) * 10;
+        _kijiScale = Mathf.Floor(_kijiScale) * 0.1f;
+        _BreadKiji.transform.DOScale(new Vector3(_kijiScale, _kijiScale, _kijiScale), _time)
             .SetEase(Ease.OutSine);
     }
 
+    /// <summary>
+    /// 生地の拡大アニメーションを(強制)終了させる
+    /// </summary>
     private void BreadAnimKill()
     {
         _BreadKiji.transform.DOKill();
         FermentJadge();
     }
 
+    /// <summary>
+    /// 生地のサイズからスコアを表示する
+    /// </summary>
     private void FermentJadge()
     {
         float breadScale = 1.0f;
@@ -114,5 +136,10 @@ public class FermentMG : MonoBehaviour
             .SetEase(Ease.OutBack, 3.0f)
             .SetDelay(0.8f);
 
+    }
+
+    private void OnDestroy()
+    {
+        _gameMG.score_Ferment = scoreTx.text;
     }
 }

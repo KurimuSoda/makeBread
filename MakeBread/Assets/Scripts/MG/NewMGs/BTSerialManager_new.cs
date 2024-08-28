@@ -32,19 +32,20 @@ public class BTSerialManager_new : MonoBehaviour
     public string nowGameScene = "TitleScene";
     public SceneNames _nowScene;
     
-    private string[] _oldMessage = new string[5] { "", "", "", "", ""}; //あまり意味がないかも
+    //private string[] _oldMessage = new string[5] { "", "", "", "", ""}; //あまり意味がないかも
     public string readUid = "";
 
     /// <summary>
     /// Null検知用
     /// </summary>
     private string _strNull = "\r";
-    private int _countImput = 1;
+    //private int _countImput = 1;
 
     //public bool isEnter = false;
     //private string _enterNFC = "04D1BEAF790000\r";  //Enter(Return)NFC UID
     //private string _backSpaceNFC = "048E69B2790000\r";  //BackSpaceNFC UID
     private string _strShaked = "Shaked\r";
+    private string _strButtonA = "ButtonA\r";
 
     //複数回送られてくるシリアルデータの1回目を判別する用。もしかしたら同じもの連続で読めるようになるかも。
     private int _receiveStrCount = 0;
@@ -131,6 +132,10 @@ public class BTSerialManager_new : MonoBehaviour
         else if (_nowScene == SceneNames.CookingPotBT)
         {
             ItemSelectMG.IsShaked = true;
+        }
+        else if(_nowScene == SceneNames.FermentScene)
+        {
+
         }
         else if (_nowScene == SceneNames.ResultScene)
         {

@@ -62,6 +62,8 @@ public class GameMG_new : MonoBehaviour
     public static bool isItemsObjExit = false;
     //public static bool isResultBreadActive = false;
 
+    public string score_Ferment = "C";
+
     /// <summary>
     /// [3]に焼いたパンの結果を入れる。状態は普通、上等、焼きすぎの3種類
     /// </summary>
