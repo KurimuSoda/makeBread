@@ -8,12 +8,12 @@ public class OvenTimers : MonoBehaviour
     private GameMG_new _gameMG;
     [SerializeField] private OvenMG _ovenMG;
     [SerializeField] private GameObject _finishPanel;
-    public static bool isGoodTemperature = false;
-    public static bool isTooHot = false;
+    //public static bool isGoodTemperature = false;
+    //public static bool isTooHot = false;
 
     
-    public float coldTime = 10.0f;
-    public float tooHotTime = 8.0f;
+    //public float coldTime = 10.0f;
+    //public float tooHotTime = 8.0f;
     
 
     /// <summary>
@@ -47,10 +47,11 @@ public class OvenTimers : MonoBehaviour
             Debug.Log("Kansei!");
             _timeUpCount++;
         }
-        else if(_isTimeUp == false)
+        else if(_ovenMG._isGameStart == true)
         {
             HalfMinutesTimer();
         }
+        /*
         if (isGoodTemperature)
         {
             coldTime += Time.deltaTime;
@@ -60,15 +61,15 @@ public class OvenTimers : MonoBehaviour
         {
             tooHotTime += Time.deltaTime;
         }
-        
+        */
         
     }
 
     public void OvenTimerInit()
     {
         _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
-        coldTime = 0.0f;
-        tooHotTime = 0.0f;
+        //coldTime = 0.0f;
+        //tooHotTime = 0.0f;
         _breadStatus = "";
         _isTimeUp = false;
         _timeUpCount = 0;

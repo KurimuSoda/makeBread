@@ -8,12 +8,13 @@ public class OvenMG : MonoBehaviour
 
     [SerializeField] private GameObject _fireObj;
     [SerializeField] private GameObject _efectObj;
+    [SerializeField] private GameObject _howtoObj;
 
     private Vector3 _fireObjTrans = new Vector3(0f, 0f, 0f);
     [SerializeField] private float _addScale = 0.1f;
     [SerializeField] private float _downScale = 0.01f;
 
-    private bool _isGameStart = false;
+    public bool _isGameStart = false;
 
     //火力強すぎのライン
     private float _hotLine = 1.7f;
@@ -52,11 +53,16 @@ public class OvenMG : MonoBehaviour
     {
         IsShaked = false;
         _efectObj.SetActive(false);
+        _howtoObj.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(_isGameStart == false && Input.GetKeyDown(KeyCode.Space))
+        {
+            OvenGameStart();
+        }
         if (_isGameStart == false) return;
 
         //M5からShakeが送られてきたらBTSerialMGでtrueにする。trueの時に行う処理
@@ -69,13 +75,9 @@ public class OvenMG : MonoBehaviour
         ZoneJadge();
     }
 
-    private void OvenGameStart()
-    {
-        _isGameStart = true;
-    }
-
     private void FixedUpdate()
     {
+        if (_isGameStart == false) return;
         FireObjDownScale();
     }
 
@@ -89,6 +91,12 @@ public class OvenMG : MonoBehaviour
         _coldCookCount = 0.0f;
         _coldTime = 10.0f;
         _tooHotTime = 8.0f;
+    }
+
+    private void OvenGameStart()
+    {
+        _howtoObj.SetActive(false);
+        _isGameStart = true;
     }
 
     /// <summary>

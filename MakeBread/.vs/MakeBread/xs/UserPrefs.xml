@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/FermentMG.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/OvenMG.cs">
     <Files>
-      <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="50" Column="44" />
+      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
       <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
-      <File FileName="Assets/Scripts/OvenTimers.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="16" Column="18" />
+      <File FileName="Assets/Scripts/OvenTimers.cs" Line="72" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -32,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="292a8a4c-6c3c-4aa6-8e10-6af17336fba3" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ca0b0c6d-e6df-4c64-8d28-6c3395d072ad" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />

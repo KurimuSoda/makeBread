@@ -4131,8 +4131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ovenMG: {fileID: 1191047136}
   _finishPanel: {fileID: 2003752793}
-  coldTime: 10
-  tooHotTime: 8
   _timerText: {fileID: 974742659}
 --- !u!114 &1191047136
 MonoBehaviour:
@@ -4148,8 +4146,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fireObj: {fileID: 1169214868}
   _efectObj: {fileID: 1514680390}
+  _howtoObj: {fileID: 1145261479}
   _addScale: 0.1
   _downScale: 0.002
+  _isGameStart: 0
+  _overCookCount: 0
+  _coldCookCount: 0
 --- !u!1 &1201489183
 GameObject:
   m_ObjectHideFlags: 0

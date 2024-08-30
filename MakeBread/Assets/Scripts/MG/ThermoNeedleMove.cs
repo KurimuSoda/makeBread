@@ -58,7 +58,7 @@ public class ThermoNeedleMove : MonoBehaviour
         }
         */
 
-        TemperatureJadge();
+        //TemperatureJadge();
         
 
 
@@ -109,6 +109,7 @@ public class ThermoNeedleMove : MonoBehaviour
 
     }
 
+    /*
     private void TemperatureJadge()
     {
         //float nowRotZ = _needleObj.transform.localEulerAngles.z;
@@ -143,4 +144,6 @@ public class ThermoNeedleMove : MonoBehaviour
             
         }
     }
+    */
+
 }
