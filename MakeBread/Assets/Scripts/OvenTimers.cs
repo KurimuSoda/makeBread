@@ -11,8 +11,10 @@ public class OvenTimers : MonoBehaviour
     public static bool isGoodTemperature = false;
     public static bool isTooHot = false;
 
+    
     public float coldTime = 10.0f;
     public float tooHotTime = 8.0f;
+    
 
     /// <summary>
     /// string Status
@@ -37,6 +39,7 @@ public class OvenTimers : MonoBehaviour
         if (_isTimeUp)
         {
             if (_timeUpCount > 1) return;
+            _isTimeUp = false;
             _finishPanel.SetActive(true);
             _breadStatus = _ovenMG.JadgeBreadStatus();
             _gameMG.BreadStatusPutArray(_breadStatus);

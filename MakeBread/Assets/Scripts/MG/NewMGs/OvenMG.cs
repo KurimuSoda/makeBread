@@ -13,15 +13,35 @@ public class OvenMG : MonoBehaviour
     [SerializeField] private float _addScale = 0.1f;
     [SerializeField] private float _downScale = 0.01f;
 
+    private bool _isGameStart = false;
+
     //火力強すぎのライン
-    private float _hotLine = 1.75f;
-    private float _overCookCount = 0.0f;
+    private float _hotLine = 1.7f;
+    /// <summary>
+    /// 火力強すぎの時の時間の合計
+    /// </summary>
+    [SerializeField]private float _overCookCount = 0.0f;
 
-    private float _coldLine = 0.5f;
-    private float _rawCookCount = 0.0f;
+    //火力弱すぎのライン
+    private float _coldLine = 0.6f;
+    /// <summary>
+    /// 火力弱すぎの時の時間の合計
+    /// </summary>
+    [SerializeField]private float _coldCookCount = 0.0f;
 
+    /// <summary>
+    /// 生焼けになる時間。この時間以上火力弱すぎが続くと生焼け
+    /// </summary>
     private float _coldTime = 10.0f;
+
+    /// <summary>
+    /// 焼きすぎになる時間。この時間以上火力強すぎが続くと黒焦げ
+    /// </summary>
     private float _tooHotTime = 8.0f;
+
+    private float _goodLineUpper = 1.7f;
+    private float _goodLineLower = 1.3f;
+    private float _goodCookCount = 0.0f;
 
     private float _upperLimit = 1.9f;
     private float _lowerLimit = 0.3f;
@@ -31,19 +51,27 @@ public class OvenMG : MonoBehaviour
     void Start()
     {
         IsShaked = false;
+        _efectObj.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //M5からShakeが送られてきたらBTSerialMGでtrueにする。trueの時に行う処理v
+        if (_isGameStart == false) return;
+
+        //M5からShakeが送られてきたらBTSerialMGでtrueにする。trueの時に行う処理
         if (IsShaked || Input.GetKeyDown(KeyCode.S))
         {
             FireObjAddScale();
             IsShaked = false;
         }
 
-        BadZoneJadge();
+        ZoneJadge();
+    }
+
+    private void OvenGameStart()
+    {
+        _isGameStart = true;
     }
 
     private void FixedUpdate()
@@ -55,10 +83,10 @@ public class OvenMG : MonoBehaviour
     {
         IsShaked = false;
         _fireObjTrans = new Vector3(0f, 0f, 0f);
-        _hotLine = 1.75f;
+        _hotLine = 1.7f;
         _overCookCount = 0.0f;
-        _coldLine = 0.5f;
-        _rawCookCount = 0.0f;
+        _coldLine = 0.6f;
+        _coldCookCount = 0.0f;
         _coldTime = 10.0f;
         _tooHotTime = 8.0f;
     }
@@ -90,7 +118,7 @@ public class OvenMG : MonoBehaviour
         _fireObj.transform.localScale = new Vector3(_fireObjTrans.x, _fireObjTrans.y, 0.0f);
     }
 
-    private void BadZoneJadge()
+    private void ZoneJadge()
     {
         if(_fireObj.transform.localScale.x >= _hotLine)
         {
@@ -99,13 +127,21 @@ public class OvenMG : MonoBehaviour
         }
         else if(_fireObj.transform.localScale.x <= _coldLine)
         {
-            _rawCookCount += Time.deltaTime;
+            _coldCookCount += Time.deltaTime;
             _efectObj.SetActive(false);
         }
-        else
+        else if(_fireObj.transform.localScale.x < _goodLineUpper && _fireObj.transform.localScale.x > _goodLineLower)
         {
+            _goodCookCount += Time.deltaTime;
             _efectObj.SetActive(true);
         }
+        
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log(JadgeBreadStatus());
+        Debug.Log("hot time: " + _overCookCount + "cold time: " + _coldCookCount + "good time: " + _goodCookCount);
     }
 
     public string JadgeBreadStatus()
@@ -115,15 +151,22 @@ public class OvenMG : MonoBehaviour
         {
             _breadStatus = "OverCoocked";
         }
-        else if (_rawCookCount >= _coldTime || _overCookCount <= _tooHotTime)
+        else if (_coldCookCount >= _coldTime && _overCookCount < _tooHotTime)
         {
-            _breadStatus = "Nomal";
+            _breadStatus = "Raw";
         }
-        else if (_rawCookCount > _coldTime && _overCookCount < _tooHotTime)
+        else if (_coldCookCount < _coldTime && _overCookCount < _tooHotTime)
         {
-            _breadStatus = "Good";
+            if (_goodCookCount >= 10.0f)
+            {
+                _breadStatus = "Perfect";
+            }
+            else
+            {
+                _breadStatus = "Good";
+            }
+            
         }
-
         return _breadStatus;
 
     }

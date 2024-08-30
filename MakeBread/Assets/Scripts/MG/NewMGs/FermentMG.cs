@@ -23,13 +23,32 @@ public class FermentMG : MonoBehaviour
     /// </summary>
     [SerializeField] private float _time = 0.2f;
 
+    /// <summary>
+    /// スコアの評価を決めるために使用する変数
+    /// </summary>
     [SerializeField] private float score_Ferment = 0.0f;
 
+    /// <summary>
+    /// 操作説明を表示するオブジェクト
+    /// </summary>
     [SerializeField] private GameObject _howtoObj;
 
+    /// <summary>
+    /// リザルトスコアUIをまとめてオンオフするためのオブジェクト
+    /// </summary>
     [SerializeField] private GameObject scoreCanvas;
+
+    /// <summary>
+    /// スコアの文字をアニメーションするのに使う
+    /// </summary>
     [SerializeField] private RectTransform scCan;
+
+    //スコアに対してコメントを表示するためのTMP
     [SerializeField] private TextMeshProUGUI comment;
+
+    /// <summary>
+    /// スコアの文字を表示するためのTMP。S+, S, A, B, C の5つ
+    /// </summary>
     [SerializeField] private TextMeshProUGUI scoreTx;
 
     private Vector3 scoreSize = new Vector3(1.0f, 1.0f, 1.0f);
@@ -50,16 +69,24 @@ public class FermentMG : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            _howtoObj.SetActive(false);
-            scoreCanvas.SetActive(false);
-            scCan.transform.DOKill();
-            BreadAnimStart();
+            FermentGameStart();
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
             BreadAnimKill();
         }
        
+    }
+
+    /// <summary>
+    /// 発酵ゲームを始める。アニメーション再生の関数を呼び出す。
+    /// </summary>
+    public void FermentGameStart()
+    {
+        _howtoObj.SetActive(false);
+        scoreCanvas.SetActive(false);
+        scCan.transform.DOKill();
+        BreadAnimStart();
     }
 
     /// <summary>
@@ -138,6 +165,7 @@ public class FermentMG : MonoBehaviour
 
     }
 
+    // このオブジェクトが破棄される時に呼び出される。今回はシーン遷移直前の想定
     private void OnDestroy()
     {
         _gameMG.score_Ferment = scoreTx.text;
