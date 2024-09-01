@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 //TODO 1度に2回設置してしまうのをなんとかする
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
@@ -8,13 +10,36 @@ public class ItemSelectMG : MonoBehaviour
     private GameMG_new _gameMG;
     [SerializeField] private static int _randomBaseItem = 0;
 
+    [SerializeField] private GameObject _popUpObj;
+    [SerializeField] private Image _popUpItemImg;
+
     public static bool IsShaked = false;
+    public static bool IsButtonAPrs = false;
+    public static int PopUpItemArrNum = -1;
+    public static string PopUpItemID = "";
+
+    private int _popUpItemNum = 0;
+    private string _popUpItemID = "";
+
+    private KeyCode[] _numbersKey = new KeyCode[]
+    {
+        KeyCode.Alpha1,KeyCode.Alpha2,
+        KeyCode.Alpha3,KeyCode.Alpha4,KeyCode.Alpha5,
+        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
+    };
+
+    private int _countImput = 0;
+
+    private int _inputUPLimit = 4;
+    private int _inputLowerLimit = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         _gameMG = GameObject.Find("Manager").GetComponent<GameMG_new>();
         ItemSelectMGInit();
+
+        _popUpObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -26,6 +51,38 @@ public class ItemSelectMG : MonoBehaviour
 
             _gameMG.ItemSelectFinish();
             
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            SetItemANDPopOff();
+        }
+
+        if (Input.anyKeyDown)
+        {
+            for (int i = 0; i < _numbersKey.Length; i++)
+            {
+                if (Input.GetKeyDown(_numbersKey[i]))
+                {
+                    _countImput++;
+                    _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+                    _gameMG._countImput = _countImput;
+                    //_gameMG.SetBread(i);
+                    PopOnUseArrayNum(i);
+                }
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(PopUpItemArrNum != -1)
+        {
+            _popUpItemNum = PopUpItemArrNum;
+            _popUpItemID = PopUpItemID;
+            //PopOnUseArrayNum(_popUpItemNum);
+            PopOnUseID(_popUpItemID);
+            PopUpItemArrNum = -1;
+            PopUpItemID = "";
         }
     }
 
@@ -47,6 +104,31 @@ public class ItemSelectMG : MonoBehaviour
         _randomBaseItem = Random.Range(0, inputCount + 1);
         GameMG_new._RandomItem = _randomBaseItem;
         Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", Inputsount is --> " + inputCount);
+    }
+
+    public void PopOnUseID(string itemname_ID)
+    {
+        _popUpObj.SetActive(true);
+        _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + itemname_ID);
+
+        _popUpItemID = "";
+    }
+
+    public void PopOnUseArrayNum(int itemArrayNum)
+    {
+        _popUpObj.SetActive(true);
+        _popUpItemNum = itemArrayNum;
+        _popUpItemID = _gameMG.ArrayNumTOItemID(itemArrayNum);
+        _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + _popUpItemID);
+
+        _popUpItemID = "";
+    }
+
+    public void SetItemANDPopOff()
+    {
+        _gameMG.SetBread(_popUpItemNum);
+        _popUpItemNum = 0;
+        _popUpObj.SetActive(false);
     }
     
 }

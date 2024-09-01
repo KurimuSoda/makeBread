@@ -33,14 +33,6 @@ public class GameMG_new : MonoBehaviour
     private TasteManager _tasteMG = new TasteManager();
     private SceneNameMG _sceneNameMG = new SceneNameMG();
     
-    
-    private KeyCode[] _numbersKey = new KeyCode[]
-    {
-        KeyCode.Alpha1,KeyCode.Alpha2,
-        KeyCode.Alpha3,KeyCode.Alpha4,KeyCode.Alpha5,
-        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
-    };
-
     /// <summary>
     /// 選んだアイテムの中からランダムで一つを選ぶ(string ID)
     /// </summary>
@@ -51,7 +43,7 @@ public class GameMG_new : MonoBehaviour
     public static int _RandomItem = 0;
     private static int _lastItemTaste = 0;
 
-    private int _countImput = 0;
+    public int _countImput = 0;
 
     private int _inputUPLimit = 4;
     private int _inputLowerLimit = 0;
@@ -115,19 +107,7 @@ public class GameMG_new : MonoBehaviour
             //_initMG.TitleInit();
             GameMGInit();
         }
-        
-        if (Input.anyKeyDown)
-        {
-            for(int i = 0; i < _numbersKey.Length; i++)
-            {
-                if (Input.GetKeyDown(_numbersKey[i]))
-                {
-                    _countImput++;
-                    _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
-                    SetBread(i);
-                }
-            }
-        }
+
         
 
         if (isItemsObjExit)
@@ -276,6 +256,26 @@ public class GameMG_new : MonoBehaviour
         StartCoroutine(LoadSceneAsync("OvenFire"));
     }
 
+    public string ArrayNumTOItemID(int arrayNum)
+    {
+        string itemID = breadData.Bread_date[arrayNum].id;
+        return itemID;
+    }
+
+    /// <summary>
+    /// UIDをもとにアイテムを検索する。
+    /// </summary>
+    /// <param name="readuid">messageで送られてきたUIDを渡す</param>
+    public void SearchItemDataUID(string readuid)
+    {
+        //if (_countImput > 3) return;
+        //_btSerialMG._readStatus = ReadStatus.StopRead;
+        int itemNo = _nfcChecks.UIDtoArrayNo(readuid);
+        string itemID = breadData.Bread_date[itemNo].id;
+
+        ItemSelectMG.PopUpItemArrNum = itemNo;
+        ItemSelectMG.PopUpItemID = itemID;
+    }
 
     /// <summary>
     /// UIDをもとにアイテムを検索し、画像付きオブジェクト生成の関数を実行する。
@@ -297,7 +297,7 @@ public class GameMG_new : MonoBehaviour
     /// 配列番号を引数に受け取り該当するアイテムのオブジェクトを生成する
     /// </summary>
     /// <param name="number">アイテムの配列番号</param>
-    private void SetBread(int number)
+    public void SetBread(int number)
     {
         Debug.Log(breadData.Bread_date[number].name);
         _breadInstantiate.SummonBreadObj(breadData.Bread_date[number].id, breadData.Bread_date[number].taste);
