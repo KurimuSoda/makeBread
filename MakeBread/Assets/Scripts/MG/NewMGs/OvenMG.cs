@@ -152,6 +152,10 @@ public class OvenMG : MonoBehaviour
         Debug.Log("hot time: " + _overCookCount + "cold time: " + _coldCookCount + "good time: " + _goodCookCount);
     }
 
+    /// <summary>
+    /// パンの焼き加減を4段階で判定し、文字列で返す
+    /// </summary>
+    /// <returns>焼き加減 Raw, OverCooked, Good, Perfect</returns>
     public string JadgeBreadStatus()
     {
         string _breadStatus = "";

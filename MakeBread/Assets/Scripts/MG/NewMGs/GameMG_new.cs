@@ -54,12 +54,15 @@ public class GameMG_new : MonoBehaviour
     public static bool isItemsObjExit = false;
     //public static bool isResultBreadActive = false;
 
+    /// <summary>
+    /// 発酵フェーズのスコア
+    /// </summary>
     public string score_Ferment = "C";
 
     /// <summary>
     /// [3]に焼いたパンの結果を入れる。状態は普通、上等、焼きすぎの3種類
     /// </summary>
-    private string[] breadStatuses = new string[4] { "Nomal", "Good", "OverCoocked", "" };
+    private string[] breadStatuses = new string[5] { "Raw", "OverCoocked", "Good", "Perfect", "" };
 
     public string nowSceneName = "";
 
@@ -149,7 +152,7 @@ public class GameMG_new : MonoBehaviour
     /// <param name="breadStatus">Nomal or Good or OverCoockedのどれかを文字列で渡す</param>
     public void BreadStatusPutArray(string breadStatus)
     {
-        breadStatuses[3] = breadStatus;
+        breadStatuses[4] = breadStatus;
     }
 
     /// <summary>
@@ -167,7 +170,7 @@ public class GameMG_new : MonoBehaviour
     /// <returns></returns>
     public string SendBakeStatus()
     {
-        return breadStatuses[3];
+        return breadStatuses[4];
     }
 
     /// <summary>
