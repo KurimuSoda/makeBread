@@ -107,5 +107,10 @@ public class NFCChecks: MonoBehaviour
         Debug.Log("ItemLength :" + _itemLength);
     }
 
+    public int ReturnItemDataLength()
+    {
+        return _itemLength;
+    }
+
 }
 

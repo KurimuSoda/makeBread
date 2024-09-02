@@ -30,10 +30,12 @@ public class ItemSelectMG : MonoBehaviour
         KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
     };
 
+    /*
     private int _countImput = 0;
 
     private int _inputUPLimit = 4;
     private int _inputLowerLimit = 0;
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -112,7 +114,7 @@ public class ItemSelectMG : MonoBehaviour
     {
         _randomBaseItem = 0;
         _randomBaseItem = Random.Range(0, inputCount + 1);
-        GameMG_new._RandomItem = _randomBaseItem;
+        GameMG_new.RandomItem = _randomBaseItem;
         Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", inputCount is --> " + inputCount);
     }
 

@@ -10,13 +10,22 @@ public class ResultSceneMG : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _ovenScore;
     [SerializeField] private TextMeshProUGUI _fermentScore;
+    [SerializeField] private TextMeshProUGUI _breadNameTx;
+
+    private string _breadName = "";
+
+    private void Awake()
+    {
+        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
+        _breadName =  _gameMG.SendBreadName();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
         _ovenScore.text = _gameMG.SendBakeStatus();
         _fermentScore.text = _gameMG.score_Ferment;
+        _breadNameTx.text = _breadName;
     }
 
     // Update is called once per frame
@@ -28,4 +37,5 @@ public class ResultSceneMG : MonoBehaviour
             StartCoroutine(_gameMG.LoadSceneAsync("TitleScene"));
         }
     }
+
 }

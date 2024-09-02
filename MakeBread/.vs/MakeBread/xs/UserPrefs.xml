@@ -1,23 +1,26 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/FermentMG.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs">
     <Files>
       <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="117" Column="32" />
       <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="10" Column="7" />
-      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="227" Column="25" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="130" Column="10" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" Line="21" Column="30" />
-      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="205" Column="29" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="143" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" Line="19" Column="84" />
+      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="138" Column="15" />
+      <File FileName="Assets/Scripts/MG/NFCChecks.cs" Line="112" Column="28" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="38" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MakeBread" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
                 <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
                   <Node name="NewMGs" expanded="True">
-                    <Node name="FermentMG.cs" selected="True" />
+                    <Node name="ResultSceneMG.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
