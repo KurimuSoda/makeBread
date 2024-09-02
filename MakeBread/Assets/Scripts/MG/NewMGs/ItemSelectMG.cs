@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //TODO 1度に2回設置してしまうのをなんとかする
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
 {
     private GameMG_new _gameMG;
+    [SerializeField] private IconColorChange _iconColorChange;
     [SerializeField] private static int _randomBaseItem = 0;
 
     [SerializeField] private GameObject _popUpObj;
     [SerializeField] private Image _popUpItemImg;
+    [SerializeField] private TextMeshProUGUI _itemNameTx;
 
     public static bool IsShaked = false;
     public static bool IsButtonAPrs = false;
@@ -52,7 +55,7 @@ public class ItemSelectMG : MonoBehaviour
             _gameMG.ItemSelectFinish();
             
         }
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) || IsButtonAPrs == true)
         {
             SetItemANDPopOff();
         }
@@ -63,13 +66,17 @@ public class ItemSelectMG : MonoBehaviour
             {
                 if (Input.GetKeyDown(_numbersKey[i]))
                 {
-                    _countImput++;
-                    _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
-                    _gameMG._countImput = _countImput;
+                    //_countImput++;
+                    //_countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+                    //_gameMG._countImput = _countImput;
                     //_gameMG.SetBread(i);
                     PopOnUseArrayNum(i);
                 }
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            _gameMG.RemoveBread();
         }
     }
 
@@ -90,6 +97,9 @@ public class ItemSelectMG : MonoBehaviour
     {
         _randomBaseItem = 0;
         IsShaked = false;
+        IsButtonAPrs = false;
+        PopUpItemArrNum = -1;
+        PopUpItemID = "";
 
         Random.InitState(System.DateTime.Now.Millisecond);
     }
@@ -103,23 +113,43 @@ public class ItemSelectMG : MonoBehaviour
         _randomBaseItem = 0;
         _randomBaseItem = Random.Range(0, inputCount + 1);
         GameMG_new._RandomItem = _randomBaseItem;
-        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", Inputsount is --> " + inputCount);
+        Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", inputCount is --> " + inputCount);
     }
 
+    /// <summary>
+    /// NFC
+    /// </summary>
+    /// <param name="itemname_ID"></param>
     public void PopOnUseID(string itemname_ID)
     {
         _popUpObj.SetActive(true);
         _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + itemname_ID);
 
+        int taste = _gameMG.ArrayTOTaste(_popUpItemNum);
+        IconColor(taste);
+
+        string itemName = _gameMG.ArrayTOName(_popUpItemNum);
+        _itemNameTx.text = itemName;
+
         _popUpItemID = "";
     }
 
+    /// <summary>
+    /// KeyBord
+    /// </summary>
+    /// <param name="itemArrayNum"></param>
     public void PopOnUseArrayNum(int itemArrayNum)
     {
         _popUpObj.SetActive(true);
         _popUpItemNum = itemArrayNum;
         _popUpItemID = _gameMG.ArrayNumTOItemID(itemArrayNum);
         _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + _popUpItemID);
+
+        int taste = _gameMG.ArrayTOTaste(itemArrayNum);
+        IconColor(taste);
+
+        string itemName = _gameMG.ArrayTOName(itemArrayNum);
+        _itemNameTx.text = itemName;
 
         _popUpItemID = "";
     }
@@ -129,6 +159,25 @@ public class ItemSelectMG : MonoBehaviour
         _gameMG.SetBread(_popUpItemNum);
         _popUpItemNum = 0;
         _popUpObj.SetActive(false);
+    }
+
+    private void IconColor(int taste)
+    {
+        switch (taste)
+        {
+            case 1:
+                _iconColorChange.SweetIconOnry();
+                break;
+            case 2:
+                _iconColorChange.SpicyIconOnry();
+                break;
+            case 3:
+                _iconColorChange.SourIconOnry();
+                break;
+            case 4:
+                _iconColorChange.SaltIconOnry();
+                break;
+        }
     }
     
 }

@@ -85,7 +85,7 @@ public class GameMG_new : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
         if (Input.GetKeyDown(KeyCode.Backspace) || ItemSelectMG.IsShaked)
         {
             if (nowSceneName != "CookingPotBT") return;
@@ -253,9 +253,31 @@ public class GameMG_new : MonoBehaviour
         ItemSelectMG.RandomItemChose(_countImput);
         _FirstItem = _breadInstantiate.ReturnSelectItemID(_RandomItem);
 
-        StartCoroutine(LoadSceneAsync("OvenFire"));
+        StartCoroutine(LoadSceneAsync("FermentScene"));
     }
 
+    /// <summary>
+    /// 配列番号をもらって味を返す
+    /// </summary>
+    /// <param name="arrayNum"></param>
+    /// <returns></returns>
+    public int ArrayTOTaste(int arrayNum)
+    {
+        int taste = breadData.Bread_date[arrayNum].taste;
+        return taste;
+    }
+
+    public string ArrayTOName(int arrayNum)
+    {
+        string itemName = breadData.Bread_date[arrayNum].name;
+        return itemName;
+    }
+
+    /// <summary>
+    /// 配列番号を受け取って対応する素材のIDを返す
+    /// </summary>
+    /// <param name="arrayNum">素材の配列番号</param>
+    /// <returns>素材のID</returns>
     public string ArrayNumTOItemID(int arrayNum)
     {
         string itemID = breadData.Bread_date[arrayNum].id;
@@ -288,8 +310,8 @@ public class GameMG_new : MonoBehaviour
         int itemNo = _nfcChecks.UIDtoArrayNo(readuid);
         SetBread(itemNo);
 
-        _countImput++;
-        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        //_countImput++;
+        //_countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
     }
 
 
@@ -299,9 +321,25 @@ public class GameMG_new : MonoBehaviour
     /// <param name="number">アイテムの配列番号</param>
     public void SetBread(int number)
     {
+        if (_countImput > 3) return;
         Debug.Log(breadData.Bread_date[number].name);
         _breadInstantiate.SummonBreadObj(breadData.Bread_date[number].id, breadData.Bread_date[number].taste);
         //_btSerialMG._readStatus = ReadStatus.ReadOK;
+
+        _countImput++;
+        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        Debug.Log(_countImput);
+    }
+
+    /// <summary>
+    /// 選択されているアイテムを一つ消す
+    /// </summary>
+    public void RemoveBread()
+    {
+        _breadInstantiate.DeleteBreadObj();
+        _countImput--;
+        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        Debug.Log(_countImput);
     }
 
 

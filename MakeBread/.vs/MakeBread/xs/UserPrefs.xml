@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/ItemImageController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs">
     <Files>
-      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="91" Column="52" />
       <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="37" Column="29" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="8" Column="2" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="18" Column="7" />
-      <File FileName="Assets/Scripts/MG/NewMGs/IconColorChange.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/ItemImageController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="260" Column="22" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="130" Column="10" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="126" Column="55" />
+      <File FileName="Assets/Scripts/MG/ItemImageController.cs" Line="28" Column="1" />
+      <File FileName="Assets/Scripts/MG/TasteManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,8 +17,9 @@
               <Node name="Scripts" expanded="True">
                 <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
-                  <Node name="NewMGs" expanded="True" />
-                  <Node name="ItemImageController.cs" selected="True" />
+                  <Node name="NewMGs" expanded="True">
+                    <Node name="ItemSelectMG.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

@@ -88,7 +88,7 @@ public class BTSerialManager_new : MonoBehaviour
                 //送られてきた文字列の後ろに"\r"がついてるので消す
                 readUid = message.Replace("\r", "");
 
-                _gameMG.ItemDataSend(readUid);
+                _gameMG.SearchItemDataUID(readUid);
                 
             }
             
