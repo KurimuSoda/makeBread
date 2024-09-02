@@ -7,6 +7,7 @@ public class TitleMG : MonoBehaviour
     private GameMG_new _gameMG;
 
     public static bool IsShaked = false;
+    //public static bool IsButtonAPrs = false;
     // Start is called before the first frame update
     void Start()
     {

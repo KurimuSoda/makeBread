@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-//TODO 1度に2回設置してしまうのをなんとかする
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
 {
@@ -57,6 +56,7 @@ public class ItemSelectMG : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.I) || IsButtonAPrs == true)
         {
+            IsButtonAPrs = false;
             SetItemANDPopOff();
         }
 

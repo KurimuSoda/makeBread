@@ -7,6 +7,9 @@ using TMPro;
 public class FermentMG : MonoBehaviour
 {
     private GameMG_new _gameMG;
+
+    public static bool IsButtonAPrs = false;
+
     /// <summary>
     /// 生地オブジェクトの膨張をするかどうか
     /// </summary>
@@ -53,11 +56,15 @@ public class FermentMG : MonoBehaviour
 
     private Vector3 scoreSize = new Vector3(1.0f, 1.0f, 1.0f);
 
+    private bool _isFermentEnd = false;
+
     // Start is called before the first frame update
     void Start()
     {
         _howtoObj.SetActive(true);
         Random.InitState(System.DateTime.Now.Millisecond);
+        IsButtonAPrs = false;
+        _isFermentEnd = false;
         scoreCanvas.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         scCan.localScale = scoreSize;
         scoreCanvas.SetActive(false);
@@ -78,11 +85,22 @@ public class FermentMG : MonoBehaviour
        
     }
 
+    private void FixedUpdate()
+    {
+        if (_isFermentEnd && IsButtonAPrs == true)
+        {
+            IsButtonAPrs = false;
+            _gameMG.FermentFinish();
+        }
+    }
+
     /// <summary>
     /// 発酵ゲームを始める。アニメーション再生の関数を呼び出す。
     /// </summary>
     public void FermentGameStart()
     {
+        IsButtonAPrs = false;
+        _isFermentEnd = false;
         _howtoObj.SetActive(false);
         scoreCanvas.SetActive(false);
         scCan.transform.DOKill();
@@ -116,8 +134,8 @@ public class FermentMG : MonoBehaviour
     /// </summary>
     private void FermentJadge()
     {
-        float breadScale = 1.0f;
-        breadScale = _BreadKiji.transform.localScale.x * 10;
+        //float breadScale = 1.0f;
+        float breadScale = _BreadKiji.transform.localScale.x * 10;
         breadScale = Mathf.Floor(breadScale) * 0.1f;
         score_Ferment = breadScale - 1.0f;
 
@@ -163,11 +181,13 @@ public class FermentMG : MonoBehaviour
             .SetEase(Ease.OutBack, 3.0f)
             .SetDelay(0.8f);
 
+        _isFermentEnd = true;
     }
 
     // このオブジェクトが破棄される時に呼び出される。今回はシーン遷移直前の想定
     private void OnDestroy()
     {
+        IsButtonAPrs = false;
         _gameMG.score_Ferment = scoreTx.text;
     }
 }

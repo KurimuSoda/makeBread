@@ -5,6 +5,7 @@ using UnityEngine;
 public class OvenMG : MonoBehaviour
 {
     public static bool IsShaked = false;
+    public static bool IsButtonAPrs = false;
 
     [SerializeField] private GameObject _fireObj;
     [SerializeField] private GameObject _efectObj;
@@ -59,8 +60,9 @@ public class OvenMG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isGameStart == false && Input.GetKeyDown(KeyCode.Space))
+        if(_isGameStart == false && Input.GetKeyDown(KeyCode.Space) || IsButtonAPrs == true)
         {
+            IsButtonAPrs = false;
             OvenGameStart();
         }
         if (_isGameStart == false) return;

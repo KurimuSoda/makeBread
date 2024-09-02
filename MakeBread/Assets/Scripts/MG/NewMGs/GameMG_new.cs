@@ -89,14 +89,6 @@ public class GameMG_new : MonoBehaviour
     void Update()
     {
         /*
-        if (Input.GetKeyDown(KeyCode.Backspace) || ItemSelectMG.IsShaked)
-        {
-            if (nowSceneName != "CookingPotBT") return;
-            _breadInstantiate.DeleteBreadObj();
-            _countImput--;
-            ItemSelectMG.IsShaked = false;
-        }
-        /*
         if (Input.GetKeyDown(KeyCode.Return))
         {
             _breadInstantiate.SelectionFixing();
@@ -220,11 +212,11 @@ public class GameMG_new : MonoBehaviour
 
         if(nowSceneName == _sceneNameMG.gameSceneNames[1])  //SelectItemScene
         {
-            _btSerialMG._readStatus = ReadStatus.ReadOK;
+            _btSerialMG.readStatus = ReadStatus.ReadOK;
         }
         else
         {
-            _btSerialMG._readStatus = ReadStatus.StopRead;
+            _btSerialMG.readStatus = ReadStatus.StopRead;
 
             if (nowSceneName == "TitleScene")
             {
@@ -257,6 +249,14 @@ public class GameMG_new : MonoBehaviour
         _FirstItem = _breadInstantiate.ReturnSelectItemID(_RandomItem);
 
         StartCoroutine(LoadSceneAsync("FermentScene"));
+    }
+
+    /// <summary>
+    /// 発酵し終わったあとに実行する
+    /// </summary>
+    public void FermentFinish()
+    {
+        StartCoroutine(LoadSceneAsync("OvenFire"));
     }
 
     /// <summary>
