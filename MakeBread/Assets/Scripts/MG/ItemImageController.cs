@@ -35,16 +35,16 @@ public class ItemImageController : MonoBehaviour
         switch (num)
         {
             case 1:
-                _rectTransform.anchoredPosition = new Vector2(-720.0f, -270.0f);
+                _rectTransform.anchoredPosition = new Vector2(-720.0f, -370.0f);
                 return;
             case 2:
-                _rectTransform.anchoredPosition = new Vector2(-240.0f, -270.0f);
+                _rectTransform.anchoredPosition = new Vector2(-240.0f, -370.0f);
                 return;
             case 3:
-                _rectTransform.anchoredPosition = new Vector2(240.0f, -270.0f);
+                _rectTransform.anchoredPosition = new Vector2(240.0f, -370.0f);
                 return;
             case 4:
-                _rectTransform.anchoredPosition = new Vector2(720.0f, -270.0f);
+                _rectTransform.anchoredPosition = new Vector2(720.0f, -370.0f);
                 return;
         }
             

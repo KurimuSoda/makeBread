@@ -33,14 +33,6 @@ public class GameMG_new : MonoBehaviour
     private TasteManager _tasteMG = new TasteManager();
     private SceneNameMG _sceneNameMG = new SceneNameMG();
     
-    
-    private KeyCode[] _numbersKey = new KeyCode[]
-    {
-        KeyCode.Alpha1,KeyCode.Alpha2,
-        KeyCode.Alpha3,KeyCode.Alpha4,KeyCode.Alpha5,
-        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
-    };
-
     /// <summary>
     /// 選んだアイテムの中からランダムで一つを選ぶ(string ID)
     /// </summary>
@@ -51,7 +43,7 @@ public class GameMG_new : MonoBehaviour
     public static int _RandomItem = 0;
     private static int _lastItemTaste = 0;
 
-    private int _countImput = 0;
+    public int _countImput = 0;
 
     private int _inputUPLimit = 4;
     private int _inputLowerLimit = 0;
@@ -62,12 +54,15 @@ public class GameMG_new : MonoBehaviour
     public static bool isItemsObjExit = false;
     //public static bool isResultBreadActive = false;
 
+    /// <summary>
+    /// 発酵フェーズのスコア
+    /// </summary>
     public string score_Ferment = "C";
 
     /// <summary>
     /// [3]に焼いたパンの結果を入れる。状態は普通、上等、焼きすぎの3種類
     /// </summary>
-    private string[] breadStatuses = new string[4] { "Nomal", "Good", "OverCoocked", "" };
+    private string[] breadStatuses = new string[5] { "Raw", "OverCoocked", "Good", "Perfect", "" };
 
     public string nowSceneName = "";
 
@@ -93,14 +88,6 @@ public class GameMG_new : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Backspace) || ItemSelectMG.IsShaked)
-        {
-            if (nowSceneName != "CookingPotBT") return;
-            _breadInstantiate.DeleteBreadObj();
-            _countImput--;
-            ItemSelectMG.IsShaked = false;
-        }
         /*
         if (Input.GetKeyDown(KeyCode.Return))
         {
@@ -115,19 +102,7 @@ public class GameMG_new : MonoBehaviour
             //_initMG.TitleInit();
             GameMGInit();
         }
-        
-        if (Input.anyKeyDown)
-        {
-            for(int i = 0; i < _numbersKey.Length; i++)
-            {
-                if (Input.GetKeyDown(_numbersKey[i]))
-                {
-                    _countImput++;
-                    _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
-                    SetBread(i);
-                }
-            }
-        }
+
         
 
         if (isItemsObjExit)
@@ -169,7 +144,7 @@ public class GameMG_new : MonoBehaviour
     /// <param name="breadStatus">Nomal or Good or OverCoockedのどれかを文字列で渡す</param>
     public void BreadStatusPutArray(string breadStatus)
     {
-        breadStatuses[3] = breadStatus;
+        breadStatuses[4] = breadStatus;
     }
 
     /// <summary>
@@ -187,7 +162,7 @@ public class GameMG_new : MonoBehaviour
     /// <returns></returns>
     public string SendBakeStatus()
     {
-        return breadStatuses[3];
+        return breadStatuses[4];
     }
 
     /// <summary>
@@ -237,11 +212,11 @@ public class GameMG_new : MonoBehaviour
 
         if(nowSceneName == _sceneNameMG.gameSceneNames[1])  //SelectItemScene
         {
-            _btSerialMG._readStatus = ReadStatus.ReadOK;
+            _btSerialMG.readStatus = ReadStatus.ReadOK;
         }
         else
         {
-            _btSerialMG._readStatus = ReadStatus.StopRead;
+            _btSerialMG.readStatus = ReadStatus.StopRead;
 
             if (nowSceneName == "TitleScene")
             {
@@ -273,9 +248,59 @@ public class GameMG_new : MonoBehaviour
         ItemSelectMG.RandomItemChose(_countImput);
         _FirstItem = _breadInstantiate.ReturnSelectItemID(_RandomItem);
 
+        StartCoroutine(LoadSceneAsync("FermentScene"));
+    }
+
+    /// <summary>
+    /// 発酵し終わったあとに実行する
+    /// </summary>
+    public void FermentFinish()
+    {
         StartCoroutine(LoadSceneAsync("OvenFire"));
     }
 
+    /// <summary>
+    /// 配列番号をもらって味を返す
+    /// </summary>
+    /// <param name="arrayNum"></param>
+    /// <returns></returns>
+    public int ArrayTOTaste(int arrayNum)
+    {
+        int taste = breadData.Bread_date[arrayNum].taste;
+        return taste;
+    }
+
+    public string ArrayTOName(int arrayNum)
+    {
+        string itemName = breadData.Bread_date[arrayNum].name;
+        return itemName;
+    }
+
+    /// <summary>
+    /// 配列番号を受け取って対応する素材のIDを返す
+    /// </summary>
+    /// <param name="arrayNum">素材の配列番号</param>
+    /// <returns>素材のID</returns>
+    public string ArrayNumTOItemID(int arrayNum)
+    {
+        string itemID = breadData.Bread_date[arrayNum].id;
+        return itemID;
+    }
+
+    /// <summary>
+    /// UIDをもとにアイテムを検索する。
+    /// </summary>
+    /// <param name="readuid">messageで送られてきたUIDを渡す</param>
+    public void SearchItemDataUID(string readuid)
+    {
+        //if (_countImput > 3) return;
+        //_btSerialMG._readStatus = ReadStatus.StopRead;
+        int itemNo = _nfcChecks.UIDtoArrayNo(readuid);
+        string itemID = breadData.Bread_date[itemNo].id;
+
+        ItemSelectMG.PopUpItemArrNum = itemNo;
+        ItemSelectMG.PopUpItemID = itemID;
+    }
 
     /// <summary>
     /// UIDをもとにアイテムを検索し、画像付きオブジェクト生成の関数を実行する。
@@ -288,8 +313,8 @@ public class GameMG_new : MonoBehaviour
         int itemNo = _nfcChecks.UIDtoArrayNo(readuid);
         SetBread(itemNo);
 
-        _countImput++;
-        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        //_countImput++;
+        //_countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
     }
 
 
@@ -297,11 +322,27 @@ public class GameMG_new : MonoBehaviour
     /// 配列番号を引数に受け取り該当するアイテムのオブジェクトを生成する
     /// </summary>
     /// <param name="number">アイテムの配列番号</param>
-    private void SetBread(int number)
+    public void SetBread(int number)
     {
+        if (_countImput > 3) return;
         Debug.Log(breadData.Bread_date[number].name);
         _breadInstantiate.SummonBreadObj(breadData.Bread_date[number].id, breadData.Bread_date[number].taste);
         //_btSerialMG._readStatus = ReadStatus.ReadOK;
+
+        _countImput++;
+        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        Debug.Log(_countImput);
+    }
+
+    /// <summary>
+    /// 選択されているアイテムを一つ消す
+    /// </summary>
+    public void RemoveBread()
+    {
+        _breadInstantiate.DeleteBreadObj();
+        _countImput--;
+        _countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
+        Debug.Log(_countImput);
     }
 
 

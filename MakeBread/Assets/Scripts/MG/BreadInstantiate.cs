@@ -120,14 +120,14 @@ public class BreadInstantiate : MonoBehaviour
     public void SelectionFixing()
     {
         _itemsParent.SetActive(false);
-            _isReturnCheck = true;
-            Debug.Log("確定!");
-            //Debug.Log("BiterCheck is : " + BiterCheck());
-            if (BiterCheck())
-            {
-                Debug.Log("Will Be Biter......");
-                _tasteManager.isBiter = true;
-            }
+        _isReturnCheck = true;
+        Debug.Log("確定!");
+        //Debug.Log("BiterCheck is : " + BiterCheck());
+        if (BiterCheck())
+        {
+            Debug.Log("Will Be Biter......");
+            _tasteManager.isBiter = true;
+        }
     }
 
     /// <summary>

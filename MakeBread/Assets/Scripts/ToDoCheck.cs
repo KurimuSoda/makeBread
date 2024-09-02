@@ -10,5 +10,6 @@ public class ToDoCheck
     //TODO リザルトのパンの回転方向をどうにかする
     //TODO タイトル画面用の初期化機能をつける
 
+    //TODO 実機テストをする
     
 }

@@ -27,7 +27,7 @@ public class BTSerialManager_new : MonoBehaviour
     /// <summary>
     /// M5からのシリアル通信を受け取るかどうかの状態を入れる
     /// </summary>
-    public ReadStatus _readStatus = ReadStatus.ReadOK;
+    public ReadStatus  readStatus = ReadStatus.ReadOK;
 
     public string nowGameScene = "TitleScene";
     public SceneNames _nowScene;
@@ -67,38 +67,54 @@ public class BTSerialManager_new : MonoBehaviour
     void OnDataReceived(string message)
     {
         //Read Serial
-        if(_readStatus == ReadStatus.ReadOK)
+        if(readStatus == ReadStatus.ReadOK)
         {
             if (_strNull == message)    //Null = "" が送られてきたとき
             {
                 _receiveStrCount = 0;
                 return;
             }
-            else if(_strShaked == message)
-            {
-                _receiveStrCount = 0;
-                return;
-            }
+            
             //Null = "" 以外が送られてきたとき
             _receiveStrCount++;
-            if (_receiveStrCount > 2) return;
+            if (_receiveStrCount > 1) return;
 
             if (_nowScene == SceneNames.CookingPotBT)
             {
-                //送られてきた文字列の後ろに"\r"がついてるので消す
-                readUid = message.Replace("\r", "");
+                if(_strButtonA == message)
+                {
+                    ItemSelectMG.IsButtonAPrs = true;
+                    return;
+                }
+                else if (_strShaked == message)
+                {
+                    M5Shaked();
+                    return;
+                }
+                else
+                {
+                    //送られてきた文字列の後ろに"\r"がついてるので消す
+                    readUid = message.Replace("\r", "");
 
-                _gameMG.ItemDataSend(readUid);
+                    _gameMG.SearchItemDataUID(readUid);
+                }
+
                 
             }
             
 
         }
-        else if(_readStatus == ReadStatus.StopRead)
+        else if(readStatus == ReadStatus.StopRead)
         {
             if (_strNull == message)    //Null = "" が送られてきたとき
             {
                 _receiveStrCount = 0;
+                return;
+            }
+
+            if(_strButtonA == message)
+            {
+                M5ButtonAPrs();
                 return;
             }
 
@@ -106,7 +122,7 @@ public class BTSerialManager_new : MonoBehaviour
             {
                 _receiveStrCount++;
 
-                if (_receiveStrCount > 2) return;
+                if (_receiveStrCount > 1) return;
 
                 Debug.Log("Shaked!!");
                 M5Shaked();
@@ -143,6 +159,14 @@ public class BTSerialManager_new : MonoBehaviour
         }
     }
 
+    private void M5ButtonAPrs()
+    {
+        if(_nowScene == SceneNames.OvenFire)
+        {
+            OvenMG.IsButtonAPrs = true;
+        }
+    }
+
     /*
     /// <summary>
     /// NFCでBackSpaceの代わりをするための関数。最新のアイテムを1つ消す。2回連続では使えない。
@@ -169,7 +193,7 @@ public class BTSerialManager_new : MonoBehaviour
         else if (nextScene == _sceneNameMG.gameSceneNames[2])
         {
             _nowScene = SceneNames.OvenFire;
-            _readStatus = ReadStatus.StopRead;
+            readStatus = ReadStatus.StopRead;
             //_thermometerCon.GetThermoDistance();
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[3])

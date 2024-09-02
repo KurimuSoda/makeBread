@@ -1,14 +1,12 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/ToldSceneName.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/FermentMG.cs">
     <Files>
-      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="51" Column="40" />
-      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ToldSceneName.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="117" Column="32" />
+      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="10" Column="7" />
+      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="227" Column="25" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="130" Column="10" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" Line="21" Column="30" />
+      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +17,7 @@
                 <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
                   <Node name="NewMGs" expanded="True">
-                    <Node name="ToldSceneName.cs" selected="True" />
+                    <Node name="FermentMG.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
@@ -31,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d7ffb0c0-5060-4268-9a0a-aaa713fce7d7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a05b6abc-5f40-45d8-92e5-3eef6408388a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />
@@ -41,8 +39,7 @@
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/BreadInstantiate.cs" relfile="Assets/Scripts/MG/BreadInstantiate.cs" line="38" column="1" />
       <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/BTSerialManager.cs" relfile="Assets/Scripts/MG/BTSerialManager.cs" line="109" column="1" />
       <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/GameMG.cs" relfile="Assets/Scripts/MG/GameMG.cs" line="206" column="1" />
-      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" relfile="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" line="88" column="1" />
-      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" relfile="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" line="82" column="1" />
+      <Breakpoint file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" relfile="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" line="93" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
