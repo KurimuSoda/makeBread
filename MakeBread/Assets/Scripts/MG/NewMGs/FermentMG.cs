@@ -9,6 +9,7 @@ public class FermentMG : MonoBehaviour
     private GameMG_new _gameMG;
 
     public static bool IsButtonAPrs = false;
+    public static bool IsShaked = false;
 
     /// <summary>
     /// 生地オブジェクトの膨張をするかどうか
@@ -74,17 +75,31 @@ public class FermentMG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (_isFermentEnd && IsButtonAPrs == true)
         {
+            IsButtonAPrs = false;
+            _gameMG.FermentFinish();
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) || IsShaked == true)
+        {
+            IsShaked = false;
             FermentGameStart();
         }
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) || IsButtonAPrs == true)
         {
+            IsButtonAPrs = false;
             BreadAnimKill();
+        }
+        if(Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.F))
+        {
+            _gameMG.FermentFinish();
         }
        
     }
 
+    /*
     private void FixedUpdate()
     {
         if (_isFermentEnd && IsButtonAPrs == true)
@@ -92,7 +107,7 @@ public class FermentMG : MonoBehaviour
             IsButtonAPrs = false;
             _gameMG.FermentFinish();
         }
-    }
+    }*/
 
     /// <summary>
     /// 発酵ゲームを始める。アニメーション再生の関数を呼び出す。

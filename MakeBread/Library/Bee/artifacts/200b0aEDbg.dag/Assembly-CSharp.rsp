@@ -394,6 +394,7 @@
 "Assets/Scripts/MG/ThermoNeedleMove.cs"
 "Assets/Scripts/OvenTimers.cs"
 "Assets/Scripts/SetActiveResultBread.cs"
+"Assets/Scripts/SimpleDOTweenAnim.cs"
 "Assets/Scripts/StickRotateController.cs"
 "Assets/Scripts/TestScripts/BTSerialTest.cs"
 "Assets/Scripts/TestScripts/TasteManager_old.cs"

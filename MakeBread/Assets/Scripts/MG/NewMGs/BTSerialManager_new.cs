@@ -88,7 +88,8 @@ public class BTSerialManager_new : MonoBehaviour
                 }
                 else if (_strShaked == message)
                 {
-                    M5Shaked();
+                    //M5Shaked();
+                    OvenMG.IsShaked = true;
                     return;
                 }
                 else
@@ -139,7 +140,6 @@ public class BTSerialManager_new : MonoBehaviour
         {
             //振られたフラグを立てる
             OvenMG.IsShaked = true;
-            //_thermometerCon.TemperatureUP();
         }
         else if(_nowScene == SceneNames.TitleScene)
         {
@@ -151,7 +151,7 @@ public class BTSerialManager_new : MonoBehaviour
         }
         else if(_nowScene == SceneNames.FermentScene)
         {
-
+            FermentMG.IsShaked = true;
         }
         else if (_nowScene == SceneNames.ResultScene)
         {
@@ -164,6 +164,10 @@ public class BTSerialManager_new : MonoBehaviour
         if(_nowScene == SceneNames.OvenFire)
         {
             OvenMG.IsButtonAPrs = true;
+        }
+        else if(_nowScene == SceneNames.FermentScene)
+        {
+            FermentMG.IsButtonAPrs = true;
         }
     }
 

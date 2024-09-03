@@ -53,7 +53,7 @@ MonoBehaviour:
     id: sour_01
     name: "\u30B9\u30C3\u30D1\u306E\u5B9F"
     taste: 3
-    uid: 04D3F4AA790000
+    uid: 04ABEFB0790000
     breadname: "\u30D5\u30EB\u30FC\u30C4\u30BF\u30EB\u30C8"
   - no: 8
     id: salt_01
