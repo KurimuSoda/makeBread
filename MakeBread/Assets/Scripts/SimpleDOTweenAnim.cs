@@ -26,6 +26,11 @@ public class SimpleDOTweenAnim : MonoBehaviour
     {
         _animObjTrans.transform.DOMoveY(_upwardValue, _upwardTime)
             .SetRelative(true)
-            .SetLoops(-1, LoopType.Yoyo);
+            .SetLoops(20, LoopType.Yoyo);
+    }
+    private void OnDestroy()
+    {
+        _animObjTrans.transform.DOKill();
+        _animObjTrans.DOKill();
     }
 }

@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/OvenMG.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImportScript/SerialHandler.cs">
     <Files>
       <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="110" Column="8" />
       <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="92" Column="44" />
-      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="52" Column="23" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="143" Column="1" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" Line="19" Column="84" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="78" Column="49" />
-      <File FileName="Assets/Scripts/SimpleDOTweenAnim.cs" Line="31" Column="2" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="73" Column="1" />
+      <File FileName="Assets/Scripts/SimpleDOTweenAnim.cs" Line="34" Column="32" />
       <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" Line="118" Column="50" />
+      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="13" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,11 +19,11 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ImportScript" expanded="True" />
+                <Node name="ImportScript" expanded="True">
+                  <Node name="SerialHandler.cs" selected="True" />
+                </Node>
                 <Node name="MG" expanded="True">
-                  <Node name="NewMGs" expanded="True">
-                    <Node name="OvenMG.cs" selected="True" />
-                  </Node>
+                  <Node name="NewMGs" expanded="True" />
                 </Node>
               </Node>
             </Node>
