@@ -11,4 +11,6 @@ public class BreadDataEntity
     public int taste;
     public string uid;
     public string breadname;
+    public string itemtext;
+    public string breadtext;
 }
