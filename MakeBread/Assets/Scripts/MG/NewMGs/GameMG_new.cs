@@ -37,11 +37,17 @@ public class GameMG_new : MonoBehaviour
     /// 選んだアイテムの中からランダムで一つを選ぶ(string ID)
     /// </summary>
     public  static string _FirstItem = "";
+
     /// <summary>
     /// ランダムで番号を入れる
     /// </summary>
-    public static int _RandomItem = 0;
+    public static int RandomItem = 0;
     private static int _lastItemTaste = 0;
+
+    /// <summary>
+    /// リザルトでパンの名前を表示するためにランダムで選ばれたアイテムの配列番号を保持する
+    /// </summary>
+    private int _randomItemint = 0;
 
     public int _countImput = 0;
 
@@ -157,6 +163,27 @@ public class GameMG_new : MonoBehaviour
     }
 
     /// <summary>
+    /// 
+    /// </summary>
+    /// <returns>string breadName</returns>
+    public string SendBreadName()
+    {
+        int length =_nfcChecks.ReturnItemDataLength();
+        string breadName = "";
+        for(int i = 0; i < length; i++)
+        {
+            if(_FirstItem == breadData.Bread_date[i].id)
+            {
+                _randomItemint = i;
+                breadName = breadData.Bread_date[i].breadname;
+                return breadName;
+            }
+        }
+
+        return breadName;
+    }
+
+    /// <summary>
     /// パンの焼き加減の状態を返す
     /// </summary>
     /// <returns></returns>
@@ -172,9 +199,10 @@ public class GameMG_new : MonoBehaviour
     {
         _FirstItem = "";
         _lastItemTaste = 0;
-        _RandomItem = 0;
+        RandomItem = 0;
         _countImput = 0;
-        breadStatuses[3] = "";
+        breadStatuses[4] = "";
+        score_Ferment = "C";
         nowSceneName = SceneManager.GetActiveScene().name;
 
         _nfcChecks.NFCChecksInit();
@@ -246,8 +274,8 @@ public class GameMG_new : MonoBehaviour
 
         //何番目のアイテムをベースにするかランダムで選出し_FirstItemにIDを記録する
         ItemSelectMG.RandomItemChose(_countImput);
-        _FirstItem = _breadInstantiate.ReturnSelectItemID(_RandomItem);
-
+        _FirstItem = _breadInstantiate.ReturnSelectItemID(RandomItem);
+        
         StartCoroutine(LoadSceneAsync("FermentScene"));
     }
 

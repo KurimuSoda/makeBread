@@ -88,6 +88,7 @@ public class BTSerialManager : MonoBehaviour
     /// <param name="message">送られてきたメッセージ</param>
     void OnDataReceived(string message)
     {
+        
         if(_readStatus == ReadStatus.ReadOK)
         {
             

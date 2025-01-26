@@ -60,16 +60,21 @@ public class OvenMG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_isGameStart == false && Input.GetKeyDown(KeyCode.Space) || IsButtonAPrs == true)
+        if(_isGameStart == false)
         {
-            IsButtonAPrs = false;
-            OvenGameStart();
+            if (Input.GetKeyDown(KeyCode.Space) || IsShaked == true)
+            {
+                IsShaked = false;
+                OvenGameStart();
+            }
+            
         }
         if (_isGameStart == false) return;
 
         //M5からShakeが送られてきたらBTSerialMGでtrueにする。trueの時に行う処理
         if (IsShaked || Input.GetKeyDown(KeyCode.S))
         {
+            Debug.Log("Fireeeee!!");
             FireObjAddScale();
             IsShaked = false;
         }

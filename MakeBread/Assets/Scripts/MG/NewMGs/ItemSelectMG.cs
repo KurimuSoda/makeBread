@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 //ItemSelectSceneに設置する
 public class ItemSelectMG : MonoBehaviour
@@ -11,14 +12,23 @@ public class ItemSelectMG : MonoBehaviour
     [SerializeField] private IconColorChange _iconColorChange;
     [SerializeField] private static int _randomBaseItem = 0;
 
+    [SerializeField] private GameObject _howToImage;
     [SerializeField] private GameObject _popUpObj;
     [SerializeField] private Image _popUpItemImg;
     [SerializeField] private TextMeshProUGUI _itemNameTx;
+    [SerializeField] private RectTransform _animRectTrans;
+    [SerializeField] private float _popAnimValue = 2.0f;
+    private float _popAnimTime = 1.0f;
 
     public static bool IsShaked = false;
     public static bool IsButtonAPrs = false;
     public static int PopUpItemArrNum = -1;
     public static string PopUpItemID = "";
+
+    /// <summary>
+    /// HoutoImageが表示されている間true
+    /// </summary>
+    public bool isHouwtoOn = true;
 
     private int _popUpItemNum = 0;
     private string _popUpItemID = "";
@@ -30,10 +40,12 @@ public class ItemSelectMG : MonoBehaviour
         KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
     };
 
+    /*
     private int _countImput = 0;
 
     private int _inputUPLimit = 4;
     private int _inputLowerLimit = 0;
+    */
 
     // Start is called before the first frame update
     void Start()
@@ -47,9 +59,23 @@ public class ItemSelectMG : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(isHouwtoOn == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space) || IsShaked == true)
+            {
+                _howToImage.SetActive(false);
+                isHouwtoOn = false;
+                return;
+
+            }
+            return;
+        }
+
+        
         if (Input.GetKeyDown(KeyCode.Return) || IsShaked == true)
         {
             IsShaked = false;
+            if (_gameMG._countImput < 1) return;
 
             _gameMG.ItemSelectFinish();
             
@@ -112,7 +138,7 @@ public class ItemSelectMG : MonoBehaviour
     {
         _randomBaseItem = 0;
         _randomBaseItem = Random.Range(0, inputCount + 1);
-        GameMG_new._RandomItem = _randomBaseItem;
+        GameMG_new.RandomItem = _randomBaseItem;
         Debug.Log("Random ItemNumber is ---> " + _randomBaseItem + ", inputCount is --> " + inputCount);
     }
 
@@ -141,6 +167,7 @@ public class ItemSelectMG : MonoBehaviour
     public void PopOnUseArrayNum(int itemArrayNum)
     {
         _popUpObj.SetActive(true);
+        //PopUpAnim();
         _popUpItemNum = itemArrayNum;
         _popUpItemID = _gameMG.ArrayNumTOItemID(itemArrayNum);
         _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + _popUpItemID);
@@ -178,6 +205,13 @@ public class ItemSelectMG : MonoBehaviour
                 _iconColorChange.SaltIconOnry();
                 break;
         }
+    }
+
+    private void PopUpAnim()
+    {
+        _animRectTrans.transform.DOScale(_popAnimValue, _popAnimTime)
+            .SetRelative(true)
+            .SetLoops(1, LoopType.Yoyo);
     }
     
 }

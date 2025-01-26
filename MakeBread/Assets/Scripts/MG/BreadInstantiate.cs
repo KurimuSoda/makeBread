@@ -140,4 +140,5 @@ public class BreadInstantiate : MonoBehaviour
         string firstItemID = _setBreadDataIDArray[number];
         return firstItemID;
     }
+
 }

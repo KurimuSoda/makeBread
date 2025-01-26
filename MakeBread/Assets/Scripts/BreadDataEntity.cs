@@ -10,4 +10,7 @@ public class BreadDataEntity
     public string name;
     public int taste;
     public string uid;
+    public string breadname;
+    public string itemtext;
+    public string breadtext;
 }
