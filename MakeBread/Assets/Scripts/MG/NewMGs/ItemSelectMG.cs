@@ -12,10 +12,20 @@ public class ItemSelectMG : MonoBehaviour
     [SerializeField] private IconColorChange _iconColorChange;
     [SerializeField] private static int _randomBaseItem = 0;
 
-    [SerializeField] private GameObject _howToImage;
+    [SerializeField] private GameObject _howToImage;    //操作説明表示用オブジェクト
     [SerializeField] private GameObject _popUpObj;
     [SerializeField] private Image _popUpItemImg;
+
+    /// <summary>
+    /// アイテムの名前を表示するためのオブジェクト
+    /// </summary>
     [SerializeField] private TextMeshProUGUI _itemNameTx;
+
+    /// <summary>
+    /// アイテム説明文を表示するためのオブジェクト
+    /// </summary>
+    [SerializeField] private TextMeshProUGUI _itemTextTx;
+
     [SerializeField] private RectTransform _animRectTrans;
     [SerializeField] private float _popAnimValue = 2.0f;
     private float _popAnimTime = 1.0f;
@@ -151,11 +161,17 @@ public class ItemSelectMG : MonoBehaviour
         _popUpObj.SetActive(true);
         _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + itemname_ID);
 
+        //味の情報をGM経由でデータから取り出す
         int taste = _gameMG.ArrayTOTaste(_popUpItemNum);
         IconColor(taste);
 
+        //アイテムの名前をGM経由でデータから取り出す
         string itemName = _gameMG.ArrayTOName(_popUpItemNum);
         _itemNameTx.text = itemName;
+
+        //アイテム説明文をGM経由でデータから取り出す
+        string itemText = _gameMG.ArrayTOItemtext(_popUpItemNum);
+        _itemTextTx.text = itemText;
 
         _popUpItemID = "";
     }
@@ -172,11 +188,18 @@ public class ItemSelectMG : MonoBehaviour
         _popUpItemID = _gameMG.ArrayNumTOItemID(itemArrayNum);
         _popUpItemImg.sprite = Resources.Load<Sprite>("Images/" + _popUpItemID);
 
+        //味の情報をGM経由でデータから取り出す
         int taste = _gameMG.ArrayTOTaste(itemArrayNum);
         IconColor(taste);
 
+        //アイテムの名前をGM経由でデータから取り出す
         string itemName = _gameMG.ArrayTOName(itemArrayNum);
         _itemNameTx.text = itemName;
+
+        //アイテム説明文をGM経由でデータから取り出す
+        string itemText = _gameMG.ArrayTOItemtext(_popUpItemNum);
+        _itemTextTx.text = itemText;
+
 
         _popUpItemID = "";
     }
