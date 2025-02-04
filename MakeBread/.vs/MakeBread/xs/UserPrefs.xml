@@ -4,10 +4,11 @@
       <File FileName="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" Line="201" Column="37" />
       <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="294" Column="19" />
       <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" />
-      <File FileName="Assets/Scripts/SimpleDOTweenAnim.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/TitleMG.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SimpleDOTweenAnim.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/OvenMG.cs" />
+      <File FileName="Assets/Scripts/MG/GMSingleton.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a8200a27-43ca-48a9-b2ff-409b75151ace" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="89b8b31f-9ceb-43ce-b0f4-df8fb26fc47f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />
