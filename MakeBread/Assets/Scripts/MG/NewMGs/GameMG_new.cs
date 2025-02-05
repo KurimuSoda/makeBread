@@ -290,18 +290,34 @@ public class GameMG_new : MonoBehaviour
     /// <summary>
     /// 配列番号をもらって味を返す
     /// </summary>
-    /// <param name="arrayNum"></param>
-    /// <returns></returns>
+    /// <param name="arrayNum">配列番号</param>
+    /// <returns>味</returns>
     public int ArrayTOTaste(int arrayNum)
     {
         int taste = breadData.Bread_date[arrayNum].taste;
         return taste;
     }
 
+    /// <summary>
+    /// 配列番号をもらってアイテム名を返す
+    /// </summary>
+    /// <param name="arrayNum">配列番号</param>
+    /// <returns>アイテム名</returns>
     public string ArrayTOName(int arrayNum)
     {
         string itemName = breadData.Bread_date[arrayNum].name;
         return itemName;
+    }
+
+    /// <summary>
+    /// 配列番号をもらってアイテム説明文を返す
+    /// </summary>
+    /// <param name="arrayNum">配列番号</param>
+    /// <returns>アイテム説明文</returns>
+    public string ArrayTOItemtext(int arrayNum)
+    {
+        string itemtext = breadData.Bread_date[arrayNum].itemtext;
+        return itemtext;
     }
 
     /// <summary>
