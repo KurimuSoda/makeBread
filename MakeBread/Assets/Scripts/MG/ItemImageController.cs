@@ -18,15 +18,18 @@ public class ItemImageController : MonoBehaviour
 
     private RectTransform _rectTransform;
 
+    private GameObject _dropitem;
+    private ItemDropControll _itemdropControll;
+
     // Start is called before the first frame update
     void Start()
     {
         _itemImage = this.gameObject.GetComponent<Image>();
         _itemSprite = Resources.Load<Sprite>("Images/" + itemname_ID);
         _rectTransform = gameObject.GetComponent<RectTransform>();
-        
 
-        if(_itemSprite == true)
+
+        if (_itemSprite == true)
         {
             _itemImage.sprite = _itemSprite;
         }
@@ -35,27 +38,25 @@ public class ItemImageController : MonoBehaviour
         switch (num)
         {
             case 1:
-                _rectTransform.anchoredPosition = new Vector2(-720.0f, -370.0f);
-                return;
+                _rectTransform.anchoredPosition = new Vector2(-85.0f, -370.0f);
+                break;
             case 2:
-                _rectTransform.anchoredPosition = new Vector2(-240.0f, -370.0f);
-                return;
+                _rectTransform.anchoredPosition = new Vector2(212.0f, -370.0f);
+                break;
             case 3:
-                _rectTransform.anchoredPosition = new Vector2(240.0f, -370.0f);
-                return;
+                _rectTransform.anchoredPosition = new Vector2(515.0f, -370.0f);
+                break;
             case 4:
-                _rectTransform.anchoredPosition = new Vector2(720.0f, -370.0f);
-                return;
+                _rectTransform.anchoredPosition = new Vector2(805.0f, -370.0f);
+                break;
         }
-            
+
         
+        _dropitem = GameObject.FindWithTag("SceneOnry");
+        _itemdropControll = _dropitem.GetComponent<ItemDropControll>();
+        _itemdropControll.DropedItem(itemname_ID, num);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     
 }

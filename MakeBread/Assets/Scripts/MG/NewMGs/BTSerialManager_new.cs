@@ -134,6 +134,9 @@ public class BTSerialManager_new : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// M5が振られた「shaked」が送られてきた時の処理
+    /// </summary>
     private void M5Shaked()
     {
         if(_nowScene == SceneNames.OvenFire)
@@ -159,6 +162,9 @@ public class BTSerialManager_new : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// M5のボタンを押された時の「ButtonA」が送られてきた時の処理
+    /// </summary>
     private void M5ButtonAPrs()
     {
         if(_nowScene == SceneNames.OvenFire)

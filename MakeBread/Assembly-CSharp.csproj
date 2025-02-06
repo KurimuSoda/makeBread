@@ -79,6 +79,7 @@
     <Compile Include="Assets/Scripts/TestScripts/BTSerialTest.cs" />
     <Compile Include="Assets/Scripts/BreadDataEntity.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
+    <Compile Include="Assets/Scripts/DropItemSpriteChange.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets/Scripts/ToDoCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Assets/Scripts/MG/NewMGs/IconColorChange.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Scripts/StickRotateController.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ItemDropControll.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/FermentMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />

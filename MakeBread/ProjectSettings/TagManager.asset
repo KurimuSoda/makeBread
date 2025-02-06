@@ -12,6 +12,7 @@ TagManager:
   - RightObj
   - GameManager
   - ItemsUI
+  - SceneOnry
   layers:
   - Default
   - TransparentFX
