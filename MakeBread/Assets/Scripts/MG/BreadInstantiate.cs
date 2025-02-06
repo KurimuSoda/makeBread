@@ -91,8 +91,14 @@ public class BreadInstantiate : MonoBehaviour
 
         //削除する番号の味をデフォルトの4にする
         //_tasteManager.PutInTastArray(_inputCount, 4);
-        GameObject missSet = GameObject.FindWithTag("Item" + _deleteNum);
-        Destroy(missSet);
+        //GameObject missSet = GameObject.FindWithTag("Item" + _deleteNum);
+        GameObject[] missSet = GameObject.FindGameObjectsWithTag("Item" + _deleteNum);
+
+        foreach(GameObject obj in missSet)
+        {
+            Destroy(obj);
+        }
+        
         _inputCount--;
         _inputCount = Mathf.Clamp(_inputCount, 0, 4);
         //Debug.Log("miss:" + missSet.name);

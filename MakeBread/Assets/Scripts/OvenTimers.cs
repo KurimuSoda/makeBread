@@ -106,23 +106,6 @@ public class OvenTimers : MonoBehaviour
         StartCoroutine(_gameMG.LoadSceneAsync("ResultScene"));
     }
 
-    /*
-    public void JadgeBreadStatus(float coldTimeCount, float overCookTimeCount)
-    {
-        if(overCookTimeCount >= tooHotTime)
-        {
-            _breadStatus = "OverCoocked";
-        }
-        else if (coldTimeCount >= coldTime || overCookTimeCount <= tooHotTime)
-        {
-            _breadStatus = "Nomal";
-        }
-        else if (coldTimeCount > coldTime && overCookTimeCount < tooHotTime)
-        {
-            _breadStatus = "Good";
-        }
     
-    }
-    */
 
 }

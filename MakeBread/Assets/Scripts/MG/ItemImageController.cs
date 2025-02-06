@@ -38,16 +38,16 @@ public class ItemImageController : MonoBehaviour
         switch (num)
         {
             case 1:
-                _rectTransform.anchoredPosition = new Vector2(-720.0f, -370.0f);
+                _rectTransform.anchoredPosition = new Vector2(-85.0f, -370.0f);
                 break;
             case 2:
-                _rectTransform.anchoredPosition = new Vector2(-240.0f, -370.0f);
+                _rectTransform.anchoredPosition = new Vector2(212.0f, -370.0f);
                 break;
             case 3:
-                _rectTransform.anchoredPosition = new Vector2(240.0f, -370.0f);
+                _rectTransform.anchoredPosition = new Vector2(515.0f, -370.0f);
                 break;
             case 4:
-                _rectTransform.anchoredPosition = new Vector2(720.0f, -370.0f);
+                _rectTransform.anchoredPosition = new Vector2(805.0f, -370.0f);
                 break;
         }
 

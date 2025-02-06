@@ -11,24 +11,8 @@ public class ItemDropControll : MonoBehaviour
     [Tooltip("ドロップアイテムのベースobj"),SerializeField]
     private GameObject _dropItemObj;
 
-    private string _itemname_ID;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            //DropedItem();
-        }
-    }
-
+    
     public void DropedItem(string itemname_ID, int itemnum)
     {
         GameObject obj = Instantiate(_dropItemObj, _dropItemsParent.transform);
