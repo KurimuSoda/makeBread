@@ -19,12 +19,14 @@ public class ItemSelectMG : MonoBehaviour
     /// <summary>
     /// アイテムの名前を表示するためのオブジェクト
     /// </summary>
-    [SerializeField] private TextMeshProUGUI _itemNameTx;
+    [Tooltip("アイテムの名前を表示するためのオブジェクト"),SerializeField]
+    private TextMeshProUGUI _itemNameTx;
 
     /// <summary>
     /// アイテム説明文を表示するためのオブジェクト
     /// </summary>
-    [SerializeField] private TextMeshProUGUI _itemTextTx;
+    [Tooltip("アイテム説明文を表示するためのオブジェクト"),SerializeField]
+    private TextMeshProUGUI _itemTextTx;
 
     [SerializeField] private RectTransform _animRectTrans;
     [SerializeField] private float _popAnimValue = 2.0f;
@@ -40,6 +42,9 @@ public class ItemSelectMG : MonoBehaviour
     /// </summary>
     public bool isHouwtoOn = true;
 
+    /// <summary>
+    /// popUpItemの配列番号
+    /// </summary>
     private int _popUpItemNum = 0;
     private string _popUpItemID = "";
 
@@ -209,6 +214,7 @@ public class ItemSelectMG : MonoBehaviour
         _gameMG.SetBread(_popUpItemNum);
         _popUpItemNum = 0;
         _popUpObj.SetActive(false);
+        
     }
 
     private void IconColor(int taste)
