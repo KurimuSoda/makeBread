@@ -48,11 +48,12 @@ public class ItemSelectMG : MonoBehaviour
     private int _popUpItemNum = 0;
     private string _popUpItemID = "";
 
-    private KeyCode[] _numbersKey = new KeyCode[]
+    private KeyCode[] _numbersKeyMore  = new KeyCode[]
     {
         KeyCode.Alpha1,KeyCode.Alpha2,
         KeyCode.Alpha3,KeyCode.Alpha4,KeyCode.Alpha5,
-        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
+        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9,
+        KeyCode.Alpha0
     };
 
     /*
@@ -103,9 +104,9 @@ public class ItemSelectMG : MonoBehaviour
 
         if (Input.anyKeyDown)
         {
-            for (int i = 0; i < _numbersKey.Length; i++)
+            for (int i = 0; i < _numbersKeyMore.Length; i++)
             {
-                if (Input.GetKeyDown(_numbersKey[i]))
+                if (Input.GetKeyDown(_numbersKeyMore[i]))
                 {
                     //_countImput++;
                     //_countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);

@@ -275,8 +275,9 @@ public class GameMG_new : MonoBehaviour
         //何番目のアイテムをベースにするかランダムで選出し_FirstItemにIDを記録する
         ItemSelectMG.RandomItemChose(_countImput);
         _FirstItem = _breadInstantiate.ReturnSelectItemID(RandomItem);
-        
-        StartCoroutine(LoadSceneAsync("FermentScene"));
+
+        //StartCoroutine(LoadSceneAsync("FermentScene"));
+        StartCoroutine(LoadSceneAsync("OvenFire"));
     }
 
     /// <summary>
