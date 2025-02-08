@@ -48,6 +48,12 @@ public class OvenMG : MonoBehaviour
     private float _upperLimit = 1.9f;
     private float _lowerLimit = 0.3f;
 
+    [Tooltip("火が大きくなった時の効果音"), SerializeField]
+    private AudioClip _fireSound;
+
+    [Tooltip("OnlyのAudioSourceを一つ入れる"), SerializeField]
+    private AudioSource _audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +82,7 @@ public class OvenMG : MonoBehaviour
         {
             Debug.Log("Fireeeee!!");
             FireObjAddScale();
+            _audioSource.PlayOneShot(_fireSound);
             IsShaked = false;
         }
 
