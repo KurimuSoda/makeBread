@@ -28,6 +28,15 @@ public class ItemSelectMG : MonoBehaviour
     [Tooltip("アイテム説明文を表示するためのオブジェクト"),SerializeField]
     private TextMeshProUGUI _itemTextTx;
 
+    /// <summary>
+    /// 後で
+    /// </summary>
+    [Tooltip("後で"), SerializeField]
+    private AudioClip _itemSetSound;
+
+    [Tooltip(""), SerializeField]
+    private AudioSource _audioSource;
+
     [SerializeField] private RectTransform _animRectTrans;
     [SerializeField] private float _popAnimValue = 2.0f;
     private float _popAnimTime = 1.0f;
@@ -215,7 +224,7 @@ public class ItemSelectMG : MonoBehaviour
         _gameMG.SetBread(_popUpItemNum);
         _popUpItemNum = 0;
         _popUpObj.SetActive(false);
-        
+        _audioSource.PlayOneShot(_itemSetSound);
     }
 
     private void IconColor(int taste)
