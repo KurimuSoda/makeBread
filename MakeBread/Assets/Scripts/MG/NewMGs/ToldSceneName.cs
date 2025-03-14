@@ -60,7 +60,7 @@ public class ToldSceneName : MonoBehaviour
                     break;
 
                 case "CookingPotBT":
-                    SceneManager.LoadScene("FermentScene");
+                    SceneManager.LoadScene("OvenFire"); //
                     break;
 
                 case "FermentScene":

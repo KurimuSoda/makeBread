@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 // GameViewをフルスクリーンで表示するスクリプト(WindowsはF11、macOSはCommand+Shift+Fでトグル動作)
-/*
+
 public class FullScreenGameView
 {
     const string menuPath = "Window/Game (Full Screen)";
@@ -51,4 +51,3 @@ public class FullScreenGameView
     private static Vector2 minSize = new Vector2(100.0f, 100.0f);
     private static Rect position = new Rect(0.0f, 0.0f, 640.0f, 480.0f);
 }
-*/

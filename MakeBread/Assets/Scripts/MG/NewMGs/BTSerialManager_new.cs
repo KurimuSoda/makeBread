@@ -88,8 +88,8 @@ public class BTSerialManager_new : MonoBehaviour
                 }
                 else if (_strShaked == message)
                 {
-                    //M5Shaked();
-                    OvenMG.IsShaked = true;
+                    M5Shaked();
+                    //OvenMG.IsShaked = true;
                     return;
                 }
                 else

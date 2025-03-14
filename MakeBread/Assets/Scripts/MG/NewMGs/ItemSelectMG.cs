@@ -28,6 +28,15 @@ public class ItemSelectMG : MonoBehaviour
     [Tooltip("アイテム説明文を表示するためのオブジェクト"),SerializeField]
     private TextMeshProUGUI _itemTextTx;
 
+    /// <summary>
+    /// 後で
+    /// </summary>
+    [Tooltip("後で"), SerializeField]
+    private AudioClip _itemSetSound;
+
+    [Tooltip(""), SerializeField]
+    private AudioSource _audioSource;
+
     [SerializeField] private RectTransform _animRectTrans;
     [SerializeField] private float _popAnimValue = 2.0f;
     private float _popAnimTime = 1.0f;
@@ -48,11 +57,12 @@ public class ItemSelectMG : MonoBehaviour
     private int _popUpItemNum = 0;
     private string _popUpItemID = "";
 
-    private KeyCode[] _numbersKey = new KeyCode[]
+    private KeyCode[] _numbersKeyMore  = new KeyCode[]
     {
         KeyCode.Alpha1,KeyCode.Alpha2,
         KeyCode.Alpha3,KeyCode.Alpha4,KeyCode.Alpha5,
-        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9
+        KeyCode.Alpha6,KeyCode.Alpha7,KeyCode.Alpha8,KeyCode.Alpha9,
+        KeyCode.Alpha0
     };
 
     /*
@@ -103,9 +113,9 @@ public class ItemSelectMG : MonoBehaviour
 
         if (Input.anyKeyDown)
         {
-            for (int i = 0; i < _numbersKey.Length; i++)
+            for (int i = 0; i < _numbersKeyMore.Length; i++)
             {
-                if (Input.GetKeyDown(_numbersKey[i]))
+                if (Input.GetKeyDown(_numbersKeyMore[i]))
                 {
                     //_countImput++;
                     //_countImput = Mathf.Clamp(_countImput, _inputLowerLimit, _inputUPLimit);
@@ -214,7 +224,7 @@ public class ItemSelectMG : MonoBehaviour
         _gameMG.SetBread(_popUpItemNum);
         _popUpItemNum = 0;
         _popUpObj.SetActive(false);
-        
+        _audioSource.PlayOneShot(_itemSetSound);
     }
 
     private void IconColor(int taste)

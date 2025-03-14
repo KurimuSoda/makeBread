@@ -436,6 +436,8 @@ MonoBehaviour:
   _popUpItemImg: {fileID: 1259933048}
   _itemNameTx: {fileID: 2087131188}
   _itemTextTx: {fileID: 282841600}
+  _itemSetSound: {fileID: 8300000, guid: 14acf5f4e21914d9ca731dbb55080cf8, type: 3}
+  _audioSource: {fileID: 23698335}
   _animRectTrans: {fileID: 1398013426}
   _popAnimValue: 20
   isHouwtoOn: 1
@@ -451,14 +453,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046228af06b21401e8b97ff5e9dad580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sourIcon: {fileID: 1035838006}
-  _sourIconBG: {fileID: 747727670}
-  _sweetIcon: {fileID: 832124099}
-  _sweetIconBG: {fileID: 747727670}
-  _spicyIcon: {fileID: 2077827071}
-  _spicyIconBG: {fileID: 747727670}
-  _saltIcon: {fileID: 2026839361}
-  _saltIconBG: {fileID: 747727670}
+  _sourIcon: {fileID: 440318120}
+  _sourIconBG: {fileID: 2011009237}
+  _sweetIcon: {fileID: 90069347}
+  _sweetIconBG: {fileID: 1938510695}
+  _spicyIcon: {fileID: 204373817}
+  _spicyIconBG: {fileID: 1226161678}
+  _saltIcon: {fileID: 5123576}
+  _saltIconBG: {fileID: 482383342}
 --- !u!114 &23698334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +475,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dropItemsParent: {fileID: 1403399525}
   _dropItemObj: {fileID: 6111184237783625514, guid: b84112280065d47c2bd327dcd978a2dd, type: 3}
+--- !u!82 &23698335
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23698331}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 14acf5f4e21914d9ca731dbb55080cf8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &25863512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 105}
+  m_AnchoredPosition: {x: 0, y: 115}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282841600
@@ -1521,7 +1619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3053\u308C\u306F\u30C6\u30B9\u30C8"
+  m_text: "\u3053\u308C\u306F\u30C6\u30B9\u30C8\u725B\u4E73<style=p2-5>\u304E\u3046\u306B\u3085\u3046</style>\u306F\u6750<style=p1>\u3056</style>\u3060\u3088<style=p1-3>\u3042\u3044\u3046</style>\u306D\u3002\u7D20\u6750<style=p2>\u305D\u3056</style>\u3042\u3042\u3042\u3088\u3093<style=p2-4>\u3082\u3058\u3082\u3058</style>\n\u3053\u308C\u306F\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u8ABF\u5473\u6599<style=p3-7>\u3061\u3087\u3046\u307F\u308A\u3087\u3046</style>\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02f86dd1f8b3c426daadfab0acfce84b, type: 2}
   m_sharedMaterial: {fileID: -1551389892450235691, guid: 02f86dd1f8b3c426daadfab0acfce84b, type: 2}

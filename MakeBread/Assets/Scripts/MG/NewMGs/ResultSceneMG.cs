@@ -18,13 +18,17 @@ public class ResultSceneMG : MonoBehaviour
     {
         _gameMG = GameObject.FindWithTag("GameManager").GetComponent<GameMG_new>();
         _breadName =  _gameMG.SendBreadName();
+        if(_breadName == "")
+        {
+            _breadName = "おさかなぱん";
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
         _ovenScore.text = _gameMG.SendBakeStatus();
-        _fermentScore.text = _gameMG.score_Ferment;
+        //_fermentScore.text = _gameMG.score_Ferment;
         _breadNameTx.text = _breadName;
     }
 
