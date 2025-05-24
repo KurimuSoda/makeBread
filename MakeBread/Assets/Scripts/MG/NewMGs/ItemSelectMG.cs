@@ -13,7 +13,7 @@ public class ItemSelectMG : MonoBehaviour
     [SerializeField] private static int _randomBaseItem = 0;
 
     [SerializeField] private GameObject _howToImage;    //操作説明表示用オブジェクト
-    [SerializeField] private GameObject _popUpObj;
+    [SerializeField] private GameObject _popUpObj;      //ポップアップ用オブジェクト
     [SerializeField] private Image _popUpItemImg;
 
     /// <summary>
@@ -29,9 +29,9 @@ public class ItemSelectMG : MonoBehaviour
     private TextMeshProUGUI _itemTextTx;
 
     /// <summary>
-    /// 後で
+    /// アイテム選択で決定を押した時の音
     /// </summary>
-    [Tooltip("後で"), SerializeField]
+    [Tooltip("アイテム決定音"), SerializeField]
     private AudioClip _itemSetSound;
 
     [Tooltip(""), SerializeField]

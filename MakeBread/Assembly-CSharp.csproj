@@ -84,6 +84,7 @@
     <Compile Include="Assets/Scripts/ToDoCheck.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/Imports/ExcelImporter/Example/Scripts/ExcelAsset/MstItems.cs" />
+    <Compile Include="Assets/Scripts/SettingBtnController.cs" />
     <Compile Include="Assets/Scripts/SetActiveResultBread.cs" />
     <Compile Include="Assets/Scripts/MG/SoundMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/Imports/ExcelImporter/Example/Scripts/Entity/MstItemEntity.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/SettingAssist.cs" />
     <Compile Include="Assets/Scripts/TestScripts/TasteManager_old.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
     <Compile Include="Assets/Scripts/MG/SceneNameMG.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets/Scripts/MG/NewMGs/ItemDropControll.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/FermentMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+    <Compile Include="Assets/Scripts/MG/NewMGs/ConnectIconChange.cs" />
     <Compile Include="Assets/Scripts/MG/NewMGs/ItemSelectMG.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />

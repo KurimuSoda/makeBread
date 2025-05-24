@@ -44,6 +44,7 @@ public class SerialHandler : MonoBehaviour
         serialPort_.Open();
 
         isRunning_ = true;
+        GameMG_new.isM5Serial = true;   //
 
         thread_ = new Thread(Read);
         thread_.Start();
@@ -74,6 +75,7 @@ public class SerialHandler : MonoBehaviour
             } catch (System.Exception e) {
                 //Debug.LogWarning(e.Message);      一旦コメントアウトした　繋がらなかった時用の処理をここに書くといいかも
                 Debug.Log(e.Message);
+                GameMG_new.isM5Serial = false;
             }
         }
     }
@@ -85,5 +87,11 @@ public class SerialHandler : MonoBehaviour
         } catch (System.Exception e) {
             Debug.LogWarning(e.Message);
         }
+    }
+
+    public void ReOpen()
+    {
+        Close();
+        Open();
     }
 }
