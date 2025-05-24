@@ -6,15 +6,23 @@
 
 #define UPPER_LIMIT 230.0 //ジャイロXの上判定ライン
 #define LOWER_LIMIT -230.0 //ジャイロXの下判定ライン
+#define UPPERAcc_LIMIT 1.0
+#define LOWERAcc_LIMIT -1.0
 
 M5Canvas canvas(&M5.Lcd);
 
 float gyroX = 0.0f;
 float gyroY = 0.0f;
 float gyroZ = 0.0f;
+float accX = 0.0f;
+float accY = 0.0f;
+float accZ = 0.0f;
 int upCount = 0;
 bool isShaked = false;
 bool isBtnAPls = false;
+bool isReadRFID = false;
+
+String rfidstr = "";
 
 const uint8_t buttonA_GPIO = 37;
 uint8_t batteryLevel;
@@ -50,11 +58,45 @@ void read_rfid(){
 }
 
 void read_serial(){
+  rfidstr = "";
   if(BTSerial.available()){ //Bluetoothデータ受信で
-    String msg = BTSerial.readString(); //BTシリアルで送られてきた文字列をmsgに格納
+    String msg = BTSerial.readStringUntil('\r'); //BTシリアルで送られてきた文字列をmsgに格納
     M5.Lcd.println("Received: " + msg); //M5Stickの画面に文字列msgを表示
     //BTSerial.print(msg);  //BTシリアルに受け取ったmsgを送信
-
+    
+    for(int i = 0; i < 3; i++){
+      //BTSerial.println(msg[i]);
+      rfidstr += msg[i];
+      //BTSerial.println(rfidstr);
+    }
+    if(rfidstr == "rOn"){
+      isReadRFID = true;
+      M5.Lcd.println("ReaderOn!");
+      rfidstr = "";
+    }
+    else if(rfidstr == "rOf"){
+      isReadRFID = false;
+      M5.Lcd.println("ReaderOff!");
+      rfidstr = "";
+    }
+  }
+  else if(Serial.available()){
+    String msg = Serial.readStringUntil('\r');
+    for(int i = 0; i < 3; i++){
+      //Serial.println(msg[i]);
+      rfidstr += msg[i];
+      //Serial.println(rfidstr);
+    }
+    if(rfidstr == "rOn"){
+      isReadRFID = true;
+      M5.Lcd.println("ReaderOn!");
+      rfidstr = "";
+    }
+    else if(rfidstr == "rOf"){
+      isReadRFID = false;
+      M5.Lcd.println("ReaderOff!");
+      rfidstr = "";
+    }
   }
 }
 
@@ -62,12 +104,21 @@ void getShaked(){
   auto imu_update = M5.Imu.update();
   if(imu_update){
     M5.Imu.getGyro(&gyroX, &gyroY, &gyroZ);
+    M5.Imu.getAccel(&accX, &accY, &accZ);
+    //Serial.printf("accX:%0.2f, accY:%0.2f, acc:%0.2f\n", accX, accY, accZ);
 
-    if(gyroX >= UPPER_LIMIT){
+    /*if(gyroX >= UPPER_LIMIT){
+      upCount++;
+    }*/
+    if(accX >= UPPERAcc_LIMIT || gyroX >= UPPER_LIMIT){
       upCount++;
     }
 
-    if(gyroX <= LOWER_LIMIT && upCount > 0){
+    /*if(gyroX <= LOWER_LIMIT && upCount > 0){
+      upCount = 0;
+      isShaked = true;
+    }*/
+    if(accX <= LOWERAcc_LIMIT || gyroX <= LOWER_LIMIT && upCount > 0){
       upCount = 0;
       isShaked = true;
     }
@@ -136,25 +187,29 @@ void loop() {
   // put your main code here, to run repeatedly:
   M5.update();
   //getButton();
+  //Serial.println("first");
   
   if(M5.BtnPWR.wasPressed()){
     Serial.println("Pow Pressed");
     //M5.Lcd.printf("BAT Level : %3d%%\n", M5.Power.getBatteryLevel());
     //spriteCanvas();
   }
-
+  
   if(isBtnAPls == true){
     Serial.println("Btn A by loop");
     M5.Lcd.setCursor(0,32);
     spriteCanvas();
     isBtnAPls = false;
   }
-  
-  read_rfid();
   read_serial();
+  if(isReadRFID == true){
+    read_rfid();
+  }
+  else{}
+  
   getShaked();
 
-  
+  //Serial.println("loop");
   
   //M5.Lcd.printf("BAT Level : %3d%%\n", M5.Power.getBatteryLevel());
 }
