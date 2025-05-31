@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImportScript/SerialHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/SettingAssist.cs">
     <Files>
-      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="95" Column="16" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="234" Column="46" />
-      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="398" Column="1" />
-      <File FileName="Assets/Scripts/MG/NewMGs/SettingAssist.cs" Line="56" Column="1" />
-      <File FileName="Assets/Scripts/SettingBtnController.cs" Line="37" Column="66" />
-      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ConnectIconChange.cs" />
-      <File FileName="Assets/Scripts/MG/TasteManager.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/ItemDropControll.cs" />
+      <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="114" Column="9" />
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="236" Column="28" />
+      <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" Line="38" Column="5" />
+      <File FileName="Assets/Scripts/MG/NewMGs/SettingAssist.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/SettingBtnController.cs" Line="40" Column="38" />
+      <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ConnectIconChange.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/TasteManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ItemDropControll.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MG/NewMGs/FermentMG.cs" />
+      <File FileName="Assets/Scripts/MG/NewMGs/ResultSceneMG.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,11 +20,11 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ImportScript" expanded="True">
-                  <Node name="SerialHandler.cs" selected="True" />
-                </Node>
+                <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
-                  <Node name="NewMGs" expanded="True" />
+                  <Node name="NewMGs" expanded="True">
+                    <Node name="SettingAssist.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

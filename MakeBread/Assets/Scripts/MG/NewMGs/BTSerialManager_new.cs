@@ -219,7 +219,7 @@ public class BTSerialManager_new : MonoBehaviour
     }
 
     /// <summary>
-    /// 設定したいポート名を受け取って書き換え、成功したらtrueを返す
+    /// 設定したいポート名を受け取って書き換え、成功したらtrueを返し再接続を試みる
     /// </summary>
     /// <param name="NewPortName">新しいポート名</param>
     /// <returns>書き換え成功はtrue</returns>
@@ -231,7 +231,8 @@ public class BTSerialManager_new : MonoBehaviour
         
         if(newPoNm != oldPoNm)
         {
-            serialHandler.portName = newPoNm;
+            //serialHandler.portName = newPoNm;
+            serialHandler.ReOpen(newPoNm);
             isWrite = true;
         }
         else if(newPoNm == oldPoNm)

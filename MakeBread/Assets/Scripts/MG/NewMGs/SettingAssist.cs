@@ -16,17 +16,6 @@ public class SettingAssist : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /// <summary>
     /// 現在設定されているポート名を _nowPortName に入れる
@@ -41,7 +30,9 @@ public class SettingAssist : MonoBehaviour
         bool isWrited = false;
         isWrited = _btserialMG.isWritePortName(newportname);
 
-        Debug.Log(isWrited);
+        Debug.Log("Change Port Name " + isWrited);
+
+       
     }
 
     /// <summary>
@@ -56,6 +47,7 @@ public class SettingAssist : MonoBehaviour
 
         return nowport;
     }
+
 
     //ポート名が取得できてるか確認用
     /* public void testPortNameCheck()

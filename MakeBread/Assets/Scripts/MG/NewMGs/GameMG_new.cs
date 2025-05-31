@@ -33,9 +33,9 @@ public class GameMG_new : MonoBehaviour
     private SceneNameMG _sceneNameMG = new SceneNameMG();
 
     /// <summary>
-    /// 
+    /// M5とのシリアル通信 true で通信している
     /// </summary>
-    [HideInInspector] public static bool isM5Serial = false;
+    public static bool isM5Serial = false;
     
     /// <summary>
     /// 選んだアイテムの中からランダムで一つ選ばれたものの(string ID)
