@@ -4231,8 +4231,8 @@ MonoBehaviour:
   _fireObj: {fileID: 1169214868}
   _efectObj: {fileID: 1514680390}
   _howtoObj: {fileID: 1145261479}
-  _addScale: 0.06
-  _downScale: 0.003
+  _addScale: 0.1
+  _downScale: 0.002
   _isGameStart: 0
   _overCookCount: 0
   _coldCookCount: 0

@@ -1445,6 +1445,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5716834193550284023, guid: 9bba1f0178d6849bcaffab0f909a4afb, type: 3}
+      propertyPath: portName
+      value: /dev/cu.M5StickCPlus2BT-ESP32SPP-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5716834193550284023, guid: 9bba1f0178d6849bcaffab0f909a4afb, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
