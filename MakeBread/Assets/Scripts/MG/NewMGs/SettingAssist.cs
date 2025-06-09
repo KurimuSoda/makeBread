@@ -5,6 +5,7 @@ using UnityEngine;
 public class SettingAssist : MonoBehaviour
 {
     private BTSerialManager_new _btserialMG;
+    [SerializeField] private SettingBtnController _settingBtnCnt;
 
     private string _nowPortName;
 
@@ -13,6 +14,11 @@ public class SettingAssist : MonoBehaviour
     {
         _btserialMG = GameObject.FindWithTag("GameManager").GetComponent<BTSerialManager_new>();
         _NowPortName();
+    }
+
+    private void FixedUpdate()
+    {
+        _settingBtnCnt.ConnctCheck();
     }
 
 

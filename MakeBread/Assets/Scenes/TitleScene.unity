@@ -207,6 +207,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &175893595 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3260812862187684415, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
+  m_PrefabInstance: {fileID: 1868230599}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147a9f43403c54d6cb77566389a3ce97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &241417063
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingObj
       objectReference: {fileID: 0}
+    - target: {fileID: 3260812862187684412, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
+      propertyPath: _settingBtnCnt
+      value: 
+      objectReference: {fileID: 175893595}
     - target: {fileID: 3260812862187684413, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -964,6 +979,18 @@ PrefabInstance:
     - target: {fileID: 3260812862187684413, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260812862187684415, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
+      propertyPath: _conecctIcon
+      value: 
+      objectReference: {fileID: 100788475}
+    - target: {fileID: 3260812862337754492, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260812862337754492, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3260812862687335584, guid: 35749a8451c1346a7b870a7c3628433c, type: 3}
       propertyPath: m_SortingOrder
@@ -1446,7 +1473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5716834193550284023, guid: 9bba1f0178d6849bcaffab0f909a4afb, type: 3}
       propertyPath: portName
-      value: /dev/cu.M5StickCPlus2BT-ESP32SPP-1
+      value: /dev/cu.M5StickCPlus2BT-ESP32SPP
       objectReference: {fileID: 0}
     - target: {fileID: 5716834193550284023, guid: 9bba1f0178d6849bcaffab0f909a4afb, type: 3}
       propertyPath: m_Enabled

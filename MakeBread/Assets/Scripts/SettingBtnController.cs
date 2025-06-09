@@ -11,15 +11,36 @@ public class SettingBtnController : MonoBehaviour
     [SerializeField, Tooltip("現在のポートを表示するText")] private TextMeshProUGUI _nowportTx;
     [SerializeField] private SettingAssist _settingAssist;
     [SerializeField] private TMP_InputField _inputFieldTMPr;
+    [SerializeField] private GameObject _conecctIcon;
 
     private string _inputKeep = "";
     private bool _isInputKeeping = false;
     private string _nowport = "";
 
+    /// <summary>
+    /// M5が繋がっているかどうか
+    /// </summary>
     private bool _isM5Connect = false;
 
+    /// <summary>
+    /// 接続を確認する
+    /// </summary>
+    public void ConnctCheck()
+    {
+        _isM5Connect = GameMG_new.isM5Serial;
+        if(_isM5Connect == true)
+        {
+            _conecctIcon.SetActive(true);
+        }
+        else if(_isM5Connect == false)
+        {
+            _conecctIcon.SetActive(false);
+        }
+    }
 
-
+    /// <summary>
+    /// 設定画面を表示する
+    /// </summary>
     public void ActiveStteingPanel()
     {
         //Debug.Log("Setting Panel ON");
@@ -35,13 +56,16 @@ public class SettingBtnController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 設定画面を非表示
+    /// </summary>
     public void NotActiveSettingPanel()
     {
         _settingPanel.SetActive(false);
     }
 
     /// <summary>
-    /// 
+    /// ポート名の入力受け取り
     /// </summary>
     public void InputText()
     {
@@ -68,6 +92,9 @@ public class SettingBtnController : MonoBehaviour
         return portname;
     }
 
+    /// <summary>
+    /// 入力されたポート名に接続する
+    /// </summary>
     public void ConnectToNewPort()
     {
         if(_isInputKeeping == false) { return; }
@@ -77,7 +104,7 @@ public class SettingBtnController : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// 現在のポート名をチェックする
     /// </summary>
     public void forCheckNowPortBtn()
     {

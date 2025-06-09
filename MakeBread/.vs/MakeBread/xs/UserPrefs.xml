@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{5EF03C9D-92BA-2B5D-2B6C-B74E549C6478}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ImportScript/SerialHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MG/NewMGs/SettingAssist.cs">
     <Files>
+      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MG/NewMGs/ConnectIconChange.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ImportScript/SerialHandler.cs" Line="114" Column="9" />
-      <File FileName="Assets/Scripts/MG/NewMGs/BTSerialManager_new.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/GameMG_new.cs" />
-      <File FileName="Assets/Scripts/MG/NewMGs/SettingAssist.cs" Line="18" Column="1" />
-      <File FileName="Assets/Scripts/SettingBtnController.cs" Line="30" Column="16" />
+      <File FileName="Assets/Scripts/MG/NewMGs/SettingAssist.cs" Line="21" Column="38" />
+      <File FileName="Assets/Scripts/SettingBtnController.cs" Line="26" Column="16" />
       <File FileName="Assets/Scripts/MG/BreadInstantiate.cs" />
       <File FileName="Assets/Scripts/MG/TasteManager.cs" />
       <File FileName="Assets/Scripts/MG/NewMGs/ItemDropControll.cs" />
@@ -20,11 +20,11 @@
             <Node name="Assets" expanded="True">
               <Node name="Excel" expanded="True" />
               <Node name="Scripts" expanded="True">
-                <Node name="ImportScript" expanded="True">
-                  <Node name="SerialHandler.cs" selected="True" />
-                </Node>
+                <Node name="ImportScript" expanded="True" />
                 <Node name="MG" expanded="True">
-                  <Node name="NewMGs" expanded="True" />
+                  <Node name="NewMGs" expanded="True">
+                    <Node name="SettingAssist.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -35,7 +35,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="feb38291-3338-4a49-b496-a7bc02f32249" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="70ecdd30-cad3-4c52-9637-a2569e7ad9eb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint enabled="false" file="/Users/hb21a035/Documents/MakeBread_Git/MakeBread/Assets/Scripts/NFCChecks.cs" relfile="Assets/Scripts/NFCChecks.cs" line="81" column="1" />
