@@ -29,6 +29,8 @@ public class BTSerialManager_new : MonoBehaviour
     /// </summary>
     public ReadStatus  readStatus = ReadStatus.ReadOK;
 
+    //private bool rfidReader = false;
+
     public string nowGameScene = "TitleScene";
     public SceneNames _nowScene;
     
@@ -56,7 +58,7 @@ public class BTSerialManager_new : MonoBehaviour
     {
         serialHandler.OnDataReceived += OnDataReceived;
         //_thermometerCon.GetThermoDistance();
-
+        
     }
 
 
@@ -175,6 +177,7 @@ public class BTSerialManager_new : MonoBehaviour
         {
             FermentMG.IsButtonAPrs = true;
         }
+
     }
 
     /*
@@ -188,6 +191,58 @@ public class BTSerialManager_new : MonoBehaviour
     }
     */
 
+    public void RFIDReader(bool isOn)
+    {
+        if(isOn == true)
+        {
+            //rfidReader = true;
+            serialHandler.Write("rOn");
+            serialHandler.Write("");
+        }
+        else if(isOn == false)
+        {
+            //rfidReader = false;
+            serialHandler.Write("rOf");
+            serialHandler.Write("");
+        }
+    }
+
+    /// <summary>
+    /// 現在 PortName に設定されているポート名を string で返す
+    /// </summary>
+    /// <returns>現在設定されているポート名</returns>
+    public string SendNowPortName()
+    {
+        string ptNm = serialHandler.portName;
+        
+        return ptNm;
+    }
+
+    /// <summary>
+    /// 設定したいポート名を受け取って書き換え、成功したらtrueを返し再接続を試みる
+    /// </summary>
+    /// <param name="NewPortName">新しいポート名</param>
+    /// <returns>書き換え成功はtrue</returns>
+    public bool isWritePortName(string NewPortName)
+    {
+        bool isWrite = false;
+        string oldPoNm = serialHandler.portName;
+        string newPoNm = NewPortName;
+        
+        if(newPoNm != oldPoNm)
+        {
+            //serialHandler.portName = newPoNm;
+            serialHandler.ReOpen(newPoNm);
+            isWrite = true;
+        }
+        else if(newPoNm == oldPoNm)
+        {
+            isWrite = false;
+        }
+
+        return isWrite;
+    }
+
     public void ModeChengeWithScene(string nextScene)
     {
         if (nextScene == _sceneNameMG.gameSceneNames[0])
@@ -199,12 +254,16 @@ public class BTSerialManager_new : MonoBehaviour
         {
             _nowScene = SceneNames.CookingPotBT;
             //_readStatus = ReadStatus.ReadOK;
+
+            
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[2])
         {
             _nowScene = SceneNames.OvenFire;
             readStatus = ReadStatus.StopRead;
             //_thermometerCon.GetThermoDistance();
+
+            
         }
         else if (nextScene == _sceneNameMG.gameSceneNames[3])
         {

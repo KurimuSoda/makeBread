@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using TasteMG;
 using SceneMG.support;
 
-//実質的なImputManager
 public class GameMG_new : MonoBehaviour
 {
     [SerializeField] private BreadDate breadData;
@@ -32,9 +31,14 @@ public class GameMG_new : MonoBehaviour
 
     private TasteManager _tasteMG = new TasteManager();
     private SceneNameMG _sceneNameMG = new SceneNameMG();
+
+    /// <summary>
+    /// M5とのシリアル通信 true で通信している
+    /// </summary>
+    public static bool isM5Serial = false;
     
     /// <summary>
-    /// 選んだアイテムの中からランダムで一つを選ぶ(string ID)
+    /// 選んだアイテムの中からランダムで一つ選ばれたものの(string ID)
     /// </summary>
     public  static string _FirstItem = "";
 
@@ -260,6 +264,7 @@ public class GameMG_new : MonoBehaviour
     public void TitleFinish()
     {
         StartCoroutine(LoadSceneAsync("CookingPotBT"));
+        _btSerialMG.RFIDReader(true);
     }
 
 
@@ -271,6 +276,7 @@ public class GameMG_new : MonoBehaviour
         if(_countImput > 3) { _countImput = 3; }
         _tasteMG.PushEnter(_countImput);
         _lastItemTaste = _tasteMG.ReturnLastItemTaste();
+        _btSerialMG.RFIDReader(false);
 
         //何番目のアイテムをベースにするかランダムで選出し_FirstItemにIDを記録する
         ItemSelectMG.RandomItemChose(_countImput);

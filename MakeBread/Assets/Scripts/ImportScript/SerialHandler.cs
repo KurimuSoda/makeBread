@@ -9,8 +9,8 @@ public class SerialHandler : MonoBehaviour
     public event SerialDataReceivedEventHandler OnDataReceived;
 
     //M5StickCPlus2のBluetooth接続したときに確認したポート
-    public string portName = "/dev/cu.M5StickCPlus2BT-ESP32SPP";　//無線
-    //public string portName = "/dev/cu.wchusbserial57710015711"; //有線
+    public string portName = "/dev/cu.M5StickCPlus2BT-ESP32SPP";
+    
     public int baudRate    = 115200;
 
     private SerialPort serialPort_;
@@ -44,6 +44,7 @@ public class SerialHandler : MonoBehaviour
         serialPort_.Open();
 
         isRunning_ = true;
+        GameMG_new.isM5Serial = true;   //
 
         thread_ = new Thread(Read);
         thread_.Start();
@@ -55,12 +56,15 @@ public class SerialHandler : MonoBehaviour
 
         if (thread_ != null && thread_.IsAlive) {
             thread_.Join();
+            Debug.Log("Close step1");
         }
 
         if (serialPort_ != null && serialPort_.IsOpen) {
             serialPort_.Close();
             serialPort_.Dispose();
+            Debug.Log("Close step2");
         }
+        Debug.Log("Port Close void run");
     }
 
     private void Read()
@@ -72,8 +76,9 @@ public class SerialHandler : MonoBehaviour
                     isNewMessageReceived_ = true;
                 // }
             } catch (System.Exception e) {
-                //Debug.LogWarning(e.Message);      一旦コメントアウトした　繋がらなかった時用の処理をここに書くといいかも
+                //Debug.LogWarning(e.Message);      //一旦コメントアウトした　繋がらなかった時用の処理をここに書くといいかも?
                 Debug.Log(e.Message);
+                GameMG_new.isM5Serial = false;
             }
         }
     }
@@ -85,5 +90,27 @@ public class SerialHandler : MonoBehaviour
         } catch (System.Exception e) {
             Debug.LogWarning(e.Message);
         }
+    }
+
+    /// <summary>
+    /// 現在の通信を終了し、新しく受け取ったポート名に接続を試みる
+    /// </summary>
+    /// <param name="newPortName">新しいポート名</param>
+    public void ReOpen(string newPortName)
+    {
+        if(GameMG_new.isM5Serial == false)
+        {
+            portName = newPortName;
+            Debug.Log("M5 not Connected");
+            Open();
+        }
+        else if(GameMG_new.isM5Serial == true)
+        {
+            Close();
+            Debug.Log("Finish M5 Connect");
+            portName = newPortName;
+            Open();
+        }
+        
     }
 }

@@ -1,513 +1,507 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1727918657033824, "dur": 533662, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657034237, "dur": 4061, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657038301, "dur": 33320, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657071628, "dur": 381407, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657453040, "dur": 113237, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657566282, "dur": 1203, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657567881, "dur": 44, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040403824, "dur": 523347, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040404380, "dur": 4468, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040408852, "dur": 30755, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040439617, "dur": 343351, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040782978, "dur": 134092, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040917080, "dur": 10088, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040927764, "dur": 69, "ph": "X", "name": "", "args": {} },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
 { "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
 { "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1727918657251479, "dur": 177770, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657254393, "dur": 86667, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657408697, "dur": 5765, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657414465, "dur": 14777, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657415548, "dur": 13125, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657434121, "dur": 1704, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1727918657433588, "dur": 2268, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657568061, "dur": 189, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040580999, "dur": 180695, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040582584, "dur": 62060, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040740138, "dur": 6131, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040746273, "dur": 15412, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040747464, "dur": 13514, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040767251, "dur": 1601, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1751129040766649, "dur": 2267, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040928227, "dur": 294, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1727918657485941, "dur":1926, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657487927, "dur":2961, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1727918657490899, "dur":139, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1727918657491039, "dur":199, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1727918657491249, "dur":417, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657491666, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657531861, "dur":39, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657531900, "dur":228, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532128, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532134, "dur":130, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532264, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532269, "dur":136, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532405, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532409, "dur":154, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532563, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532569, "dur":152, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532721, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532726, "dur":179, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532905, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657532910, "dur":146, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657533056, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657533061, "dur":153, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657533214, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657533231, "dur":46, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657533286, "dur":5494, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1727918657491157, "dur":532, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657491691, "dur":3225, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657494937, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1727918657494959, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657495426, "dur":230, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1727918657495671, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1727918657495681, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657495766, "dur":381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496148, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496166, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496182, "dur":563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496785, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496862, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657496881, "dur":398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1727918657497293, "dur":3134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657500430, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657500536, "dur":279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657500824, "dur":3467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657504293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657504298, "dur":247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657504549, "dur":1302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657505855, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657505860, "dur":544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657506410, "dur":1493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/ExcelImporter.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657507928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657507933, "dur":275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/ExcelImporter.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657508214, "dur":5195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657513411, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657513416, "dur":227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657513646, "dur":3112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657516761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657516767, "dur":486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657517259, "dur":2288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657519551, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657519557, "dur":507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657520071, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657520114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657520121, "dur":518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657520646, "dur":504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.Addressables.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657521153, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657521159, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.Addressables.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657522341, "dur":929, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657523274, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657523421, "dur":818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657524346, "dur":1397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657525747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657525754, "dur":463, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657526223, "dur":714, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657526972, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657526979, "dur":555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657527541, "dur":585, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657528130, "dur":33, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657528210, "dur":592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1727918657528812, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657528834, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657528839, "dur":585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657529432, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level2.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657529441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657529450, "dur":507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level2.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657529967, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657530058, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657530064, "dur":862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":1, "ts":1727918657530974, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":1, "ts":1727918657530984, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1727918657531022, "dur":702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":1, "ts":1727918657531730, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":1, "ts":1727918657531731, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657491171, "dur":523, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657491694, "dur":3245, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657494942, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1727918657495017, "dur":46, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657495842, "dur":372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1727918657496276, "dur":897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1727918657497176, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657497183, "dur":829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1727918657498062, "dur":2886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread.exe" }}
-,{ "pid":12345, "tid":2, "ts":1727918657500950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657500953, "dur":502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread.exe" }}
-,{ "pid":12345, "tid":2, "ts":1727918657501464, "dur":4270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657505739, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657505745, "dur":581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657506332, "dur":3573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657509908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657509934, "dur":264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510213, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510225, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510230, "dur":225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510458, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510473, "dur":192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657510668, "dur":1361, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657512032, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657512037, "dur":292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657512334, "dur":4215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657516553, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657516559, "dur":477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657517043, "dur":2623, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657519669, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657519673, "dur":450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657520189, "dur":2975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657523168, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657523281, "dur":1078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657524367, "dur":1024, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657525395, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657525402, "dur":496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657525904, "dur":575, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657526482, "dur":42, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657526603, "dur":703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657527343, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657527963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657527969, "dur":555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1727918657528533, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1727918657528541, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657528546, "dur":637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529190, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level1.resS" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529205, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529211, "dur":418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level1.resS" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529636, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level2" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529645, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657529649, "dur":689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level2" }}
-,{ "pid":12345, "tid":2, "ts":1727918657530346, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/boot.config" }}
-,{ "pid":12345, "tid":2, "ts":1727918657530393, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1727918657530398, "dur":764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/boot.config" }}
-,{ "pid":12345, "tid":2, "ts":1727918657531168, "dur":619, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657491183, "dur":515, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657491698, "dur":3247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657494960, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1727918657495046, "dur":22, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657496655, "dur":482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1727918657497159, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1727918657497184, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657497190, "dur":817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1727918657498044, "dur":23352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657521399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657521404, "dur":817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657522355, "dur":844, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657523202, "dur":64, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657523423, "dur":1025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657524472, "dur":913, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657525389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657525404, "dur":685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657526097, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657526454, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657526538, "dur":705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657527249, "dur":2351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657529604, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657529609, "dur":481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530098, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level4" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530108, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530112, "dur":415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level4" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530533, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530571, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530576, "dur":387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530980, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets4.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530991, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1727918657530997, "dur":551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets4.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1727918657531555, "dur":243, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657491196, "dur":505, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657491701, "dur":3254, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657494959, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1727918657495038, "dur":25, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657495736, "dur":402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1727918657496155, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1727918657496174, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657496192, "dur":558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1727918657496816, "dur":1130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1727918657497950, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657498007, "dur":438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1727918657498461, "dur":1015, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657499480, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657499501, "dur":256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657499764, "dur":2015, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657501783, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657501789, "dur":394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657502189, "dur":3538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657505731, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657505737, "dur":523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657506299, "dur":1756, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657508058, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657508063, "dur":389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657508459, "dur":2457, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657510918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657510923, "dur":266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657511196, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657511364, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657511368, "dur":223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657511595, "dur":609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Assembly-CSharp-firstpass.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657512208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657512248, "dur":284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Assembly-CSharp-firstpass.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657512542, "dur":3633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657516178, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657516182, "dur":461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657516650, "dur":978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657517664, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657517671, "dur":269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657517950, "dur":1744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657519697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657519701, "dur":454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657520215, "dur":1211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657521430, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657521436, "dur":690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657522271, "dur":1749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657524024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657524031, "dur":549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657524587, "dur":1561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657526152, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657526157, "dur":525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657526689, "dur":630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657527323, "dur":23, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657527451, "dur":720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528217, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528229, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528234, "dur":560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets3.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528802, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528811, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657528816, "dur":624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level0" }}
-,{ "pid":12345, "tid":4, "ts":1727918657529446, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level3.resS" }}
-,{ "pid":12345, "tid":4, "ts":1727918657529456, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657529461, "dur":483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level3.resS" }}
-,{ "pid":12345, "tid":4, "ts":1727918657529951, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level3" }}
-,{ "pid":12345, "tid":4, "ts":1727918657529960, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657530058, "dur":679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level3" }}
-,{ "pid":12345, "tid":4, "ts":1727918657530770, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1727918657530912, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1727918657530967, "dur":574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1727918657531547, "dur":233, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657491207, "dur":498, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657491705, "dur":3256, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657494963, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1727918657495073, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657496388, "dur":579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1727918657496981, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1727918657496997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657497004, "dur":383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1727918657497400, "dur":4053, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1727918657501456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657501460, "dur":351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1727918657501848, "dur":1190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657503041, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657503045, "dur":279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657503330, "dur":2412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657505746, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657505794, "dur":416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657506217, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657506232, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657506278, "dur":318, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657506601, "dur":1324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657507928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657507935, "dur":359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657508298, "dur":2734, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657511035, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657511039, "dur":354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657511398, "dur":3231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657514632, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657514636, "dur":219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657514859, "dur":1523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657516415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657516420, "dur":579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657517005, "dur":706, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657517715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657517722, "dur":299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657518029, "dur":2871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657520904, "dur":61, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657520972, "dur":1084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657522143, "dur":877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657523024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657523030, "dur":476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657523512, "dur":1773, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657525289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657525295, "dur":540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657525842, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657525858, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657525864, "dur":588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657526516, "dur":716, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657527236, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657527242, "dur":490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657527740, "dur":402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657528146, "dur":25, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657528180, "dur":606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1727918657528795, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":5, "ts":1727918657528805, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657528836, "dur":551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":5, "ts":1727918657529393, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1727918657529625, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657529630, "dur":1231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1727918657530870, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":5, "ts":1727918657530880, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1727918657530885, "dur":620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":5, "ts":1727918657531512, "dur":285, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657491220, "dur":488, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657491709, "dur":3258, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657494970, "dur":1179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1727918657496152, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657496159, "dur":578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1727918657496784, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1727918657496811, "dur":26, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657496883, "dur":450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":6, "ts":1727918657497344, "dur":8423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657505795, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657505815, "dur":406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657506240, "dur":2126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657508369, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657508374, "dur":325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657508703, "dur":847, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.DOTween.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657509553, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657509558, "dur":239, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.DOTween.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657509800, "dur":2581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657512384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657512398, "dur":323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657512726, "dur":3951, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657516680, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657516686, "dur":543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657517242, "dur":1509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657518754, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657518759, "dur":334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657519099, "dur":2624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657521726, "dur":184, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657522135, "dur":578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657522720, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657522733, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657522739, "dur":632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657523428, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/DOTween.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657523440, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657523445, "dur":924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/DOTween.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657524378, "dur":609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657525048, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657525056, "dur":468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657525530, "dur":576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657526110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657526116, "dur":563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657526708, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657527278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657527284, "dur":549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657527839, "dur":2128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657529970, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657530058, "dur":526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":6, "ts":1727918657530591, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level4.resS" }}
-,{ "pid":12345, "tid":6, "ts":1727918657530600, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1727918657530621, "dur":710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level4.resS" }}
-,{ "pid":12345, "tid":6, "ts":1727918657531337, "dur":441, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657491232, "dur":480, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657491712, "dur":3263, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657494979, "dur":987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1727918657495970, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657496030, "dur":422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1727918657496466, "dur":999, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1727918657497468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657497475, "dur":730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1727918657498219, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1727918657498252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657498376, "dur":526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":7, "ts":1727918657498923, "dur":2536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657501462, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657501468, "dur":418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657501895, "dur":5120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657507018, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657507023, "dur":233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UniTask.Linq.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657507260, "dur":1093, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657508356, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657508373, "dur":348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657508725, "dur":3833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657512561, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657512569, "dur":254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657512827, "dur":3260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657516092, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657516108, "dur":415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657516547, "dur":2503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657519053, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657519057, "dur":284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657519356, "dur":699, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657520059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657520150, "dur":554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657520710, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657520983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657520990, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657522101, "dur":593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657522698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657522705, "dur":468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657523256, "dur":1493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657524752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657524757, "dur":399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657525168, "dur":1146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657526318, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657526325, "dur":611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657526942, "dur":390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657527335, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657527411, "dur":682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528178, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528207, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528225, "dur":469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528700, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level1" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528709, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657528715, "dur":448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/level1" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529170, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529179, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529184, "dur":670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529861, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/resources.assets" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657529876, "dur":831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/resources.assets" }}
-,{ "pid":12345, "tid":7, "ts":1727918657530769, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1727918657530839, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1727918657530852, "dur":442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1727918657531300, "dur":478, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657491243, "dur":476, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657491719, "dur":3265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657494985, "dur":1280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1727918657496268, "dur":68, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657496469, "dur":473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1727918657496958, "dur":529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1727918657497490, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657497494, "dur":668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498176, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498189, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498340, "dur":351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498709, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498876, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657498979, "dur":221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657499204, "dur":1269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657500476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657500481, "dur":258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657500743, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657500772, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657500777, "dur":225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657501006, "dur":1689, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657502698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657502703, "dur":224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657502931, "dur":1790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657504723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657504727, "dur":213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657504943, "dur":776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657505722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657505728, "dur":542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657506307, "dur":10181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657516493, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657516500, "dur":444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657516951, "dur":4964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657521919, "dur":55, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657522174, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657522974, "dur":1066, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657524044, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657524050, "dur":538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657524596, "dur":664, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657525264, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657525270, "dur":589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657525867, "dur":525, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657526395, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657526402, "dur":497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657526906, "dur":848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657527757, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657527763, "dur":592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528361, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528374, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528380, "dur":485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528872, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528881, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657528886, "dur":485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":8, "ts":1727918657529378, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1727918657529427, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657529449, "dur":792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1727918657530247, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1727918657530298, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1727918657530303, "dur":680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Desktop/MakeBread_forWin_1003/MakeBread_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1727918657530992, "dur":798, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1727918657541765, "dur":829, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1727918657568296, "dur": 926, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1727918657567830, "dur": 1409, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1751129040822162, "dur":1929, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040824130, "dur":3867, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1751129040828011, "dur":77, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1751129040828088, "dur":242, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1751129040828346, "dur":499, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040828845, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040881670, "dur":46, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040881717, "dur":281, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040881998, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882008, "dur":167, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882176, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882182, "dur":172, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882354, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882360, "dur":172, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882532, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882538, "dur":161, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882699, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882705, "dur":172, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882877, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040882884, "dur":214, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040883098, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040883105, "dur":151, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040883256, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040883274, "dur":30, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040883313, "dur":8643, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1751129040828214, "dur":657, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040828874, "dur":3786, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040832669, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1751129040832680, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040832918, "dur":1640, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1751129040834559, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1751129040834614, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040834845, "dur":442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1751129040835287, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1751129040835321, "dur":49, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040835447, "dur":728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1751129040836194, "dur":1486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread.exe" }}
+,{ "pid":12345, "tid":1, "ts":1751129040837683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040837687, "dur":353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread.exe" }}
+,{ "pid":12345, "tid":1, "ts":1751129040838047, "dur":1508, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040839561, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040839567, "dur":371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040839945, "dur":9523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040849475, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040849484, "dur":501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040849993, "dur":710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040850706, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040850753, "dur":420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040851204, "dur":748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040851956, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040851963, "dur":412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040852382, "dur":8628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040861014, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040861021, "dur":441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040861492, "dur":7755, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040869252, "dur":47, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040869418, "dur":1040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040870466, "dur":577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040871047, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040871054, "dur":832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040871901, "dur":1886, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040873791, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040873798, "dur":546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040874356, "dur":721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040875081, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040875089, "dur":694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040875790, "dur":2260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040878054, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040878129, "dur":456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1751129040878593, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1751129040878603, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040878609, "dur":399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1751129040879017, "dur":397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1751129040879417, "dur":62, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040879553, "dur":743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1751129040880303, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1751129040880312, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1751129040880319, "dur":734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1751129040881060, "dur":607, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040828258, "dur":619, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040828877, "dur":3841, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040832719, "dur":1007, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1751129040833729, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040833916, "dur":553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1751129040834489, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1751129040834508, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040834667, "dur":535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1751129040835211, "dur":688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1751129040835909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040835935, "dur":419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1751129040836373, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1751129040836399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040836557, "dur":372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1751129040836945, "dur":1896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040838844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040838849, "dur":225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040839078, "dur":693, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040839774, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040839812, "dur":518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040840338, "dur":677, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841019, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841041, "dur":332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841378, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841493, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841498, "dur":441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841953, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841973, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040841990, "dur":396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040842396, "dur":2172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040844650, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040844747, "dur":467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040845221, "dur":5017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040850243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040850251, "dur":661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040850921, "dur":1416, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040852341, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040852365, "dur":465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040852835, "dur":8524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040861363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040861371, "dur":424, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040861802, "dur":1253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040863059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040863067, "dur":446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040863523, "dur":5135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040868685, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040868694, "dur":597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040869386, "dur":1118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040870508, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040870515, "dur":810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040871333, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040871350, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040871356, "dur":872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040872234, "dur":857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040873096, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040873140, "dur":460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040873643, "dur":1217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040874864, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040874871, "dur":457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040875338, "dur":631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040875974, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040875992, "dur":534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040876533, "dur":1806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040878343, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040878350, "dur":619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1751129040878976, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1751129040878987, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040878993, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1751129040879906, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1751129040879975, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040880025, "dur":757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1751129040880865, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1751129040880948, "dur":45, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1751129040881066, "dur":542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":2, "ts":1751129040881617, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1751129040881619, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040828269, "dur":616, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040828885, "dur":3812, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040832700, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1751129040832803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040833915, "dur":561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1751129040834500, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1751129040834536, "dur":22, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040834811, "dur":461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1751129040835296, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1751129040835329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040835337, "dur":621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1751129040835972, "dur":3882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1751129040839856, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040839860, "dur":436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1751129040840316, "dur":3009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040843329, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040843337, "dur":438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040843788, "dur":6311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040850111, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040850120, "dur":695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040850822, "dur":1053, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040851920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040851928, "dur":535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040852470, "dur":8725, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040861199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040861206, "dur":489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040861699, "dur":461, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040862164, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040862171, "dur":396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040862574, "dur":489, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040863081, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040863088, "dur":479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040863575, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040863587, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040863593, "dur":680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040864283, "dur":4455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040868742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040868750, "dur":589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040869414, "dur":1016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040870434, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040870445, "dur":448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040870900, "dur":1085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040871988, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040871995, "dur":419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040872420, "dur":657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040873082, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040873090, "dur":438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040873535, "dur":1042, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040874581, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040874587, "dur":524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040875273, "dur":1057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040876334, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040876459, "dur":514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040876980, "dur":1896, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040878880, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040878888, "dur":472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1751129040879366, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1751129040879376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040879382, "dur":718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1751129040880157, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1751129040880175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040880181, "dur":598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1751129040880872, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1751129040880954, "dur":39, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1751129040881023, "dur":467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":3, "ts":1751129040881497, "dur":143, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040828281, "dur":608, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040828890, "dur":3791, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040832683, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1751129040832770, "dur":31, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040834102, "dur":640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1751129040834826, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1751129040834864, "dur":19, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040834938, "dur":526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1751129040835490, "dur":2807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040838300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040838397, "dur":455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040838871, "dur":3205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040842079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040842086, "dur":369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040842462, "dur":1688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040844154, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040844162, "dur":500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040844672, "dur":341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/ExcelImporter.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040845030, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040845046, "dur":402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/ExcelImporter.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040845454, "dur":5652, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040851111, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040851118, "dur":520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040851644, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040851735, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040851741, "dur":438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040852185, "dur":8682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040860872, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040860881, "dur":560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040861464, "dur":1552, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040863020, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040863027, "dur":692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040863725, "dur":7353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040871082, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040871089, "dur":777, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040871877, "dur":1660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040873541, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040873548, "dur":390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040873946, "dur":490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040874440, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040874447, "dur":515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040874969, "dur":564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040875552, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040875559, "dur":437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040876003, "dur":3385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040879391, "dur":110, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040879561, "dur":554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1751129040880154, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1751129040880165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1751129040880172, "dur":670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1751129040880923, "dur":729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040828296, "dur":600, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040828896, "dur":3793, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040832693, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1751129040832790, "dur":15, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040834329, "dur":485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1751129040834867, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1751129040834922, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040834946, "dur":620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1751129040835579, "dur":15981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040851564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040851590, "dur":486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040852090, "dur":817, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040853089, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040853098, "dur":441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040853560, "dur":7330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040860893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040860898, "dur":501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040861406, "dur":587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040861996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040862002, "dur":371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040862381, "dur":5957, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040868344, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040868354, "dur":521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040868883, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.Addressables.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040869167, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040869175, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.Addressables.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040869961, "dur":1129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040871093, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040871100, "dur":922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040872031, "dur":2453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040874488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040874495, "dur":460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040874961, "dur":468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040875433, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040875439, "dur":372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040875817, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040876097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040876104, "dur":469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040876580, "dur":1104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040877687, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040877729, "dur":435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878171, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878196, "dur":474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level1" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878682, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040878700, "dur":398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":5, "ts":1751129040879105, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level2.resS" }}
+,{ "pid":12345, "tid":5, "ts":1751129040879147, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040879153, "dur":739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level2.resS" }}
+,{ "pid":12345, "tid":5, "ts":1751129040879968, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1751129040880037, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1751129040880149, "dur":716, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1751129040881000, "dur":639, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040828310, "dur":591, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040828901, "dur":3802, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040832706, "dur":1096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1751129040833805, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040833967, "dur":541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1751129040834574, "dur":1007, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1751129040835585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040835594, "dur":587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1751129040836199, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1751129040836218, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040836319, "dur":607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":6, "ts":1751129040836942, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040837162, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040837275, "dur":277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040837557, "dur":766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040838327, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040838331, "dur":280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040838615, "dur":1297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040839915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040839922, "dur":433, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040840364, "dur":1813, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040842180, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040842187, "dur":426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040842618, "dur":9705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040852327, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040852360, "dur":426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040852792, "dur":8147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040860942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040860948, "dur":498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040861483, "dur":735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040862222, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040862237, "dur":372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040862613, "dur":6665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040869282, "dur":30, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040869391, "dur":1048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040870453, "dur":585, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040871042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040871050, "dur":930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040871991, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040872002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040872009, "dur":487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040872503, "dur":1287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040873793, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040873799, "dur":435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040874241, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040874252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040874259, "dur":459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040874740, "dur":534, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040875278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040875285, "dur":778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040876070, "dur":792, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040876866, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040876872, "dur":346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877224, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877239, "dur":445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877691, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040877740, "dur":439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878189, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878205, "dur":467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878681, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040878830, "dur":474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1751129040879311, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040879320, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040879326, "dur":481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level3.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040879922, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040880045, "dur":37, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040880152, "dur":547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1751129040880706, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":6, "ts":1751129040880767, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1751129040880900, "dur":595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":6, "ts":1751129040881501, "dur":175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040828322, "dur":584, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040828906, "dur":3804, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040832714, "dur":850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1751129040833568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040833952, "dur":619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1751129040834662, "dur":720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1751129040835385, "dur":50, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040835445, "dur":660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1751129040836122, "dur":44147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1751129040880272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1751129040880278, "dur":1111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1751129040881402, "dur":272, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040828340, "dur":571, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040828911, "dur":3760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040832674, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1751129040832782, "dur":21, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040834232, "dur":569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1751129040834871, "dur":965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1751129040835839, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040835847, "dur":586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1751129040836446, "dur":1252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040837701, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040837719, "dur":354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040838079, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040838095, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040838101, "dur":354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040838459, "dur":1355, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040839823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040839830, "dur":345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040840181, "dur":4008, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040844193, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040844201, "dur":465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040844677, "dur":5686, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040850367, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040850388, "dur":450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040850845, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.DOTween.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040851139, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040851184, "dur":499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.DOTween.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040851688, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040851699, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040851706, "dur":452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040852165, "dur":6769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040858942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040858949, "dur":497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040859455, "dur":2000, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040861458, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040861489, "dur":521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040862016, "dur":449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040862505, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040862512, "dur":404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040862922, "dur":8371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040871314, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040871320, "dur":880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UniTask.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040872207, "dur":1231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040873442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040873449, "dur":417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040873873, "dur":1181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040875106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040875114, "dur":425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040875581, "dur":1142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040876728, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040876735, "dur":469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877211, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877227, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877245, "dur":513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877767, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877778, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040877783, "dur":580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878372, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878388, "dur":505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/sharedassets2.resource" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878899, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level1.resS" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040878915, "dur":394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level1.resS" }}
+,{ "pid":12345, "tid":8, "ts":1751129040879315, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1751129040879325, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040879330, "dur":703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/level2" }}
+,{ "pid":12345, "tid":8, "ts":1751129040880065, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1751129040880181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1751129040880188, "dur":751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/Users/hb21a035/Documents/MakeBread_others/MaybeBread_ver1.0_win/MakeBread_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1751129040881036, "dur":613, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1751129040894584, "dur":704, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1751129040928588, "dur": 1179, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1751129040927709, "dur": 2079, "ph": "X", "name": "Write chrome-trace events", "args": {} },

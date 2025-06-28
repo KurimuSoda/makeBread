@@ -12,8 +12,8 @@ public class OvenMG : MonoBehaviour
     [SerializeField] private GameObject _howtoObj;
 
     private Vector3 _fireObjTrans = new Vector3(0f, 0f, 0f);
-    [SerializeField] private float _addScale = 0.1f;
-    [SerializeField] private float _downScale = 0.01f;
+    [SerializeField] private float _addScale = 0.06f;
+    [SerializeField] private float _downScale = 0.003f;
 
     public bool _isGameStart = false;
 

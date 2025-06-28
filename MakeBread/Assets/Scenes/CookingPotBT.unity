@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3053\u308C\u306F\u30C6\u30B9\u30C8\u725B\u4E73<style=p2-5>\u304E\u3046\u306B\u3085\u3046</style>\u306F\u6750<style=p1>\u3056</style>\u3060\u3088<style=p1-3>\u3042\u3044\u3046</style>\u306D\u3002\u7D20\u6750<style=p2>\u305D\u3056</style>\u3042\u3042\u3042\u3088\u3093<style=p2-4>\u3082\u3058\u3082\u3058</style>\n\u3053\u308C\u306F\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u8ABF\u5473\u6599<style=p3-7>\u3061\u3087\u3046\u307F\u308A\u3087\u3046</style>\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8"
+  m_text: "\u3053\u308C\u306F\u30C6\u30B9\u30C8\u725B\u4E73<style=p2-5>\u304E\u3046\u306B\u3085\u3046</style>\u306F\u6750<style=p1>\u3056</style>\u3060\u3088<style=p1-3>\u3042\u3044\u3046</style>\u306D\u3002\u7D20\u6750<style=p2>\u305D\u3056</style>\u3042\u3042\u3042\u3088\u3093<style=p2-4>\u3082\u3058\u3082\u3058</style>\n\u3053\u308C\u306F\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u8ABF\u5473\u6599<style=p3-7>\u3061\u3087\u3046\u307F\u308A\u3087\u3046</style>\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8\u30C6\u30B9\u30C8..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02f86dd1f8b3c426daadfab0acfce84b, type: 2}
   m_sharedMaterial: {fileID: -1551389892450235691, guid: 02f86dd1f8b3c426daadfab0acfce84b, type: 2}
@@ -2227,7 +2227,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &482383340
 GameObject:
@@ -3208,7 +3208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: 30}
+  m_AnchoredPosition: {x: -180, y: 40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259933048
