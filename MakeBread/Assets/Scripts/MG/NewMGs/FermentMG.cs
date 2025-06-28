@@ -14,7 +14,7 @@ public class FermentMG : MonoBehaviour
     /// <summary>
     /// 生地オブジェクトの膨張をするかどうか
     /// </summary>
-    [SerializeField] private bool isBigStart = false;
+    //[SerializeField] private bool isBigStart = false;
     [SerializeField] private GameObject _BreadKiji;
 
     /// <summary>
